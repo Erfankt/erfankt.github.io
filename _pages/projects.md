@@ -2,7 +2,7 @@
 **Study Area:** Mecklenburg County, North Carolina
 **Temporal Coverage:** 1990–2023
 **Scale:** Parcel‑, street‑, and neighborhood‑level analysis
-
+permalink: /projects/
 
 ---
 
