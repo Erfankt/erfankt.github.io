@@ -23,7 +23,7 @@ Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX · HPC ·
 
 ---
 
-👉 **[Research](/research.html)**  
-👉 **[Projects](/projects.html)**  
-👉 **[Curriculum Vitae](/cv.html)**
+👉 **[Research](/research/)**  
+👉 **[Projects](/projects/)**  
+👉 **[Curriculum Vitae](/cv/)**
 
