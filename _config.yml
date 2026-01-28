@@ -14,10 +14,16 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# ✅ Tell Jekyll to publish _pages
+collections:
+  pages:
+    output: true
+
+# ✅ Point navbar to files INSIDE _pages
 header_pages:
-  - about.md
-  - research.md
-  - projects.md
-  - publications.md
-  - cv.md
-  - contact.md
+  - _pages/about.md
+  - _pages/research.md
+  - _pages/projects.md
+  - _pages/publications.md
+  - _pages/cv.md
+  - _pages/contact.md
