@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research
-permalink: /research/
+title: Projects
+permalink: /projects/
 ---
 
 <div class="project-box">
