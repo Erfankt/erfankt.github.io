@@ -1,26 +1,71 @@
-title: Erfan Kefayat
-email: erfan.kefayat@uncc.edu
-description: >-
-  Academic and technical portfolio of Erfan Kefayat, focusing on geospatial data
-  science, urban systems, spatial–temporal modeling, and AI-driven automation of
-  local government workflows.
+---
+---
 
-baseurl: ""
-url: "https://erfan-kefayat.github.io"
+@import "{{ site.theme }}";
 
-markdown: kramdown
-theme: jekyll-theme-cayman
+/* ===============================
+   Global Typography Improvements
+   =============================== */
 
+.main-content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 900px;
+}
 
-plugins:
-  - jekyll-feed
+/* ===============================
+   Section Headers (Academic Look)
+   =============================== */
 
-# ✅ Point navbar to files INSIDE _pages
-header_pages:
-  - about.md
-  - research.md
-  - projects.md
-  - publications.md
-  - cv.md
-  - contact.md
+.main-content h2 {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3em;
+  margin-top: 2.5em;
+}
 
+.main-content h3 {
+  margin-top: 2em;
+  color: #1f2937;
+}
+
+/* ===============================
+   Project / Research Cards
+   =============================== */
+
+.project-box {
+  background: #f9fafb;
+  border-left: 5px solid #2563eb;
+  padding: 1.4em;
+  margin: 2em 0;
+  border-radius: 8px;
+}
+
+/* ===============================
+   Callout / Insight Boxes
+   =============================== */
+
+.callout {
+  background: #eef2ff;
+  border-left: 5px solid #6366f1;
+  padding: 1em 1.2em;
+  margin: 1.8em 0;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* ===============================
+   Figures
+   =============================== */
+
+.main-content img {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-top: 0.5em;
+}
