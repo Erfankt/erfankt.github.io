@@ -119,3 +119,43 @@ pre {
   padding: 1em;
   overflow-x: auto;
 }
+
+/* =================================
+   INTERACTIVE NETWORK BACKGROUND
+   ================================= */
+
+#network-background {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+}
+
+.site-header,
+.site-footer,
+.main-content,
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  background: transparent;
+}
+
+/* =================================
+   ACCESSIBILITY
+   ================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  #network-background {
+    display: none;
+  }
+}
