@@ -14,11 +14,9 @@ erfan.kefayat@utsa.edu
  
 [**GitHub**](https://github.com/erfankt)
 
-**LinkedIn**  
-[LinkedIn Profile](https://linkedin.com/in/erfankefayat)
+[**LinkedIn**](https://linkedin.com/in/erfankefayat)
 
-**Google Scholar**  
-[Google Scholar Profile](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en)
+[**Google Scholar**](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en)
 
 ---
 
