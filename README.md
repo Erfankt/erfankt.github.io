@@ -26,7 +26,7 @@ HPC / SLURM · Google Earth Engine · Spatial econometrics
 - Geospatial automation pipelines for local governments
 
 ## Website
-🌐 https://erfan-kefayat.github.io
+🌐 [https://erfan-kefayat.github.io](https://erfankt.github.io)
 
 This site is intended for academic collaborators, hiring committees,
 and reviewers interested in reproducible, policy-relevant geospatial research.
