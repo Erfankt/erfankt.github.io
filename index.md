@@ -3,6 +3,8 @@ layout: default
 title: Erfan Kefayat
 ---
 
+<canvas id="network-background"></canvas>
+
 # Erfan Kefayat
 
 ### Urban Data Science · Geospatial Analytics · Policy Automation
