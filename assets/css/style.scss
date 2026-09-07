@@ -126,11 +126,14 @@ pre {
 
 #network-background {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+
   width: 100vw;
   height: 100vh;
 
   z-index: 0;
+
   pointer-events: none;
 }
 
@@ -138,16 +141,16 @@ body {
   position: relative;
 }
 
-.site-header,
-.site-footer,
-.main-content,
 .wrapper {
   position: relative;
   z-index: 1;
 }
 
-.main-content {
-  background: transparent;
+.site-header,
+.main-content,
+.site-footer {
+  position: relative;
+  z-index: 2;
 }
 
 /* =================================
