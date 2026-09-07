@@ -4,8 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-# Contact
-
 I welcome inquiries regarding research collaboration, academic opportunities, geospatial data science, urban analytics, and public-sector applications of spatial data and AI.
 
 ## Get in Touch
