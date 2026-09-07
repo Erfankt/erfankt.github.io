@@ -18,7 +18,7 @@ erfan.kefayat@utsa.edu
 [LinkedIn Profile](www.linkedin.com/in/erfankefayat)
 
 **Google Scholar**  
-[Google Scholar Profile]([YOUR-GOOGLE-SCHOLAR-URL](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en)
+[Google Scholar Profile](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en)
 
 ---
 
