@@ -12,7 +12,7 @@ I welcome inquiries regarding research collaboration, academic opportunities, ge
 erfan.kefayat@utsa.edu
 
 **GitHub**  
-[github.com/erfankt](https://github.com/erfankt)
+[Github Profile](https://github.com/erfankt)
 
 **LinkedIn**  
 [LinkedIn Profile](https://linkedin.com/in/erfankefayat)
