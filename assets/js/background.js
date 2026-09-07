@@ -1,26 +1,29 @@
 (function () {
   const canvas = document.getElementById("network-background");
 
-  if (!canvas) return;
+  if (!canvas) {
+    console.log("Network background: canvas not found.");
+    return;
+  }
 
   const ctx = canvas.getContext("2d");
+
   let width;
   let height;
   let nodes = [];
-  let animationFrame;
 
   const mouse = {
     x: null,
     y: null,
-    radius: 180
+    radius: 220
   };
 
-  const NODE_COUNT = 75;
-  const MAX_DISTANCE = 150;
-  const NODE_SPEED = 0.22;
+  const NODE_COUNT = 110;
+  const MAX_DISTANCE = 170;
+  const NODE_SPEED = 0.28;
 
-  function resizeCanvas() {
-    const dpr = window.devicePixelRatio || 1;
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     width = window.innerWidth;
     height = window.innerHeight;
@@ -43,13 +46,13 @@
         y: Math.random() * height,
         vx: (Math.random() - 0.5) * NODE_SPEED,
         vy: (Math.random() - 0.5) * NODE_SPEED,
-        radius: Math.random() * 1.8 + 1
+        radius: Math.random() * 1.5 + 1
       });
     }
   }
 
-  function updateNodes() {
-    nodes.forEach((node) => {
+  function update() {
+    for (const node of nodes) {
       node.x += node.vx;
       node.y += node.vy;
 
@@ -61,28 +64,31 @@
         node.vy *= -1;
       }
 
-      // Subtle mouse interaction
-      if (mouse.x !== null && mouse.y !== null) {
+      if (mouse.x !== null) {
         const dx = mouse.x - node.x;
         const dy = mouse.y - node.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < mouse.radius && distance > 0) {
-          const force = (mouse.radius - distance) / mouse.radius;
+          const force =
+            (mouse.radius - distance) / mouse.radius;
 
-          node.x -= (dx / distance) * force * 0.35;
-          node.y -= (dy / distance) * force * 0.35;
+          node.x -= (dx / distance) * force * 0.7;
+          node.y -= (dy / distance) * force * 0.7;
         }
       }
-    });
+    }
   }
 
-  function drawNetwork() {
+  function draw() {
     ctx.clearRect(0, 0, width, height);
 
-    // Connections
+    /*
+     * Network connections
+     */
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
+
         const a = nodes[i];
         const b = nodes[j];
 
@@ -92,60 +98,86 @@
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < MAX_DISTANCE) {
-          const opacity = 0.12 * (1 - distance / MAX_DISTANCE);
+
+          const opacity =
+            0.28 * (1 - distance / MAX_DISTANCE);
 
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
 
-          ctx.strokeStyle = `rgba(120, 140, 170, ${opacity})`;
-          ctx.lineWidth = 0.7;
+          ctx.strokeStyle =
+            `rgba(37, 99, 235, ${opacity})`;
+
+          ctx.lineWidth = 0.8;
           ctx.stroke();
         }
       }
     }
 
-    // Nodes
-    nodes.forEach((node) => {
+    /*
+     * Nodes
+     */
+    for (const node of nodes) {
+
       ctx.beginPath();
-      ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
 
-      ctx.fillStyle = "rgba(150, 170, 200, 0.45)";
+      ctx.arc(
+        node.x,
+        node.y,
+        node.radius,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle =
+        "rgba(37, 99, 235, 0.65)";
+
       ctx.fill();
-    });
+    }
 
-    // Mouse interaction
-    if (mouse.x !== null && mouse.y !== null) {
-      nodes.forEach((node) => {
+    /*
+     * Mouse connections
+     */
+    if (mouse.x !== null) {
+
+      for (const node of nodes) {
+
         const dx = mouse.x - node.x;
         const dy = mouse.y - node.y;
 
-        const distance = Math.sqrt(dx * dx + dy * dy);
+        const distance =
+          Math.sqrt(dx * dx + dy * dy);
 
         if (distance < mouse.radius) {
-          const opacity = 0.18 * (1 - distance / mouse.radius);
+
+          const opacity =
+            0.45 * (1 - distance / mouse.radius);
 
           ctx.beginPath();
+
           ctx.moveTo(mouse.x, mouse.y);
           ctx.lineTo(node.x, node.y);
 
-          ctx.strokeStyle = `rgba(100, 130, 170, ${opacity})`;
-          ctx.lineWidth = 0.8;
+          ctx.strokeStyle =
+            `rgba(37, 99, 235, ${opacity})`;
+
+          ctx.lineWidth = 1;
+
           ctx.stroke();
         }
-      });
+      }
     }
   }
 
   function animate() {
-    updateNodes();
-    drawNetwork();
-
-    animationFrame = requestAnimationFrame(animate);
+    update();
+    draw();
+    requestAnimationFrame(animate);
   }
 
   window.addEventListener("resize", () => {
-    resizeCanvas();
+    resize();
     createNodes();
   });
 
@@ -159,7 +191,9 @@
     mouse.y = null;
   });
 
-  resizeCanvas();
+  resize();
   createNodes();
   animate();
+
+  console.log("Network background loaded.");
 })();
