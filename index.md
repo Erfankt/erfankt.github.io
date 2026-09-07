@@ -3,8 +3,6 @@ layout: default
 title: Erfan Kefayat
 ---
 
-<canvas id="network-background"></canvas>
-
 # Erfan Kefayat
 
 ### Urban Data Science · Geospatial Analytics · Policy Automation
@@ -24,8 +22,6 @@ My research focuses on developing **quantitative, scalable, and reproducible met
 Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX · HPC · Google Earth Engine
 
 ---
-
-<script src="/assets/js/background.js"></script>
 
 👉 **[Research](/research/)**  
 👉 **[Projects](/projects/)**  
