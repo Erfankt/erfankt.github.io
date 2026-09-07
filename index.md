@@ -25,6 +25,8 @@ Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX · HPC ·
 
 ---
 
+<script src="/assets/js/background.js"></script>
+
 👉 **[Research](/research/)**  
 👉 **[Projects](/projects/)**  
 👉 **[Curriculum Vitae](/cv/)**
