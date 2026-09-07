@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+
+  {% if site.google_analytics %}
+    <script>
+      if (window.location.hostname !== "localhost") {
+        window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+        ga.l = +new Date;
+      }
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  {% endif %}
+
+  {% seo %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+</head>
+
+<body>
+
+  <canvas id="network-background"></canvas>
+
+  <div class="wrapper">
+
+    <header class="site-header">
+      <h1>
+        <a href="{{ '/' | relative_url }}">
+          {{ site.title }}
+        </a>
+      </h1>
+
+      <nav>
+        {% for path in site.header_pages %}
+          {% assign page = site.pages | where: "path", path | first %}
+          {% if page %}
+            <a href="{{ page.url | relative_url }}">
+              {{ page.title }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main class="main-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>{{ site.description }}</p>
+    </footer>
+
+  </div>
+
+  <script src="{{ '/assets/js/background.js' | relative_url }}"></script>
+
+</body>
+</html>
