@@ -3,17 +3,12 @@ layout: page
 title: About
 ---
 
-I am a final-year PhD candidate in **Public Policy Analysis** with a specialization in **geospatial data science**, **urban systems modeling**, and **spatial–temporal analytics**.
+I am a PhD student in Civil Engineering at the University of Texas at San Antonio, where I explore artificial intelligence and intelligent built environments. My research interests include Agentic AI, intelligent human–building interaction, and the integration of AI with buildings, infrastructure, and built-environment data.
 
-My research focuses on developing **quantitative, scalable methods** to understand how urban form, infrastructure, and policy interact over time. I work at the intersection of urban planning, data science, and public policy, with an emphasis on **automation, reproducibility, and decision-support systems** for local and regional governments.
+I am interested in a simple but broad question: how can we make the environments around us more intelligent, responsive, and adaptive?
 
-My academic background integrates:
-- Advanced spatial statistics and econometrics  
-- Large-scale geospatial data engineering  
-- Machine learning and GeoAI applications  
-- Urban morphology and sustainability analysis  
+My interest in this question grew from earlier work studying cities as complex systems. During my previous PhD in Public Policy Analysis, I explored urban morphology, land use, transportation, accessibility, and how built environments change across space and time. This work brought me into geospatial analysis, spatial-temporal modeling, and computational approaches to understanding urban systems.
 
-Across my projects, I design end-to-end analytical pipelines—from raw administrative and spatial data to interpretable models and policy-relevant insights. My work routinely combines **Python, R, GIS platforms, HPC environments, and open-source spatial libraries**.
+Today, I am bringing those interests closer to the physical environment—exploring how AI, data, and intelligent systems can become part of the buildings and infrastructure we interact with every day.
 
-My long-term research agenda centers on **modernizing local government workflows** through data-driven automation, particularly in land management, infrastructure planning, and urban analytics. I aim to produce research that is both methodologically rigorous and directly applicable to real-world governance challenges.
-
+Looking ahead, I am particularly interested in intelligent built environments that can sense, understand, reason, and adapt to the people and conditions around them.
