@@ -16,7 +16,7 @@ public-sector workflows.
 - Data-driven policy and infrastructure analysis
 
 ## Methods & Tools
-Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX ·  
+Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX
 HPC / SLURM · Google Earth Engine · Spatial econometrics
 
 ## Selected Work
