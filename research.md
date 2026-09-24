@@ -4,98 +4,75 @@ title: Research
 permalink: /research/
 ---
 
+I study how data, AI, and urban systems intersect — from the spatial structure of cities to the built environments people move through every day. Below is a live snapshot of my publication record, pulled directly from my [Google Scholar profile](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en).
+
 <div class="project-box" markdown="1">
 
-### 🌆 Spatio-Temporal Study of Sustainable Urban Morphology (SUM)
+### 📈 Citation Metrics
 
-**Study Area:** Mecklenburg County, North Carolina  
-**Temporal Coverage:** 1990–2023  
-**Scale:** Parcel-, street-, and neighborhood-level analysis
+**Citations:** 35 (all since 2021)
+**h-index:** 2
+**i10-index:** 1
 
-</div>
-
----
-
-### 🔍 Research Problem
-
-Urban sustainability is often evaluated using **cross-sectional indicators**, providing limited insight into how urban form evolves over time. This research addresses a core gap in urban analytics: the lack of **longitudinal, spatially explicit frameworks** for measuring sustainable urban morphology.
-
-The central question is not only whether cities become more sustainable, but **where**, **how**, and **under what spatial regimes** these changes occur.
-
----
-
-### 🧠 Research Contributions
-
-This dissertation develops a **spatio-temporal analytical framework** that:
-
-- Quantifies urban form using reproducible morphology indicators  
-- Tracks long-run structural change in the built environment  
-- Detects spatial heterogeneity and regime shifts in urban development  
-- Integrates time-series analysis, clustering, and spatial statistics  
-
-The framework enables fine-grained evaluation of **whether**, **where**, and **how** urban morphology trends toward (or away from) sustainability.
-
-<div class="callout" markdown="1">
-
-**Methodological Contribution:**  
-Rather than treating urban form as static, this research models the built environment as a dynamic system with measurable temporal trajectories.
+*Source: Google Scholar, updated 2026*
 
 </div>
 
 ---
 
-### 🧪 Data & Methods
+### 🎯 Research Interests
 
-**Data Sources:**
-- Tax parcels and building records  
-- Street networks and intersection topology  
-- Administrative and GIS boundary datasets  
-
-**Analytical Methods:**
-- Urban morphology metrics (density, compactness, street hierarchy)  
-- Spatial–temporal clustering (ST-DBSCAN, hierarchical clustering)  
-- Kernel density estimation (KDE)  
-- Time-series trend analysis and structural break detection  
-- Spatial regression and exploratory spatial data analysis  
+- Geospatial Data Science
+- Urban Systems
+- Agentic Built Environment
 
 ---
 
-### ⚙️ Technical Stack
+### 📚 Publications
 
-- **Programming:** Python, R  
-- **GIS:** ArcGIS Pro, GeoPandas, PostGIS  
-- **Analytics:** Spatial statistics, time-series modeling, clustering  
-- **Infrastructure:** High-performance computing (HPC), automated pipelines  
+<div class="project-box" markdown="1">
 
----
+**Urban Street Network Configuration and Property Crime: An Empirical Multivariate Case Study**
+E Kefayat, JC Thill
+*International Journal of Geo-Information*, 14(5), 200 — 2025
+Cited by 29
 
-### 📊 Key Outcomes
+</div>
 
-- Longitudinal evidence of heterogeneous urban form trajectories  
-- Identification of spatial regimes with distinct sustainability dynamics  
-- A scalable methodology applicable to other U.S. metropolitan regions  
+<div class="project-box" markdown="1">
 
----
+**Localized Spatio-Temporal Dynamics of Sustainable Urban Built Morphology**
+E Kefayat, JC Thill
+*Sustainability*, 18(16), 8314 — 2026
 
-### 🏛️ Policy & Planning Relevance
+</div>
 
-This research supports **data-driven urban governance** by providing:
+<div class="project-box" markdown="1">
 
-- Objective diagnostics for long-term land-use outcomes  
-- Evidence-based inputs for planning and infrastructure decision-making  
-- A foundation for automating sustainability monitoring in local governments  
+**Local Government Proliferation and Fiscal Efficiency: Evidence From Ghana**
+Z Iddrisu, ASJ Abdulai, E Kefayat, M Gadri
+*Growth and Change*, 56(4), e70058 — 2025
+Cited by 5
 
-<div class="callout" markdown="1">
+</div>
 
-**Governance Insight:**  
-The framework enables continuous, automated monitoring of urban sustainability indicators, supporting proactive planning rather than reactive assessment.
+<div class="project-box" markdown="1">
+
+**Tracing Urban Morphology Towards Sustainability Across Space and Time: Evidence From a Rapidly Growing US Metropolitan Region**
+E Kefayat
+The University of North Carolina at Charlotte — 2026
+Cited by 1
+
+</div>
+
+<div class="callout">
+
+**Note:** This list reflects the publications currently indexed on my Google Scholar profile. It will continue to grow as new work from my PhD research at UTSA is published.
 
 </div>
 
 ---
 
-### 📎 Related Outputs
+### 🔗 Find Me
 
-- Doctoral dissertation manuscript (forthcoming)  
-- Journal articles (in preparation / under review)  
-- Reproducible analysis pipelines (select components to be released)
+[View my full profile on Google Scholar →](https://scholar.google.com/citations?user=OYXWp40AAAAJ&hl=en)
