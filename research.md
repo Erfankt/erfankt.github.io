@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-<div class="project-box">
+<div class="project-box" markdown="1">
 
 ### 🌆 Spatio-Temporal Study of Sustainable Urban Morphology (SUM)
 
@@ -35,7 +35,7 @@ This dissertation develops a **spatio-temporal analytical framework** that:
 
 The framework enables fine-grained evaluation of **whether**, **where**, and **how** urban morphology trends toward (or away from) sustainability.
 
-<div class="callout">
+<div class="callout" markdown="1">
 
 **Methodological Contribution:**  
 Rather than treating urban form as static, this research models the built environment as a dynamic system with measurable temporal trajectories.
@@ -85,7 +85,7 @@ This research supports **data-driven urban governance** by providing:
 - Evidence-based inputs for planning and infrastructure decision-making  
 - A foundation for automating sustainability monitoring in local governments  
 
-<div class="callout">
+<div class="callout" markdown="1">
 
 **Governance Insight:**  
 The framework enables continuous, automated monitoring of urban sustainability indicators, supporting proactive planning rather than reactive assessment.
