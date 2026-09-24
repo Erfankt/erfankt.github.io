@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-## About
-
 I am a PhD student in Civil Engineering at the University of Texas at San Antonio, where I explore **artificial intelligence and intelligent built environments**. My research interests include Agentic AI, intelligent human–building interaction, and the integration of AI with buildings, infrastructure, and built-environment data.
 
 My research is guided by a simple question:

@@ -3,6 +3,8 @@ layout: default
 title: Erfan Kefayat
 ---
 
+<img src="{{ '/assets/img/image.jpg' | relative_url }}" alt="Erfan Kefayat" class="profile-photo">
+
 # Erfan Kefayat
 
 ### Urban Data Science · Geospatial Analytics · Policy Automation
@@ -26,4 +28,3 @@ Python · R · ArcGIS Pro · PostGIS · GeoPandas · OSMNX · NetworkX · HPC ·
 👉 **[Research](/research/)**  
 👉 **[Projects](/projects/)**  
 👉 **[Curriculum Vitae](/cv/)**
-
