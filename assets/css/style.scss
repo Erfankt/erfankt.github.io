@@ -329,6 +329,95 @@ body {
 }
 
 /* =================================
+   HOMEPAGE: STATS ROW
+   ================================= */
+
+.stats-row {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 2.5em 0;
+}
+
+.stat-tile {
+  flex: 1;
+  min-width: 140px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.4em 1em;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.82rem;
+  font-family: var(--font-heading);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* =================================
+   HOMEPAGE: NAV CARDS
+   ================================= */
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2em;
+  margin: 2.5em 0;
+}
+
+.main-content .nav-card {
+  display: block;
+  padding: 1.5em;
+  background: var(--color-surface);
+  background-image: none !important;
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.main-content .nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background-image: none !important;
+}
+
+.nav-card h4 {
+  margin: 0 0 0.4em;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.nav-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* =================================
    FIGURES & IMAGES (ALL PAGES)
    ================================= */
 
