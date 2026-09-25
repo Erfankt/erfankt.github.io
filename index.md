@@ -19,6 +19,14 @@ I study how artificial intelligence can make the buildings, infrastructure, and 
 
 ---
 
+### 🎓 Background
+
+My path here started in public policy analysis, studying cities as complex systems — urban morphology, land use, transportation, and how the built environment changes across space and time. That work pulled me deep into geospatial analysis and spatial-temporal modeling, and eventually toward a bigger question: what if the environments we study could also sense, respond, and adapt on their own? That question led me to a second PhD, in Civil Engineering at UTSA, where I now work at the intersection of agentic AI, data, and the built environment.
+
+[Read my full story on the About page →](/about/)
+
+---
+
 <div class="stats-row">
   <div class="stat-tile">
     <span class="stat-number">35</span>
