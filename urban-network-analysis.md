@@ -94,48 +94,18 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
 <h3>Study Area &amp; Street Network Diversity</h3>
-<div class="story-two-col">
-  <div class="story-text">
-    <p>Mecklenburg County, NC is partitioned into <strong>371 Neighborhood Profile Areas (NPAs)</strong> &mdash; Charlotte’s official planning units. Their street networks span a wide spectrum: dense urban grids near Uptown with hundreds of intersections per square mile, to suburban cul-de-sac loops where the nearest connecting road may be half a mile away.</p>
-    <p>Property crime data (burglary, larceny-theft, motor-vehicle theft, arson) from the <strong>Charlotte-Mecklenburg Police Department for 2022</strong> serve as the outcome. Local Moran’s I analysis confirms statistically significant high-high crime clusters in the urban core and low-low clusters in affluent southern suburbs &mdash; the kind of spatial patterning that demands spatial models.</p>
-  </div>
-  <div class="story-right">
-    <div class="nc-pair">
-      <div class="nc-box">
-        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Dense grid street pattern">
-          <line x1="0" y1="20" x2="100" y2="20" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="40" x2="100" y2="40" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="60" x2="100" y2="60" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="80" x2="100" y2="80" stroke="currentColor" stroke-width="2.2"/>
-          <line x1="20" y1="0" x2="20" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="40" y1="0" x2="40" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="60" y1="0" x2="60" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="80" y1="0" x2="80" y2="100" stroke="currentColor" stroke-width="2.2"/>
-          <circle cx="20" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="20" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="40" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="60" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="80" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <p class="nc-lbl"><strong>Grid</strong> (Uptown)<br>High density · open access</p>
-      </div>
-      <div class="nc-box">
-        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Curvilinear suburban street pattern with cul-de-sacs">
-          <path d="M0,55 Q25,50 50,55 Q75,60 100,55" stroke="currentColor" stroke-width="2.2" fill="none"/>
-          <path d="M25,54 Q22,37 30,24" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="30" cy="21" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M50,55 Q48,35 56,22" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="56" cy="19" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M75,57 Q80,38 72,25" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="72" cy="22" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M35,55 Q32,73 40,86" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="40" cy="89" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M65,57 Q70,75 62,88" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="62" cy="91" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="25" cy="54" r="3.5" fill="var(--color-accent)"/><circle cx="50" cy="55" r="3.5" fill="var(--color-accent)"/><circle cx="75" cy="57" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <p class="nc-lbl"><strong>Loops &amp; cul-de-sacs</strong> (suburbs)<br>Low density · restricted access</p>
-      </div>
-    </div>
-    <div class="story-stats-row">
-      <div class="sstat"><span class="sstat-n">371</span><span class="sstat-l">NPAs</span></div>
-      <div class="sstat"><span class="sstat-n">2022</span><span class="sstat-l">Study year</span></div>
-      <div class="sstat"><span class="sstat-n">4</span><span class="sstat-l">Crime types</span></div>
-    </div>
-  </div>
+<p>Mecklenburg County, NC is partitioned into <strong>371 Neighborhood Profile Areas (NPAs)</strong> &mdash; Charlotte’s official planning units. Their street networks span a wide spectrum: dense urban grids near Uptown with hundreds of intersections per square mile, to suburban cul-de-sac loops where the nearest connecting road may be half a mile away.</p>
+<p>Property crime data (burglary, larceny-theft, motor-vehicle theft, arson) from the <strong>Charlotte-Mecklenburg Police Department for 2022</strong> serve as the outcome. Local Moran’s I analysis confirms statistically significant high-high crime clusters in the urban core and low-low clusters in affluent southern suburbs &mdash; the kind of spatial patterning that demands spatial models.</p>
+<figure class="story-fig">
+  <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+       alt="Figure 2 from Kefayat &amp; Thill (2025): Diversity of street networks in the study area — showing Mecklenburg County NPAs with contrasting grid (Uptown) and curvilinear cul-de-sac (suburban) street patterns"
+       class="story-fig-img">
+  <figcaption><strong>Figure 2.</strong> Diversity of street networks in the study area. The urban core (Uptown) follows a traditional grid that facilitates connectivity and high intersection density. Suburban areas feature curvilinear loop patterns and cul-de-sacs that reduce permeability. <span class="fig-source">Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+</figure>
+<div class="story-stats-row">
+  <div class="sstat"><span class="sstat-n">371</span><span class="sstat-l">NPAs</span></div>
+  <div class="sstat"><span class="sstat-n">2022</span><span class="sstat-l">Study year</span></div>
+  <div class="sstat"><span class="sstat-n">4</span><span class="sstat-l">Crime types</span></div>
 </div>
 </div>
 
@@ -167,7 +137,7 @@ permalink: /projects/urban-network-analysis/
     </svg>
   </div>
   <div class="measure-right">
-    <p class="measure-eq"><strong>8 metrics × 5 buffers = 40 variables</strong></p>
+    <p class="measure-eq"><strong>8 metrics &times; 5 buffers = 40 variables</strong></p>
     <ul class="measure-list">
       <li>Street density</li>
       <li>Intersection density</li>
@@ -203,39 +173,39 @@ permalink: /projects/urban-network-analysis/
 <tr class="rtr-odd">
   <td><strong>Intersection density</strong><br><small>Network intensity &amp; permeability</small></td>
   <td class="rdir rpos">+</td>
-  <td class="rdir rpos">+✓</td>
-  <td class="rdir rpos">+✓</td>
-  <td class="rdir rpos">+✓</td>
-  <td class="rdir rmix">◆</td>
+  <td class="rdir rpos">+&#10003;</td>
+  <td class="rdir rpos">+&#10003;</td>
+  <td class="rdir rpos">+&#10003;</td>
+  <td class="rdir rmix">&#9670;</td>
 </tr>
 <tr>
   <td><strong>Avg. clustering coeff.</strong><br><small>Local street enclosure</small></td>
   <td class="rdir rneg">&minus;</td>
   <td class="rdir rns">n.s.</td>
-  <td class="rdir rneg">&minus;✓</td>
-  <td class="rdir rneg">&minus;✓</td>
-  <td class="rdir rmix">◆</td>
+  <td class="rdir rneg">&minus;&#10003;</td>
+  <td class="rdir rneg">&minus;&#10003;</td>
+  <td class="rdir rmix">&#9670;</td>
 </tr>
 <tr class="rtr-odd">
   <td><strong>Avg. shortest path</strong><br><small>Network accessibility</small></td>
   <td class="rdir rneg">&minus;</td>
-  <td class="rdir rneg">&minus;✓</td>
-  <td class="rdir rneg">&minus;✓</td>
+  <td class="rdir rneg">&minus;&#10003;</td>
+  <td class="rdir rneg">&minus;&#10003;</td>
   <td class="rdir rns">n.s.</td>
-  <td class="rdir rmix">◆</td>
+  <td class="rdir rmix">&#9670;</td>
 </tr>
 <tr>
   <td><strong>Avg. betweenness centrality</strong><br><small>Through-traffic potential</small></td>
   <td class="rdir rpos">+</td>
   <td class="rdir rns">n.s.</td>
   <td class="rdir rns">n.s.</td>
-  <td class="rdir rpos">+✓</td>
-  <td class="rdir rmix">◆</td>
+  <td class="rdir rpos">+&#10003;</td>
+  <td class="rdir rmix">&#9670;</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p class="rtable-note">✓ significant  |  n.s. not significant  |  ◆ spatially varying (GWR: significant in some areas, not others)</p>
+<p class="rtable-note">&#10003;&nbsp;significant &nbsp;|&nbsp; n.s.&nbsp;not significant &nbsp;|&nbsp; &#9670;&nbsp;spatially varying (GWR: significant in some areas, not others)</p>
 <p><strong>Where effects are strongest:</strong> GWR reveals that intersection density’s positive association peaks in the suburban mid-ring — consistent with a saturation effect where adding one more intersection to an already hyper-connected downtown block matters less than the same addition in a disconnected suburb.</p>
 </div>
 
@@ -415,35 +385,30 @@ text.pf-label.pf-on {
   margin: 0.9em 0;
 }
 /* ── Page 2: Study Area ─────────────────────────── */
-.story-two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.6em;
-  margin-top: 0.7em;
-  align-items: start;
-}
-.story-text p { margin-top: 0; }
-.nc-pair {
-  display: flex;
-  gap: 1em;
-}
-.nc-box {
-  flex: 1;
+.story-fig {
+  margin: 0.9em 0 0.5em;
   text-align: center;
 }
-.nc-svg {
+.story-fig-img {
   width: 100%;
-  max-width: 110px;
+  max-width: 680px;
   height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
   display: block;
-  margin: 0 auto 0.5em;
-  color: var(--color-text-muted);
+  margin: 0 auto;
 }
-.nc-lbl {
-  font-size: 0.74rem;
+.story-fig figcaption {
+  margin-top: 0.45em;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin: 0;
-  line-height: 1.4;
+  font-style: italic;
+  line-height: 1.5;
+}
+.fig-source {
+  font-style: normal;
+  font-size: 0.75rem;
+  opacity: 0.8;
 }
 .story-stats-row {
   display: flex;
@@ -587,7 +552,6 @@ text.pf-label.pf-on {
   margin-bottom: 0.8em;
 }
 @media (max-width: 700px) {
-  .story-two-col { grid-template-columns: 1fr; }
   .measure-layout { grid-template-columns: 1fr; }
   .measure-svg { max-width: 200px; margin: 0 auto 1em; }
   .pca-name { min-width: 95px; }
