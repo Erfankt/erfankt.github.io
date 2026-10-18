@@ -46,48 +46,51 @@ permalink: /projects/urban-network-analysis/
 <text x="130" y="195" text-anchor="middle" font-size="12">Neighborhood Profile</text>
 <text x="130" y="212" text-anchor="middle" font-size="12">Areas (371 NPAs)</text>
 </g>
-<g class="pf-arrow pf-arrow-diag" data-step="7">
-<line x1="670" y1="50" x2="715" y2="110" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-arrow pf-arrow-v" data-step="7" style="transform-origin:130px 170px">
+<line x1="130" y1="80" x2="130" y2="170" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
-<g class="pf-arrow pf-arrow-diag" data-step="8">
-<line x1="240" y1="200" x2="715" y2="150" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-node" data-step="8">
+<rect x="260" y="170" width="200" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="360" y="195" text-anchor="middle" font-size="12">Buffer at 5 scales</text>
+<text x="360" y="212" text-anchor="middle" font-size="12">(0.1–1 mile)</text>
 </g>
-<g class="pf-node" data-step="9">
-<rect x="720" y="90" width="220" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="830" y="125" text-anchor="middle" font-size="13" font-weight="700">Buffer each NPA</text>
-<text x="830" y="143" text-anchor="middle" font-size="12">5 scales: 0.1&ndash;1 mi</text>
-<text x="830" y="160" text-anchor="middle" font-size="12">(0.1, 0.25, 0.5, 0.75, 1)</text>
+<g class="pf-arrow pf-arrow-h" data-step="9" style="transform-origin:240px 200px">
+<line x1="240" y1="200" x2="260" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
-<g class="pf-arrow pf-arrow-h" data-step="10" style="transform-origin:940px 130px">
-<line x1="940" y1="130" x2="985" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-arrow pf-arrow-h" data-step="10" style="transform-origin:460px 200px">
+<line x1="460" y1="200" x2="490" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
 <g class="pf-node" data-step="11">
-<rect x="990" y="90" width="200" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="1090" y="125" text-anchor="middle" font-size="13" font-weight="700">Network measures</text>
-<text x="1090" y="143" text-anchor="middle" font-size="12">40 variables</text>
-<text x="1090" y="160" text-anchor="middle" font-size="12">(8 &times; 5 buffers)</text>
+<rect x="490" y="170" width="230" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="605" y="195" text-anchor="middle" font-size="12">Compute 40 network</text>
+<text x="605" y="212" text-anchor="middle" font-size="12">measures (8 per scale)</text>
 </g>
-<g class="pf-arrow pf-arrow-h" data-step="12" style="transform-origin:1190px 130px">
-<line x1="1190" y1="130" x2="1235" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-arrow pf-arrow-h" data-step="12" style="transform-origin:720px 200px">
+<line x1="720" y1="200" x2="750" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
-<text class="pf-label" data-step="12" x="1212" y="118" text-anchor="middle" font-size="11">reduce</text>
 <g class="pf-node" data-step="13">
-<rect x="1240" y="90" width="190" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="1335" y="125" text-anchor="middle" font-size="13" font-weight="700">Component</text>
-<text x="1335" y="143" text-anchor="middle" font-size="12">analysis (PCA)</text>
-<text x="1335" y="160" text-anchor="middle" font-size="12">4 components</text>
+<rect x="750" y="170" width="230" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="865" y="195" text-anchor="middle" font-size="12">PCA: 40 measures →</text>
+<text x="865" y="212" text-anchor="middle" font-size="12">4 components</text>
 </g>
-<g class="pf-arrow pf-arrow-h" data-step="14" style="transform-origin:1430px 130px">
-<line x1="1430" y1="130" x2="1475" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-arrow pf-arrow-h" data-step="14" style="transform-origin:980px 200px">
+<line x1="980" y1="200" x2="1010" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
-<text class="pf-label" data-step="14" x="1452" y="118" text-anchor="middle" font-size="11">select</text>
 <g class="pf-node" data-step="15">
-<rect x="1480" y="95" width="120" height="70" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="1540" y="125" text-anchor="middle" font-size="12" font-weight="700">Modeling</text>
-<text x="1540" y="142" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
+<rect x="1010" y="170" width="250" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="1135" y="195" text-anchor="middle" font-size="12">Model dataset: 4 vars</text>
+<text x="1135" y="212" text-anchor="middle" font-size="12">+ controls, N=371 NPAs</text>
+</g>
+<g class="pf-node" data-step="16">
+<rect x="1290" y="170" width="330" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="1455" y="195" text-anchor="middle" font-size="12">Spatial models</text>
+<text x="1455" y="212" text-anchor="middle" font-size="12">(OLS · SAR · CAR · GWR)</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="17" style="transform-origin:1260px 200px">
+<line x1="1260" y1="200" x2="1290" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
 </g>
 </svg>
-<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
+<figcaption>Data pipeline: the county, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
 </figure>
 </div>
 
@@ -124,35 +127,57 @@ permalink: /projects/urban-network-analysis/
       <p class="fig2-lb-cap"><strong>Figure 2.</strong> Diversity of street networks in the study area &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
     </div>
   </div>
-  <div class="p2-concepts">
-    <div class="nc-pair">
-      <div class="nc-box">
-        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Dense grid street pattern">
-          <line x1="0" y1="20" x2="100" y2="20" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="40" x2="100" y2="40" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="60" x2="100" y2="60" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="80" x2="100" y2="80" stroke="currentColor" stroke-width="2.2"/>
-          <line x1="20" y1="0" x2="20" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="40" y1="0" x2="40" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="60" y1="0" x2="60" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="80" y1="0" x2="80" y2="100" stroke="currentColor" stroke-width="2.2"/>
-          <circle cx="20" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="20" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="40" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="60" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="80" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <p class="nc-lbl"><strong>Grid</strong><br>Uptown &middot; high connectivity</p>
+  <div class="p2-figs-col">
+    <figure class="p2-map">
+      <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
+        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
+             alt="Figure 3: Property crime counts across NPAs in 2022"
+             class="p2-map-img p2-map-img--sm" id="fig3Img">
+        <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+          </svg>
+        </button>
       </div>
-      <div class="nc-box">
-        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Curvilinear suburban street pattern with cul-de-sacs">
-          <path d="M0,55 Q25,50 50,55 Q75,60 100,55" stroke="currentColor" stroke-width="2.2" fill="none"/>
-          <path d="M25,54 Q22,37 30,24" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="30" cy="21" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M50,55 Q48,35 56,22" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="56" cy="19" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M75,57 Q80,38 72,25" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="72" cy="22" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M35,55 Q32,73 40,86" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="40" cy="89" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <path d="M65,57 Q70,75 62,88" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="62" cy="91" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
-          <circle cx="25" cy="54" r="3.5" fill="var(--color-accent)"/><circle cx="50" cy="55" r="3.5" fill="var(--color-accent)"/><circle cx="75" cy="57" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <p class="nc-lbl"><strong>Cul-de-sac</strong><br>Suburbs &middot; low permeability</p>
+      <figcaption><strong>Fig. 3.</strong> Property crime counts by NPA (2022). <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+    </figure>
+    <div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
+      <div class="fig2-lb-backdrop" id="fig3Backdrop"></div>
+      <div class="fig2-lb-box">
+        <button class="fig2-lb-close" id="fig3Close" aria-label="Close">&#215;</button>
+        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
+             alt="Figure 3 full size: Property crime counts across NPAs in 2022"
+             class="fig2-lb-img">
+        <p class="fig2-lb-cap"><strong>Figure 3.</strong> Property crime counts across NPAs in 2022 &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
+      </div>
+    </div>
+    <figure class="p2-map">
+      <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
+        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
+             alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
+             class="p2-map-img p2-map-img--sm" id="fig4Img">
+        <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+          </svg>
+        </button>
+      </div>
+      <figcaption><strong>Fig. 4.</strong> Property crime density by NPA, per acre (2022). <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+    </figure>
+    <div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
+      <div class="fig2-lb-backdrop" id="fig4Backdrop"></div>
+      <div class="fig2-lb-box">
+        <button class="fig2-lb-close" id="fig4Close" aria-label="Close">&#215;</button>
+        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
+             alt="Figure 4 full size: Property crime density across NPAs (by acre) in 2022"
+             class="fig2-lb-img">
+        <p class="fig2-lb-cap"><strong>Figure 4.</strong> Property crime density across NPAs, per acre (2022) &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
       </div>
     </div>
     <div class="story-stats-row">
@@ -570,6 +595,9 @@ text.pf-label.pf-on {
   margin: 0;
 }
 .fig2-lb-cap a { color: #8bbfff; }
+/* ── Figures 3 & 4 column ──────────────────────── */
+.p2-figs-col { display: flex; flex-direction: column; gap: 0.8em; }
+.p2-map-img--sm { max-height: 160px; object-fit: contain; width: 100%; display: block; }
 .story-stats-row {
   display: flex;
   gap: 0.7em;
@@ -880,6 +908,66 @@ text.pf-label.pf-on {
     document.body.style.overflow = '';
   }
 
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
+})();
+
+// ── Figure 3 Lightbox ───────────────────────────────
+(function() {
+  var lb       = document.getElementById('fig3Lb');
+  var backdrop = document.getElementById('fig3Backdrop');
+  var closeBtn = document.getElementById('fig3Close');
+  var wrap     = document.getElementById('fig3Wrap');
+  var expandBtn = document.getElementById('fig3Btn');
+  if (!lb || !wrap) return;
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
+})();
+
+// ── Figure 4 Lightbox ───────────────────────────────
+(function() {
+  var lb       = document.getElementById('fig4Lb');
+  var backdrop = document.getElementById('fig4Backdrop');
+  var closeBtn = document.getElementById('fig4Close');
+  var wrap     = document.getElementById('fig4Wrap');
+  var expandBtn = document.getElementById('fig4Btn');
+  if (!lb || !wrap) return;
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
   wrap.addEventListener('click', function(e) {
     if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
       open();
