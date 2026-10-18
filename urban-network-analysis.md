@@ -4,113 +4,140 @@ title: Urban Street Network Configuration & Property Crime
 permalink: /projects/urban-network-analysis/
 ---
 
-<div class="fb-wrap" id="fbWrap">
+<div class="book-wrap">
 
-<div class="fb-stage" id="fbStage">
+<div class="book" id="book">
 
-<div class="fb-page" data-page="0">
-<div class="fb-kicker">Project 01</div>
+<div class="book-page" data-i="0">
+<div class="book-kicker">Page 1</div>
 <h2>Urban Street Network Configuration &amp; Property Crime</h2>
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
-<div class="fb-note">Placeholder &mdash; pipeline diagram: streets + neighborhoods &rarr; network measures at multiple buffer scales &rarr; component analysis &rarr; modeling dataset. (Add image: assets/img/pipeline-diagram.png)</div>
+<div class="book-note">Placeholder &mdash; pipeline diagram: streets + neighborhoods &rarr; network measures at multiple buffer scales &rarr; component analysis &rarr; modeling dataset. (Add image: assets/img/pipeline-diagram.png)</div>
 </div>
 
-<div class="fb-page" data-page="1">
-<div class="fb-kicker">The Paper</div>
+<div class="book-page" data-i="1">
+<div class="book-kicker">Page 2</div>
+<h3>The Paper</h3>
 <p><strong>Kefayat, E., &amp; Thill, J.-C. (2025).</strong> Urban Street Network Configuration and Property Crime: An Empirical Multivariate Case Study. <em>ISPRS International Journal of Geo-Information</em>, 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">doi.org/10.3390/ijgi14050200</a></p>
-<p class="fb-label">Three takeaways</p>
-<p class="fb-placeholder">Placeholder &mdash; takeaway 1 from the paper's findings.</p>
-<p class="fb-placeholder">Placeholder &mdash; takeaway 2 from the paper's findings.</p>
-<p class="fb-placeholder">Placeholder &mdash; takeaway 3 from the paper's findings.</p>
+<p class="book-label">Three takeaways</p>
+<p class="book-placeholder">Placeholder &mdash; takeaway 1 from the paper's findings.</p>
+<p class="book-placeholder">Placeholder &mdash; takeaway 2 from the paper's findings.</p>
+<p class="book-placeholder">Placeholder &mdash; takeaway 3 from the paper's findings.</p>
 </div>
 
-<div class="fb-page" data-page="2">
-<div class="fb-kicker">Try It Yourself</div>
+<div class="book-page" data-i="2">
+<div class="book-kicker">Page 3</div>
+<h3>Try It Yourself</h3>
 <p>The repository isn't just the paper's code &mdash; it's a point-and-click web app. Download it, double-click a launcher, and step through the same pipeline in your browser: no command line required.</p>
-<div class="fb-note">Placeholder &mdash; 30&ndash;60 second GIF or video of the app walking through the pipeline stages. (Add media: assets/img/app-demo.gif)</div>
-<p><a class="fb-btn" href="https://github.com/Erfankt/urban-network-analysis" target="_blank" rel="noopener">View the repository on GitHub &rarr;</a></p>
-<p><a class="fb-btn fb-btn-ghost" href="https://github.com/Erfankt/urban-network-analysis/releases/latest" target="_blank" rel="noopener">Latest release (v2.0.1) &rarr;</a></p>
+<div class="book-note">Placeholder &mdash; 30&ndash;60 second GIF or video of the app walking through the pipeline stages. (Add media: assets/img/app-demo.gif)</div>
+<p><a class="book-btn" href="https://github.com/Erfankt/urban-network-analysis" target="_blank" rel="noopener">View the repository on GitHub &rarr;</a></p>
+<p><a class="book-btn book-btn-ghost" href="https://github.com/Erfankt/urban-network-analysis/releases/latest" target="_blank" rel="noopener">Latest release (v2.0.1) &rarr;</a></p>
 </div>
 
-<div class="fb-page" data-page="3">
-<div class="fb-kicker">Under the Hood</div>
+<div class="book-page" data-i="3">
+<div class="book-kicker">Page 4</div>
+<h3>Under the Hood</h3>
 <p><strong>Language &amp; libraries:</strong> Python, GeoPandas, NetworkX, OSMnx</p>
 <p><strong>Methods:</strong> spatial statistics, principal component analysis, large-scale checkpointed computation</p>
 <p><strong>Interface:</strong> a Streamlit web app with an optional AI assistant for exploring run results</p>
 <p><strong>License:</strong> MIT &mdash; free to reuse, extend, or adapt to another city's data</p>
 </div>
 
-<div class="fb-page" data-page="4">
-<div class="fb-kicker">Cite This Work</div>
+<div class="book-page" data-i="4">
+<div class="book-kicker">Page 5</div>
+<h3>Cite This Work</h3>
 <p>Citation details (paper and software) are maintained in the repository's <a href="https://github.com/Erfankt/urban-network-analysis/blob/master/CITATION.cff" target="_blank" rel="noopener">CITATION.cff</a>.</p>
-<p><a class="fb-btn fb-btn-ghost" href="/projects/">&larr; Back to Projects</a></p>
+<p><a class="book-btn book-btn-ghost" href="/projects/">&larr; Back to Projects</a></p>
 </div>
 
 </div>
 
-<div class="fb-controls">
-<button type="button" class="fb-arrow" id="fbPrev" aria-label="Previous page">&#8592;</button>
-<div class="fb-dots" id="fbDots"></div>
-<button type="button" class="fb-arrow" id="fbNext" aria-label="Next page">&#8594;</button>
+<div class="book-controls">
+<button type="button" class="book-nav" id="bookPrev">&#8249; Prev</button>
+<div class="book-counter" id="bookCounter">1 / 5</div>
+<button type="button" class="book-nav" id="bookNext">Next &#8250;</button>
 </div>
 
 </div>
 
 <style>
-.fb-wrap {
-  max-width: 720px;
-  margin: 2em auto;
+.book-wrap {
+  max-width: 780px;
+  margin: 2.5em auto;
 }
-.fb-stage {
+.book {
   position: relative;
-  min-height: 420px;
-  perspective: 1800px;
+  min-height: 460px;
+  padding: 30px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  perspective: 2400px;
+}
+.book-page {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-left: 4px solid var(--color-accent);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-}
-.fb-page {
-  display: none;
-  padding: 2.2em 2.4em;
-  transform-origin: center;
+  border-radius: 4px var(--radius-lg) var(--radius-lg) 4px;
+  padding: 2.4em 2.6em;
+  overflow: auto;
+  box-shadow: 3px 0 16px rgba(0, 0, 0, 0.25), inset -1px 0 0 rgba(0, 0, 0, 0.06);
+  transform-origin: left center;
+  transform-style: preserve-3d;
   backface-visibility: hidden;
+  transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.9s ease;
 }
-.fb-page.fb-active {
-  display: block;
+.book-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 16px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.16), transparent);
+  pointer-events: none;
 }
-.fb-stage.fb-flip .fb-page.fb-active {
-  animation: fbTurn 0.5s ease;
+.book-page.is-flipped {
+  transform: rotateY(-178deg);
+  box-shadow: -6px 0 18px rgba(0, 0, 0, 0.3);
 }
-@keyframes fbTurn {
-  0%   { transform: rotateY(0deg);   opacity: 1; }
-  45%  { transform: rotateY(-85deg); opacity: 0.15; }
-  55%  { transform: rotateY(85deg);  opacity: 0.15; }
-  100% { transform: rotateY(0deg);   opacity: 1; }
+.book-page.is-flipping::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 38%, rgba(0, 0, 0, 0.22) 50%, transparent 62%);
+  animation: bookFold 0.9s ease;
+  pointer-events: none;
 }
-.fb-kicker {
+@keyframes bookFold {
+  0%   { opacity: 0; }
+  40%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+.book-kicker {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--color-accent);
   font-weight: 700;
   margin-bottom: 0.6em;
 }
-.fb-page h2 {
+.book-page h2, .book-page h3 {
   margin-top: 0;
 }
-.fb-label {
+.book-label {
   font-weight: 700;
   margin-bottom: 0.3em;
 }
-.fb-placeholder {
+.book-placeholder {
   font-style: italic;
   color: var(--color-text-muted);
 }
-.fb-note {
+.book-note {
   background: var(--color-accent-soft);
   border-left: 4px solid var(--color-accent-2);
   border-radius: var(--radius-sm);
@@ -119,7 +146,7 @@ permalink: /projects/urban-network-analysis/
   color: var(--color-text-muted);
   margin: 1em 0;
 }
-.fb-btn {
+.book-btn {
   display: inline-block;
   background: var(--color-accent);
   color: #fff !important;
@@ -129,100 +156,102 @@ permalink: /projects/urban-network-analysis/
   font-weight: 600;
   margin: 0.3em 0.4em 0.3em 0;
 }
-.fb-btn-ghost {
+.book-btn-ghost {
   background: transparent;
   color: var(--color-accent) !important;
   border: 1px solid var(--color-border);
 }
-.fb-controls {
+.book-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.2em;
-  margin-top: 1.2em;
+  gap: 1.4em;
+  margin-top: 1.4em;
 }
-.fb-arrow {
+.book-nav {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  font-size: 1.1rem;
+  border-radius: 999px;
+  padding: 0.55em 1.4em;
+  font-weight: 600;
+  font-family: var(--font-heading);
   cursor: pointer;
   box-shadow: var(--shadow-sm);
   color: var(--color-text);
 }
-.fb-arrow:disabled {
+.book-nav:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.book-nav:disabled {
   opacity: 0.35;
   cursor: default;
 }
-.fb-dots {
-  display: flex;
-  gap: 0.5em;
-}
-.fb-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--color-border);
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-.fb-dot.fb-dot-active {
-  background: var(--color-accent);
+.book-counter {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  min-width: 56px;
+  text-align: center;
 }
 @media (max-width: 600px) {
-  .fb-page { padding: 1.6em 1.4em; }
+  .book { min-height: 560px; padding: 16px; }
+  .book-page { top: 16px; left: 16px; right: 16px; bottom: 16px; padding: 1.6em 1.5em; }
 }
 </style>
 
 <script>
 (function() {
-  var pages = Array.prototype.slice.call(document.querySelectorAll('#fbStage .fb-page'));
-  var stage = document.getElementById('fbStage');
-  var dotsWrap = document.getElementById('fbDots');
-  var prevBtn = document.getElementById('fbPrev');
-  var nextBtn = document.getElementById('fbNext');
-  var current = 0;
+  var pages = Array.prototype.slice.call(document.querySelectorAll('#book .book-page'));
+  var total = pages.length;
+  var flipped = 0;
+  var prevBtn = document.getElementById('bookPrev');
+  var nextBtn = document.getElementById('bookNext');
+  var counter = document.getElementById('bookCounter');
 
   pages.forEach(function(p, i) {
-    var dot = document.createElement('button');
-    dot.type = 'button';
-    dot.className = 'fb-dot';
-    dot.setAttribute('aria-label', 'Go to page ' + (i + 1));
-    dot.addEventListener('click', function() { goTo(i); });
-    dotsWrap.appendChild(dot);
+    p.style.zIndex = total - i;
   });
 
-  function render() {
-    pages.forEach(function(p, i) {
-      p.classList.toggle('fb-active', i === current);
-    });
-    var dots = dotsWrap.querySelectorAll('.fb-dot');
-    dots.forEach(function(d, i) {
-      d.classList.toggle('fb-dot-active', i === current);
-    });
-    prevBtn.disabled = current === 0;
-    nextBtn.disabled = current === pages.length - 1;
+  function update() {
+    counter.textContent = (flipped + 1) + ' / ' + total;
+    prevBtn.disabled = flipped === 0;
+    nextBtn.disabled = flipped === total - 1;
   }
 
-  function goTo(index) {
-    if (index === current || index < 0 || index >= pages.length) { return; }
-    current = index;
-    stage.classList.add('fb-flip');
-    render();
-    setTimeout(function() { stage.classList.remove('fb-flip'); }, 500);
+  function settle(p) {
+    setTimeout(function() { p.classList.remove('is-flipping'); }, 900);
   }
 
-  prevBtn.addEventListener('click', function() { goTo(current - 1); });
-  nextBtn.addEventListener('click', function() { goTo(current + 1); });
+  function next() {
+    if (flipped >= total - 1) { return; }
+    var p = pages[flipped];
+    p.classList.add('is-flipping');
+    p.classList.add('is-flipped');
+    flipped++;
+    update();
+    settle(p);
+  }
+
+  function prev() {
+    if (flipped <= 0) { return; }
+    flipped--;
+    var p = pages[flipped];
+    p.classList.add('is-flipping');
+    p.classList.remove('is-flipped');
+    update();
+    settle(p);
+  }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowRight') { goTo(current + 1); }
-    if (e.key === 'ArrowLeft') { goTo(current - 1); }
+    if (e.key === 'ArrowRight') { next(); }
+    if (e.key === 'ArrowLeft') { prev(); }
   });
 
-  render();
+  update();
 })();
 </script>
