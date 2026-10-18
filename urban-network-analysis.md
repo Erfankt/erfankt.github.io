@@ -97,11 +97,33 @@ permalink: /projects/urban-network-analysis/
 <p class="p2-intro">Mecklenburg County is divided into <strong>371 NPAs</strong>. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime (2022, 4 types) clusters spatially, demanding spatial models.</p>
 <div class="p2-grid">
   <figure class="p2-map">
-    <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-         alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
-         class="p2-map-img">
+    <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
+      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+           alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
+           class="p2-map-img" id="fig2Img">
+      <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
+        <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+          <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+          <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+          <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+        </svg>
+      </button>
+    </div>
     <figcaption><strong>Fig. 2.</strong> Street network diversity across Mecklenburg County. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
   </figure>
+
+  <!-- Lightbox -->
+  <div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
+    <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
+    <div class="fig2-lb-box">
+      <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
+      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+           alt="Figure 2 full size: Diversity of street networks in the study area"
+           class="fig2-lb-img">
+      <p class="fig2-lb-cap"><strong>Figure 2.</strong> Diversity of street networks in the study area &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
+    </div>
+  </div>
   <div class="p2-concepts">
     <div class="nc-pair">
       <div class="nc-box">
@@ -463,6 +485,91 @@ text.pf-label.pf-on {
   margin: 0;
   line-height: 1.35;
 }
+/* ── Figure 2 expand / lightbox ───────────────── */
+.p2-map-wrap {
+  position: relative;
+  cursor: zoom-in;
+  display: block;
+}
+.fig2-expand-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  z-index: 2;
+}
+.p2-map-wrap:hover .fig2-expand-btn { opacity: 1; pointer-events: auto; }
+.fig2-lb {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.fig2-lb.is-open { display: flex; }
+.fig2-lb-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+  cursor: zoom-out;
+}
+.fig2-lb-box {
+  position: relative;
+  max-width: min(92vw, 900px);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  z-index: 1;
+}
+.fig2-lb-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  display: block;
+}
+.fig2-lb-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+.fig2-lb-cap {
+  color: #ccc;
+  font-size: 0.72rem;
+  text-align: center;
+  line-height: 1.45;
+  margin: 0;
+}
+.fig2-lb-cap a { color: #8bbfff; }
 .story-stats-row {
   display: flex;
   gap: 0.7em;
@@ -751,5 +858,37 @@ text.pf-label.pf-on {
   });
 
   update();
+})();
+
+// ── Figure 2 Lightbox ───────────────────────────────
+(function() {
+  var lb       = document.getElementById('fig2Lb');
+  var backdrop = document.getElementById('fig2Backdrop');
+  var closeBtn = document.getElementById('fig2Close');
+  var wrap     = document.getElementById('fig2Wrap');
+  var expandBtn = document.getElementById('fig2Btn');
+  if (!lb || !wrap) return;
+
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
 })();
 </script>
