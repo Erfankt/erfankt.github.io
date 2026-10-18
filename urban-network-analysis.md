@@ -12,7 +12,38 @@ permalink: /projects/urban-network-analysis/
 <div class="book-kicker">Page 1</div>
 <h2>Urban Street Network Configuration &amp; Property Crime</h2>
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
-<div class="book-note">Placeholder &mdash; pipeline diagram: streets + neighborhoods &rarr; network measures at multiple buffer scales &rarr; component analysis &rarr; modeling dataset. (Add image: assets/img/pipeline-diagram.png)</div>
+<figure class="pipeline-figure">
+<svg viewBox="0 0 920 210" role="img" aria-label="Pipeline: street network and neighborhood boundaries feed network measures computed at multiple buffer scales, which are reduced by component analysis into the modeling dataset.">
+<defs>
+<marker id="pfArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+<polygon points="0 0, 8 4, 0 8" fill="currentColor"></polygon>
+</marker>
+</defs>
+<rect x="20" y="20" width="170" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="105" y="45" text-anchor="middle" font-size="12">Street network</text>
+<text x="105" y="62" text-anchor="middle" font-size="12">(OSMnx)</text>
+<rect x="20" y="130" width="170" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="105" y="155" text-anchor="middle" font-size="12">Neighborhood</text>
+<text x="105" y="172" text-anchor="middle" font-size="12">boundaries</text>
+<rect x="290" y="35" width="220" height="140" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="400" y="95" text-anchor="middle" font-size="13" font-weight="700">Network measures</text>
+<text x="400" y="113" text-anchor="middle" font-size="12">at multiple</text>
+<text x="400" y="130" text-anchor="middle" font-size="12">buffer scales</text>
+<line x1="190" y1="50" x2="280" y2="75" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<line x1="190" y1="160" x2="280" y2="135" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<rect x="580" y="55" width="160" height="100" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="660" y="100" text-anchor="middle" font-size="13" font-weight="700">Component</text>
+<text x="660" y="118" text-anchor="middle" font-size="12">analysis (PCA)</text>
+<line x1="510" y1="105" x2="570" y2="105" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<text x="540" y="95" text-anchor="middle" font-size="11">reduce</text>
+<rect x="800" y="60" width="100" height="90" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="850" y="98" text-anchor="middle" font-size="12" font-weight="700">Modeling</text>
+<text x="850" y="115" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
+<line x1="740" y1="105" x2="790" y2="105" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<text x="765" y="95" text-anchor="middle" font-size="11">assemble</text>
+</svg>
+<figcaption>Street network and neighborhood boundaries are combined into network measures at multiple buffer scales, then reduced by principal component analysis into the final modeling dataset.</figcaption>
+</figure>
 </div>
 
 <div class="book-page" data-i="1">
@@ -103,6 +134,21 @@ permalink: /projects/urban-network-analysis/
 .book-page.is-flipped {
   transform: rotateY(-178deg);
   box-shadow: -6px 0 18px rgba(0, 0, 0, 0.3);
+}
+.pipeline-figure {
+  margin: 1.2em 0;
+  color: var(--color-text);
+}
+.pipeline-figure svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.pipeline-figure figcaption {
+  margin-top: 0.6em;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
 }
 .book-page.is-flipping::after {
   content: '';
