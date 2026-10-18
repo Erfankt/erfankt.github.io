@@ -127,23 +127,71 @@ permalink: /projects/urban-network-analysis/
       <p class="fig2-lb-cap"><strong>Figure 2.</strong> Diversity of street networks in the study area &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
     </div>
   </div>
-  <div class="p2-figs-col">
-    <figure class="p2-map">
-      <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
-        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
-             alt="Figure 3: Property crime counts across NPAs in 2022"
-             class="p2-map-img p2-map-img--sm" id="fig3Img">
-        <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
-          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-          </svg>
-        </button>
+  <div class="p2-concepts">
+    <div class="nc-pair">
+      <div class="nc-box">
+        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Dense grid street pattern">
+          <line x1="0" y1="20" x2="100" y2="20" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="40" x2="100" y2="40" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="60" x2="100" y2="60" stroke="currentColor" stroke-width="2.2"/><line x1="0" y1="80" x2="100" y2="80" stroke="currentColor" stroke-width="2.2"/>
+          <line x1="20" y1="0" x2="20" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="40" y1="0" x2="40" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="60" y1="0" x2="60" y2="100" stroke="currentColor" stroke-width="2.2"/><line x1="80" y1="0" x2="80" y2="100" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="20" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="20" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="20" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="20" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="40" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="40" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="20" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="60" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="20" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="80" r="3.5" fill="var(--color-accent)"/>
+        </svg>
+        <p class="nc-lbl"><strong>Grid</strong><br>Uptown &middot; high connectivity</p>
       </div>
-      <figcaption><strong>Fig. 3.</strong> Property crime counts by NPA (2022). <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
-    </figure>
+      <div class="nc-box">
+        <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Curvilinear suburban street pattern with cul-de-sacs">
+          <path d="M0,55 Q25,50 50,55 Q75,60 100,55" stroke="currentColor" stroke-width="2.2" fill="none"/>
+          <path d="M25,54 Q22,37 30,24" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="30" cy="21" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M50,55 Q48,35 56,22" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="56" cy="19" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M75,57 Q80,38 72,25" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="72" cy="22" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M35,55 Q32,73 40,86" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="40" cy="89" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M65,57 Q70,75 62,88" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="62" cy="91" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <circle cx="25" cy="54" r="3.5" fill="var(--color-accent)"/><circle cx="50" cy="55" r="3.5" fill="var(--color-accent)"/><circle cx="75" cy="57" r="3.5" fill="var(--color-accent)"/>
+        </svg>
+        <p class="nc-lbl"><strong>Cul-de-sac</strong><br>Suburbs &middot; low permeability</p>
+      </div>
+    </div>
+    <div class="nc-crime-pair">
+      <figure class="nc-crime-fig">
+        <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
+          <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
+               alt="Figure 3: Property crime counts across NPAs in 2022"
+               class="p2-map-img p2-map-img--xs" id="fig3Img">
+          <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+              <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+              <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+              <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+            </svg>
+          </button>
+        </div>
+        <figcaption><strong>Fig. 3.</strong> Crime counts by NPA. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+      </figure>
+      <figure class="nc-crime-fig">
+        <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
+          <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
+               alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
+               class="p2-map-img p2-map-img--xs" id="fig4Img">
+          <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+              <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+              <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+              <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+            </svg>
+          </button>
+        </div>
+        <figcaption><strong>Fig. 4.</strong> Crime density/acre. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+      </figure>
+    </div>
     <div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
       <div class="fig2-lb-backdrop" id="fig3Backdrop"></div>
       <div class="fig2-lb-box">
@@ -154,22 +202,6 @@ permalink: /projects/urban-network-analysis/
         <p class="fig2-lb-cap"><strong>Figure 3.</strong> Property crime counts across NPAs in 2022 &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
       </div>
     </div>
-    <figure class="p2-map">
-      <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
-        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
-             alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
-             class="p2-map-img p2-map-img--sm" id="fig4Img">
-        <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
-          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-          </svg>
-        </button>
-      </div>
-      <figcaption><strong>Fig. 4.</strong> Property crime density by NPA, per acre (2022). <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
-    </figure>
     <div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
       <div class="fig2-lb-backdrop" id="fig4Backdrop"></div>
       <div class="fig2-lb-box">
@@ -187,6 +219,9 @@ permalink: /projects/urban-network-analysis/
     </div>
   </div>
 </div>
+</div>
+
+<div class="book-page" data-i="2">
 </div>
 
 <div class="book-page" data-i="2">
@@ -595,9 +630,11 @@ text.pf-label.pf-on {
   margin: 0;
 }
 .fig2-lb-cap a { color: #8bbfff; }
-/* ── Figures 3 & 4 column ──────────────────────── */
-.p2-figs-col { display: flex; flex-direction: column; gap: 0.8em; }
-.p2-map-img--sm { max-height: 160px; object-fit: contain; width: 100%; display: block; }
+/* ── Crime maps pair (Page 2 right column) ─────── */
+.nc-crime-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em; margin-top: 0.6em; }
+.nc-crime-fig { margin: 0; }
+.nc-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; }
+.p2-map-img--xs { max-height: 115px; object-fit: contain; width: 100%; display: block; }
 .story-stats-row {
   display: flex;
   gap: 0.7em;
