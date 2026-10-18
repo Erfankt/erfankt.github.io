@@ -13,36 +13,50 @@ permalink: /projects/urban-network-analysis/
 <h2>Urban Street Network Configuration &amp; Property Crime</h2>
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
 <figure class="pipeline-figure">
-<svg viewBox="0 0 920 210" role="img" aria-label="Pipeline: street network and neighborhood boundaries feed network measures computed at multiple buffer scales, which are reduced by component analysis into the modeling dataset.">
+<svg viewBox="0 0 1620 260" role="img" aria-label="Pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; each of 371 Neighborhood Profile Areas is buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
 <defs>
 <marker id="pfArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
 <polygon points="0 0, 8 4, 0 8" fill="currentColor"></polygon>
 </marker>
 </defs>
-<rect x="20" y="20" width="170" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
-<text x="105" y="45" text-anchor="middle" font-size="12">Street network</text>
-<text x="105" y="62" text-anchor="middle" font-size="12">(OSMnx)</text>
-<rect x="20" y="130" width="170" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
-<text x="105" y="155" text-anchor="middle" font-size="12">Neighborhood</text>
-<text x="105" y="172" text-anchor="middle" font-size="12">boundaries</text>
-<rect x="290" y="35" width="220" height="140" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="400" y="95" text-anchor="middle" font-size="13" font-weight="700">Network measures</text>
-<text x="400" y="113" text-anchor="middle" font-size="12">at multiple</text>
-<text x="400" y="130" text-anchor="middle" font-size="12">buffer scales</text>
-<line x1="190" y1="50" x2="280" y2="75" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<line x1="190" y1="160" x2="280" y2="135" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<rect x="580" y="55" width="160" height="100" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="660" y="100" text-anchor="middle" font-size="13" font-weight="700">Component</text>
-<text x="660" y="118" text-anchor="middle" font-size="12">analysis (PCA)</text>
-<line x1="510" y1="105" x2="570" y2="105" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<text x="540" y="95" text-anchor="middle" font-size="11">reduce</text>
-<rect x="800" y="60" width="100" height="90" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
-<text x="850" y="98" text-anchor="middle" font-size="12" font-weight="700">Modeling</text>
-<text x="850" y="115" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
-<line x1="740" y1="105" x2="790" y2="105" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<text x="765" y="95" text-anchor="middle" font-size="11">assemble</text>
+<rect x="20" y="20" width="190" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="115" y="45" text-anchor="middle" font-size="12">Street centerline</text>
+<text x="115" y="62" text-anchor="middle" font-size="12">dataset (county)</text>
+<line x1="210" y1="50" x2="250" y2="50" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<rect x="250" y="20" width="160" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="330" y="45" text-anchor="middle" font-size="12">Clean &amp; simplify</text>
+<text x="330" y="62" text-anchor="middle" font-size="12">the network</text>
+<line x1="410" y1="50" x2="450" y2="50" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<rect x="450" y="20" width="220" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="560" y="45" text-anchor="middle" font-size="12">Build network graph</text>
+<text x="560" y="62" text-anchor="middle" font-size="12">(NetworkX)</text>
+<rect x="20" y="170" width="220" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+<text x="130" y="195" text-anchor="middle" font-size="12">Neighborhood Profile</text>
+<text x="130" y="212" text-anchor="middle" font-size="12">Areas (371 NPAs)</text>
+<line x1="670" y1="50" x2="715" y2="110" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<line x1="240" y1="200" x2="715" y2="150" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<rect x="720" y="90" width="220" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="830" y="125" text-anchor="middle" font-size="13" font-weight="700">Buffer each NPA</text>
+<text x="830" y="143" text-anchor="middle" font-size="12">5 scales: 0.1&ndash;1 mi</text>
+<text x="830" y="160" text-anchor="middle" font-size="12">(0.1, 0.25, 0.5, 0.75, 1)</text>
+<line x1="940" y1="130" x2="985" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<rect x="990" y="90" width="200" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="1090" y="125" text-anchor="middle" font-size="13" font-weight="700">Network measures</text>
+<text x="1090" y="143" text-anchor="middle" font-size="12">40 variables</text>
+<text x="1090" y="160" text-anchor="middle" font-size="12">(8 &times; 5 buffers)</text>
+<line x1="1190" y1="130" x2="1235" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<text x="1212" y="118" text-anchor="middle" font-size="11">reduce</text>
+<rect x="1240" y="90" width="190" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="1335" y="125" text-anchor="middle" font-size="13" font-weight="700">Component</text>
+<text x="1335" y="143" text-anchor="middle" font-size="12">analysis (PCA)</text>
+<text x="1335" y="160" text-anchor="middle" font-size="12">4 components</text>
+<line x1="1430" y1="130" x2="1475" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<text x="1452" y="118" text-anchor="middle" font-size="11">select</text>
+<rect x="1480" y="95" width="120" height="70" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<text x="1540" y="125" text-anchor="middle" font-size="12" font-weight="700">Modeling</text>
+<text x="1540" y="142" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
 </svg>
-<figcaption>Street network and neighborhood boundaries are combined into network measures at multiple buffer scales, then reduced by principal component analysis into the final modeling dataset.</figcaption>
+<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
 </figure>
 </div>
 
@@ -68,7 +82,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="3">
 <div class="book-kicker">Page 4</div>
 <h3>Under the Hood</h3>
-<p><strong>Language &amp; libraries:</strong> Python, GeoPandas, NetworkX, OSMnx</p>
+<p><strong>Language &amp; libraries:</strong> Python, GeoPandas, NetworkX, scikit-learn, factor_analyzer</p>
 <p><strong>Methods:</strong> spatial statistics, principal component analysis, large-scale checkpointed computation</p>
 <p><strong>Interface:</strong> a Streamlit web app with an optional AI assistant for exploring run results</p>
 <p><strong>License:</strong> MIT &mdash; free to reuse, extend, or adapt to another city's data</p>
