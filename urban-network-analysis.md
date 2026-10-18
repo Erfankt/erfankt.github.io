@@ -12,6 +12,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-kicker">Page 1</div>
 <h2>Urban Street Network Configuration &amp; Property Crime</h2>
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
+<p class="book-cite">Kefayat, E., &amp; Thill, J.-C. (2025). Urban Street Network Configuration and Property Crime: An Empirical Multivariate Case Study. <em>ISPRS International Journal of Geo-Information</em>, 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">doi.org/10.3390/ijgi14050200</a></p>
 <figure class="pipeline-figure">
 <svg id="pfSvg" viewBox="0 0 1620 260" role="img" aria-label="Animated pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; each of 371 Neighborhood Profile Areas is buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
 <defs>
@@ -92,12 +93,10 @@ permalink: /projects/urban-network-analysis/
 
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
-<h3>The Paper</h3>
-<p><strong>Kefayat, E., &amp; Thill, J.-C. (2025).</strong> Urban Street Network Configuration and Property Crime: An Empirical Multivariate Case Study. <em>ISPRS International Journal of Geo-Information</em>, 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">doi.org/10.3390/ijgi14050200</a></p>
-<p class="book-label">Three takeaways</p>
-<p class="book-placeholder">Placeholder &mdash; takeaway 1 from the paper's findings.</p>
-<p class="book-placeholder">Placeholder &mdash; takeaway 2 from the paper's findings.</p>
-<p class="book-placeholder">Placeholder &mdash; takeaway 3 from the paper's findings.</p>
+<h3>Three Takeaways</h3>
+<p><strong>Denser street grids see more property crime.</strong> Intersection density was the strongest and most consistent predictor across every model: neighborhoods with more connected, more permeable street networks experienced more property crime, even after controlling for socioeconomic conditions.</p>
+<p><strong>Accessibility cuts both ways.</strong> Neighborhoods that are easier to move through &mdash; shorter average network paths &mdash; tended to see more property crime, suggesting the same street layouts that serve residents' mobility can also extend offenders' reach.</p>
+<p><strong>Place and scale matter.</strong> The network effect showed up most clearly at mid-range buffer scales and was stronger in suburban neighborhoods than downtown &mdash; which is why the study pairs multi-scale network measures with spatial regression models (SAR, CAR, GWR) rather than a single citywide equation.</p>
 </div>
 
 <div class="book-page" data-i="2">
@@ -260,13 +259,12 @@ text.pf-label.pf-on {
 .book-page h2, .book-page h3 {
   margin-top: 0;
 }
-.book-label {
-  font-weight: 700;
-  margin-bottom: 0.3em;
-}
-.book-placeholder {
-  font-style: italic;
+.book-cite {
+  font-size: 0.85rem;
   color: var(--color-text-muted);
+  border-left: 3px solid var(--color-border);
+  padding-left: 0.9em;
+  margin: 0.9em 0;
 }
 .book-note {
   background: var(--color-accent-soft);
