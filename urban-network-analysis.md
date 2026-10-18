@@ -62,13 +62,13 @@ permalink: /projects/urban-network-analysis/
 
 <style>
 .book-wrap {
-  max-width: 780px;
+  max-width: 1100px;
   margin: 2.5em auto;
 }
 .book {
   position: relative;
-  min-height: 460px;
-  padding: 30px;
+  min-height: 680px;
+  padding: 6px;
   background: linear-gradient(135deg, #1e293b, #0f172a);
   border-radius: 20px;
   box-shadow: var(--shadow-lg);
@@ -76,10 +76,10 @@ permalink: /projects/urban-network-analysis/
 }
 .book-page {
   position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 30px;
-  bottom: 30px;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
   background: var(--color-surface);
   border-radius: 4px var(--radius-lg) var(--radius-lg) 4px;
   padding: 2.4em 2.6em;
@@ -196,8 +196,8 @@ permalink: /projects/urban-network-analysis/
   text-align: center;
 }
 @media (max-width: 600px) {
-  .book { min-height: 560px; padding: 16px; }
-  .book-page { top: 16px; left: 16px; right: 16px; bottom: 16px; padding: 1.6em 1.5em; }
+  .book { min-height: 620px; padding: 4px; }
+  .book-page { top: 4px; left: 4px; right: 4px; bottom: 4px; padding: 1.6em 1.5em; }
 }
 </style>
 
