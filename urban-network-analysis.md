@@ -86,7 +86,7 @@ permalink: /projects/urban-network-analysis/
 <text x="1540" y="142" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
 </g>
 </svg>
-<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset. <button type="button" class="pf-replay" id="pfReplay">&#8635; Replay</button></figcaption>
+<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
 </figure>
 </div>
 
@@ -235,25 +235,6 @@ text.pf-label {
 text.pf-label.pf-on {
   opacity: 1;
 }
-.pf-replay {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3em;
-  margin-left: 0.6em;
-  background: transparent;
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 0.15em 0.7em;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-family: var(--font-heading);
-  color: var(--color-accent);
-  cursor: pointer;
-}
-.pf-replay:hover {
-  border-color: var(--color-accent);
-  background: var(--color-accent-soft);
-}
 .book-page.is-flipping::after {
   content: '';
   position: absolute;
@@ -366,7 +347,6 @@ text.pf-label.pf-on {
   });
 
   var pfSvg = document.getElementById('pfSvg');
-  var pfReplay = document.getElementById('pfReplay');
   var pfTimers = [];
 
   function playPipeline() {
@@ -388,10 +368,6 @@ text.pf-label.pf-on {
         pfTimers.push(t);
       })(i);
     }
-  }
-
-  if (pfReplay) {
-    pfReplay.addEventListener('click', playPipeline);
   }
 
   function update() {
