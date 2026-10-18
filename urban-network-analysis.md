@@ -13,50 +13,80 @@ permalink: /projects/urban-network-analysis/
 <h2>Urban Street Network Configuration &amp; Property Crime</h2>
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
 <figure class="pipeline-figure">
-<svg viewBox="0 0 1620 260" role="img" aria-label="Pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; each of 371 Neighborhood Profile Areas is buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
+<svg id="pfSvg" viewBox="0 0 1620 260" role="img" aria-label="Animated pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; each of 371 Neighborhood Profile Areas is buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
 <defs>
 <marker id="pfArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
 <polygon points="0 0, 8 4, 0 8" fill="currentColor"></polygon>
 </marker>
 </defs>
+<g class="pf-node" data-step="1">
 <rect x="20" y="20" width="190" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="115" y="45" text-anchor="middle" font-size="12">Street centerline</text>
 <text x="115" y="62" text-anchor="middle" font-size="12">dataset (county)</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="2" style="transform-origin:210px 50px">
 <line x1="210" y1="50" x2="250" y2="50" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+</g>
+<g class="pf-node" data-step="3">
 <rect x="250" y="20" width="160" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="330" y="45" text-anchor="middle" font-size="12">Clean &amp; simplify</text>
 <text x="330" y="62" text-anchor="middle" font-size="12">the network</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="4" style="transform-origin:410px 50px">
 <line x1="410" y1="50" x2="450" y2="50" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+</g>
+<g class="pf-node" data-step="5">
 <rect x="450" y="20" width="220" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="560" y="45" text-anchor="middle" font-size="12">Build network graph</text>
 <text x="560" y="62" text-anchor="middle" font-size="12">(NetworkX)</text>
+</g>
+<g class="pf-node" data-step="6">
 <rect x="20" y="170" width="220" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="130" y="195" text-anchor="middle" font-size="12">Neighborhood Profile</text>
 <text x="130" y="212" text-anchor="middle" font-size="12">Areas (371 NPAs)</text>
+</g>
+<g class="pf-arrow pf-arrow-diag" data-step="7">
 <line x1="670" y1="50" x2="715" y2="110" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+</g>
+<g class="pf-arrow pf-arrow-diag" data-step="8">
 <line x1="240" y1="200" x2="715" y2="150" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+</g>
+<g class="pf-node" data-step="9">
 <rect x="720" y="90" width="220" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
 <text x="830" y="125" text-anchor="middle" font-size="13" font-weight="700">Buffer each NPA</text>
 <text x="830" y="143" text-anchor="middle" font-size="12">5 scales: 0.1&ndash;1 mi</text>
 <text x="830" y="160" text-anchor="middle" font-size="12">(0.1, 0.25, 0.5, 0.75, 1)</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="10" style="transform-origin:940px 130px">
 <line x1="940" y1="130" x2="985" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+</g>
+<g class="pf-node" data-step="11">
 <rect x="990" y="90" width="200" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
 <text x="1090" y="125" text-anchor="middle" font-size="13" font-weight="700">Network measures</text>
 <text x="1090" y="143" text-anchor="middle" font-size="12">40 variables</text>
 <text x="1090" y="160" text-anchor="middle" font-size="12">(8 &times; 5 buffers)</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="12" style="transform-origin:1190px 130px">
 <line x1="1190" y1="130" x2="1235" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<text x="1212" y="118" text-anchor="middle" font-size="11">reduce</text>
+</g>
+<text class="pf-label" data-step="12" x="1212" y="118" text-anchor="middle" font-size="11">reduce</text>
+<g class="pf-node" data-step="13">
 <rect x="1240" y="90" width="190" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
 <text x="1335" y="125" text-anchor="middle" font-size="13" font-weight="700">Component</text>
 <text x="1335" y="143" text-anchor="middle" font-size="12">analysis (PCA)</text>
 <text x="1335" y="160" text-anchor="middle" font-size="12">4 components</text>
+</g>
+<g class="pf-arrow pf-arrow-h" data-step="14" style="transform-origin:1430px 130px">
 <line x1="1430" y1="130" x2="1475" y2="130" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
-<text x="1452" y="118" text-anchor="middle" font-size="11">select</text>
+</g>
+<text class="pf-label" data-step="14" x="1452" y="118" text-anchor="middle" font-size="11">select</text>
+<g class="pf-node" data-step="15">
 <rect x="1480" y="95" width="120" height="70" rx="8" fill="none" stroke="currentColor" stroke-width="2"></rect>
 <text x="1540" y="125" text-anchor="middle" font-size="12" font-weight="700">Modeling</text>
 <text x="1540" y="142" text-anchor="middle" font-size="12" font-weight="700">dataset</text>
+</g>
 </svg>
-<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
+<figcaption>The county street centerline dataset is cleaned, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset. <button type="button" class="pf-replay" id="pfReplay">&#8635; Replay</button></figcaption>
 </figure>
 </div>
 
@@ -174,6 +204,56 @@ permalink: /projects/urban-network-analysis/
   color: var(--color-text-muted);
   font-style: italic;
 }
+.pf-node {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.pf-node.pf-on {
+  opacity: 1;
+  transform: translateY(0);
+}
+.pf-arrow-h {
+  transform: scaleX(0.001);
+  transition: transform 0.45s ease-out;
+}
+.pf-arrow-h.pf-on {
+  transform: scaleX(1);
+}
+.pf-arrow-diag {
+  opacity: 0;
+  transition: opacity 0.55s ease;
+}
+.pf-arrow-diag.pf-on {
+  opacity: 1;
+}
+text.pf-label {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  fill: currentColor;
+}
+text.pf-label.pf-on {
+  opacity: 1;
+}
+.pf-replay {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin-left: 0.6em;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.15em 0.7em;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  cursor: pointer;
+}
+.pf-replay:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
 .book-page.is-flipping::after {
   content: '';
   position: absolute;
@@ -285,10 +365,40 @@ permalink: /projects/urban-network-analysis/
     p.style.zIndex = total - i;
   });
 
+  var pfSvg = document.getElementById('pfSvg');
+  var pfReplay = document.getElementById('pfReplay');
+  var pfTimers = [];
+
+  function playPipeline() {
+    if (!pfSvg) { return; }
+    var all = Array.prototype.slice.call(pfSvg.querySelectorAll('[data-step]'));
+    pfTimers.forEach(function(t) { clearTimeout(t); });
+    pfTimers = [];
+    all.forEach(function(el) { el.classList.remove('pf-on'); });
+    void pfSvg.getBoundingClientRect();
+    var maxStep = 0;
+    all.forEach(function(el) { maxStep = Math.max(maxStep, parseInt(el.getAttribute('data-step'), 10)); });
+    for (var i = 1; i <= maxStep; i++) {
+      (function(stepNum) {
+        var t = setTimeout(function() {
+          all.forEach(function(el) {
+            if (parseInt(el.getAttribute('data-step'), 10) === stepNum) { el.classList.add('pf-on'); }
+          });
+        }, (stepNum - 1) * 220);
+        pfTimers.push(t);
+      })(i);
+    }
+  }
+
+  if (pfReplay) {
+    pfReplay.addEventListener('click', playPipeline);
+  }
+
   function update() {
     counter.textContent = (flipped + 1) + ' / ' + total;
     prevBtn.disabled = flipped === 0;
     nextBtn.disabled = flipped === total - 1;
+    if (flipped === 0) { playPipeline(); }
   }
 
   function settle(p) {
