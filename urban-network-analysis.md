@@ -97,7 +97,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
 <h3>Study Area &amp; Street Network Diversity</h3>
-<p class="p2-intro">The City of Charlotte is divided into <strong>371 NPAs</strong>. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime (2022, 4 types) clusters spatially, demanding spatial models.</p>
+<p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime (2022, 4 types) clusters spatially, demanding spatial models.</p>
 <div class="p2-grid">
   <figure class="p2-map">
     <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
@@ -113,7 +113,7 @@ permalink: /projects/urban-network-analysis/
         </svg>
       </button>
     </div>
-    <figcaption><strong>Fig. 2.</strong> Street network diversity across Charlotte. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+    <figcaption>Fig. 2. Street network diversity across Charlotte. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
   </figure>
 
   <!-- Lightbox -->
@@ -124,7 +124,7 @@ permalink: /projects/urban-network-analysis/
       <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
            alt="Figure 2 full size: Diversity of street networks in the study area"
            class="fig2-lb-img">
-      <p class="fig2-lb-cap"><strong>Figure 2.</strong> Diversity of street networks in the study area &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
+      <p class="fig2-lb-cap">Figure 2. Diversity of street networks in the study area &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
     </div>
   </div>
   <div class="p2-concepts">
@@ -138,7 +138,7 @@ permalink: /projects/urban-network-analysis/
           <circle cx="20" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="60" r="3.5" fill="var(--color-accent)"/>
           <circle cx="20" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="80" r="3.5" fill="var(--color-accent)"/>
         </svg>
-        <p class="nc-lbl"><strong>Grid</strong><br>Uptown &middot; high connectivity</p>
+        <p class="nc-lbl">Grid<br>Uptown &middot; high connectivity</p>
       </div>
       <div class="nc-box">
         <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Curvilinear suburban street pattern with cul-de-sacs">
@@ -155,7 +155,7 @@ permalink: /projects/urban-network-analysis/
           <circle cx="62" cy="91" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
           <circle cx="25" cy="54" r="3.5" fill="var(--color-accent)"/><circle cx="50" cy="55" r="3.5" fill="var(--color-accent)"/><circle cx="75" cy="57" r="3.5" fill="var(--color-accent)"/>
         </svg>
-        <p class="nc-lbl"><strong>Cul-de-sac</strong><br>Suburbs &middot; low permeability</p>
+        <p class="nc-lbl">Cul-de-sac<br>Suburbs &middot; low permeability</p>
       </div>
     </div>
     <div class="nc-crime-pair">
@@ -173,7 +173,7 @@ permalink: /projects/urban-network-analysis/
             </svg>
           </button>
         </div>
-        <figcaption><strong>Fig. 3.</strong> Crime counts by NPA. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+        <figcaption>Fig. 3. Crime counts by NPA. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
       </figure>
       <figure class="nc-crime-fig">
         <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
@@ -189,7 +189,7 @@ permalink: /projects/urban-network-analysis/
             </svg>
           </button>
         </div>
-        <figcaption><strong>Fig. 4.</strong> Crime density/acre. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+        <figcaption>Fig. 4. Crime density/acre. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
       </figure>
     </div>
     <div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
@@ -199,7 +199,7 @@ permalink: /projects/urban-network-analysis/
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
              alt="Figure 3 full size: Property crime counts across NPAs in 2022"
              class="fig2-lb-img">
-        <p class="fig2-lb-cap"><strong>Figure 3.</strong> Property crime counts across NPAs in 2022 &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
+        <p class="fig2-lb-cap">Figure 3. Property crime counts across NPAs in 2022 &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
       </div>
     </div>
     <div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
@@ -209,7 +209,7 @@ permalink: /projects/urban-network-analysis/
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
              alt="Figure 4 full size: Property crime density across NPAs (by acre) in 2022"
              class="fig2-lb-img">
-        <p class="fig2-lb-cap"><strong>Figure 4.</strong> Property crime density across NPAs, per acre (2022) &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
+        <p class="fig2-lb-cap">Figure 4. Property crime density across NPAs, per acre (2022) &mdash; Kefayat &amp; Thill (2025), ISPRS IJGI 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></p>
       </div>
     </div>
     <div class="story-stats-row">
