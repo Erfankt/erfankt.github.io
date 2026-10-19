@@ -141,13 +141,6 @@ permalink: /projects/urban-network-analysis/
         <p class="nc-lbl">Grid<br>Uptown &middot; high connectivity</p>
       </div>
       <div class="nc-box">
-        <svg viewBox="0 0 100 100" class="nc-svg" accent)"/><circle cx="80" cy="40" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="60" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="60" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="20" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="40" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="60" cy="80" r="3.5" fill="var(--color-accent)"/><circle cx="80" cy="80" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <p class="nc-lbl">Grid<br>Uptown &middot; high connectivity</p>
-      </div>
-      <div class="nc-box">
         <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Curvilinear suburban street pattern with cul-de-sacs">
           <path d="M0,55 Q25,50 50,55 Q75,60 100,55" stroke="currentColor" stroke-width="2.2" fill="none"/>
           <path d="M25,54 Q22,37 30,24" stroke="currentColor" stroke-width="1.6" fill="none"/>
@@ -664,192 +657,358 @@ text.pf-label.pf-on {
   margin-top: 0.15em;
 }
 /* ââ Page 3: Measurement ââââââââââââââââââââââââââ */
-YX\Ý\K[^[Ý]Â\Ü^NÜYÂÜY][\]KXÛÛ[[ÎLYÂØ\K[NÂ[YÛZ][\ÎÝ\ÂX\Ú[]ÜY[NÂBYX\Ý\K\ÝÈÂÚYL	NÂZYÚ]]ÎÂ\Ü^NØÚÎÂÛÛÜ\KXÛÛÜ]^
-NÂBYX\Ý\KY\HÂX\Ú[Y[NÂBYX\Ý\K[\ÝÂX\Ú[[HK[NÂY[ÎÂÛ\Ú^NÜ[NÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂ[KZZYÚKÎÂBYX\Ý\K\ØKZXYÂÛ\Ú^N[NÂÛ]ÙZYÚ
-ÂX\Ú[
-Y[NÂBØKX\ÈÈX\Ú[ÈBØK\ÝÈÂ\Ü^N^Â[YÛZ][\ÎÙ[\ÂØ\Y[NÂX\Ú[XÝÛNÎ[NÂBØK[[YHÂÛ\Ú^NÍ[NÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂZ[]ÚYLÌÂ^\Ú[ÎÂBØK]XÚÈÂ^NÂXÚÙÜÝ[\KXÛÛÜXÜ\NÂÜ\\Y]\ÎN\ÂZYÚÂÝ\ÝÎY[ÂBØKY[ÂZYÚL	NÂXÚÙÜÝ[\KXÛÛÜXXØÙ[
-NÂÜ\\Y]\ÎN\Â\Ü^N^Â[YÛZ][\ÎÙ[\ÂY[Ë[Y
-ÜÂÛ\Ú^NÜ[NÂÛÛÜÙÂÛ]ÙZYÚ
-ÌÂÚ]K\ÜXÙNÝÜ\ÂBÈXÚÙÜÝ[ÌXMYNNÈBÈÈXÚÙÜÝ[ÎXÙÈBÈXÚÙÜÝ[ÌLNNÈBØK[ÝHÂÛ\Ú^NÎ[NÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂX\Ú[]Ü[NÂBÊ8¥ 8¥ YÙH
-\Ý[ÈXH8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 
-ÂXK]Ü\ÂÝ\ÝË^]]ÎÂX\Ú[Ù[HÙ[NÂBXHÂÚYL	NÂÜ\XÛÛ\ÙNÛÛ\ÙNÂÛ\Ú^N\[NÂBXHÂXÚÙÜÝ[\KXÛÛÜXXØÙ[\ÛÙØJNKLK
-JNÂY[Î
-Y[HY[NÂ^X[YÛYÂÛY[Z[N\KYÛZXY[ÊNÂÛ\Ú^NÍ[NÂÜ\XÝÛNÛÛY\KXÛÛÜXÜ\NÂÚ]K\ÜXÙNÝÜ\ÂBXHÂY[ÎY[HY[NÂÜ\XÝÛN\ÛÛY\KXÛÛÜXÜ\NÂ\XØ[X[YÛZYNÂBXHÛX[Â\Ü^NØÚÎÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂÛ\Ú^NÎ[NÂX\Ú[]ÜY[NÂB[ÙÈXÚÙÜÝ[\KXÛÛÜXXØÙ[\ÛÙØJNKLK
-JNÈB\Â^X[YÛÙ[\ÂÛ]ÙZYÚ
-ÌÂÛ\Ú^NM\[NÂÚ]K\ÜXÙNÝÜ\ÂBÜÈÈÛÛÜÙY
+.measure-layout {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 1.6em;
+  align-items: start;
+  margin-top: 0.5em;
+}
+.measure-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  color: var(--color-text);
+}
+.measure-eq {
+  margin: 0 0 0.5em;
+}
+.measure-list {
+  margin: 0 0 0.8em 1.2em;
+  padding: 0;
+  font-size: 0.83rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+.measure-pca-head {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0 0 0.45em;
+}
+.pca-bars { margin: 0; }
+.pca-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.38em;
+}
+.pca-name {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  min-width: 130px;
+  flex-shrink: 0;
+}
+.pca-track {
+  flex: 1;
+  background: var(--color-border);
+  border-radius: 99px;
+  height: 20px;
+  overflow: hidden;
+}
+.pca-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pf2 { background: #0ea5e9; }
+.pf3 { background: #8b5cf6; }
+.pf4 { background: #10b981; }
+.pca-note {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 0.8em;
+}
+/* ââ Page 4: Results Table ââââââââââââââââââââââââ */
+.rtable-wrap {
+  overflow-x: auto;
+  margin: 0.7em 0 0.3em;
+}
+.rtable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.81rem;
+}
+.rtable th {
+  background: var(--color-accent-soft, rgba(99,102,241,.08));
+  padding: 0.45em 0.65em;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+.rtable td {
+  padding: 0.5em 0.65em;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+.rtable td small {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.78em;
+  margin-top: 0.1em;
+}
+.rtr-odd td { background: var(--color-accent-soft, rgba(99,102,241,.04)); }
+.rdir {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.rpos { color: #ef4444; }
+.rneg { color: #3b82f6; }
+.rns  { color: var(--color-text-muted); font-weight: 400; font-size: 0.8rem; }
+.rmix { color: #8b5cf6; }
+.rtable-note {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.8em;
+}
+@media (max-width: 700px) {
+  .measure-layout { grid-template-columns: 1fr; }
+  .measure-svg { max-width: 200px; margin: 0 auto 1em; }
+  .pca-name { min-width: 95px; }
+}
+.book-note {
+  background: var(--color-accent-soft);
+  border-left: 4px solid var(--color-accent-2);
+  border-radius: var(--radius-sm);
+  padding: 1em 1.2em;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 1em 0;
+}
+.book-btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff !important;
+  padding: 0.6em 1.2em;
+  border-radius: var(--radius-sm);
+  text-decoration: none !important;
+  font-weight: 600;
+  margin: 0.3em 0.4em 0.3em 0;
+}
+.book-btn-ghost {
+  background: transparent;
+  color: var(--color-accent) !important;
+  border: 1px solid var(--color-border);
+}
+.book-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4em;
+  margin-top: 1.4em;
+}
+.book-nav {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.55em 1.4em;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+}
+.book-nav:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.book-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.book-counter {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  min-width: 56px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .book-wrap { padding: 0 0.8em; }
+  .book { min-height: 620px; padding: 4px; }
+  .book-page { top: 4px; left: 4px; right: 4px; bottom: 4px; padding: 1.6em 1.5em; }
+}
+</style>
 
+<script>
+(function() {
+  var pages = Array.prototype.slice.call(document.querySelectorAll('#book .book-page'));
+  var total = pages.length;
+  var flipped = 0;
+  var prevBtn = document.getElementById('bookPrev');
+  var nextBtn = document.getElementById('bookNext');
+  var counter = document.getElementById('bookCounter');
 
-ÈBYÈÈÛÛÜÌØÈBÈÈÛÛÜ\KXÛÛÜ]^[]]Y
-NÈÛ]ÙZYÚ
-ÈÛ\Ú^N[NÈBZ^ÈÛÛÜÎXÙÈBXK[ÝHÂÛ\Ú^NÍ[NÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂX\Ú[XÝÛN[NÂBYYXH
-X^]ÚY
-Ì
-HÂYX\Ý\K[^[Ý]ÈÜY][\]KXÛÛ[[ÎYÈBYX\Ý\K\ÝÈÈX^]ÚYÈX\Ú[]]ÈY[NÈBØK[[YHÈZ[]ÚYM\ÈBBÛÚË[ÝHÂXÚÙÜÝ[\KXÛÛÜXXØÙ[\ÛÙ
-NÂÜ\[Y
-ÛÛY\KXÛÛÜXXØÙ[LNÂÜ\\Y]\Î\K\Y]\Ë\ÛJNÂY[ÎY[HK[NÂÛ\Ý[N][XÎÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂX\Ú[Y[HÂBÛÚËXÂ\Ü^N[[KXØÚÎÂXÚÙÜÝ[\KXÛÛÜXXØÙ[
-NÂÛÛÜÙZ[\Ü[ÂY[Î[HK[NÂÜ\\Y]\Î\K\Y]\Ë\ÛJNÂ^YXÛÜ][ÛÛHZ[\Ü[ÂÛ]ÙZYÚ
-ÂX\Ú[Ù[H[HÙ[HÂBÛÚËXYÚÜÝÂXÚÙÜÝ[[Ü\[ÂÛÛÜ\KXÛÛÜXXØÙ[
-HZ[\Ü[ÂÜ\\ÛÛY\KXÛÛÜXÜ\NÂBÛÚËXÛÛÛÈÂ\Ü^N^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\ÂØ\K[NÂX\Ú[]ÜK[NÂBÛÚË[]ÂXÚÙÜÝ[\KXÛÛÜ\Ý\XÙJNÂÜ\\ÛÛY\KXÛÛÜXÜ\NÂÜ\\Y]\ÎNN\ÂY[ÎMY[HK[NÂÛ]ÙZYÚ
-ÂÛY[Z[N\KYÛZXY[ÊNÂÝ\ÛÜÚ[\ÂÞ\ÚYÝÎ\K\ÚYÝË\ÛJNÂÛÛÜ\KXÛÛÜ]^
-NÂBÛÚË[]Ý\Ý
-\ØXY
-HÂÜ\XÛÛÜ\KXÛÛÜXXØÙ[
-NÂÛÛÜ\KXÛÛÜXXØÙ[
-NÂBÛÚË[]\ØXYÂÜXÚ]NÍNÂÝ\ÛÜY][ÂBÛÚËXÛÝ[\ÂÛY[Z[N\KYÛZXY[ÊNÂÛ]ÙZYÚ
-ÌÂÛÛÜ\KXÛÛÜ]^[]]Y
-NÂ]\\ÜXÚ[Î
-[NÂZ[]ÚY
-MÂ^X[YÛÙ[\ÂBYYXH
-X^]ÚY
-
-HÂÛÚË]Ü\ÈY[Î[NÈBÛÚÈÈZ[ZZYÚ
-ÈY[Î
-ÈBÛÚË\YÙHÈÜ
-ÈY
-ÈYÚ
-ÈÝÛN
-ÈY[ÎK[HKY[NÈBBÜÝ[OØÜ\[Ý[Û
-HÂ\YÙ\ÈH\^KÝÝ\KÛXÙKØ[
-ØÝ[Y[]Y\TÙ[XÝÜ[
-	ÈØÛÚÈÛÚË\YÙIÊJNÂ\Ý[HYÙ\Ë[ÝÂ\\YHÂ\]HØÝ[Y[Ù][[Y[RY
-	ØÛÚÔ]ÊNÂ\^HØÝ[Y[Ù][[Y[RY
-	ØÛÚÓ^	ÊNÂ\ÛÝ[\HØÝ[Y[Ù][[Y[RY
-	ØÛÚÐÛÝ[\ÊNÂYÙ\ËÜXXÚ
-[Ý[ÛJHÂÝ[K[^HÝ[HNÂJNÂ\ÝÈHØÝ[Y[Ù][[Y[RY
-	ÜÝÉÊNÂ\[Y\ÈH×NÂ[Ý[Û^T\[[J
-HÂY
-\ÝÊHÈ]\ÈB\[H\^KÝÝ\KÛXÙKØ[
-ÝË]Y\TÙ[XÝÜ[
-	ÖÙ]K\Ý\IÊJNÂ[Y\ËÜXXÚ
-[Ý[Û
-HÈÛX\[Y[Ý]
-
-NÈJNÂ[Y\ÈH×NÂ[ÜXXÚ
-[Ý[Û[
-HÈ[Û\ÜÓ\Ý[[ÝJ	Ü[ÛÊNÈJNÂÚYÝËÙ]Ý[[ÐÛY[XÝ
+  pages.forEach(function(p, i) {
+    p.style.zIndex = total - i;
+  });
 
-NÂ\X^Ý\HÂ[ÜXXÚ
-[Ý[Û[
-HÈX^Ý\HX]X^
-X^Ý\\ÙR[
-[Ù]]X]J	Ù]K\Ý\	ÊKL
-JNÈJNÂÜ
-\HHNÈHHX^Ý\ÈJÊÊHÂ
-[Ý[ÛÝ\[JHÂ\HÙ][Y[Ý]
-[Ý[Û
-HÂ[ÜXXÚ
-[Ý[Û[
-HÂY
-\ÙR[
-[Ù]]X]J	Ù]K\Ý\	ÊKL
-HOOHÝ\[JHÈ[Û\ÜÓ\ÝY
-	Ü[ÛÊNÈBJNÂK
-Ý\[HHJH
-
-NÂ[Y\Ë\Ú
-
-NÂJJJNÂBB[Ý[Û\]J
-HÂÛÝ[\^ÛÛ[H
-\Y
-ÈJH
-È	ÈÈ	È
-ÈÝ[Â]\ØXYH\YOOHÂ^\ØXYH\YOOHÝ[HNÂY
-\YOOH
-HÈ^T\[[J
-NÈBB[Ý[ÛÙ]J
-HÂÙ][Y[Ý]
-[Ý[Û
-HÈÛ\ÜÓ\Ý[[ÝJ	Ú\ËY\[ÉÊNÈKL
-NÂB[Ý[Û^
+  var pfSvg = document.getElementById('pfSvg');
+  var pfTimers = [];
 
-HÂY
-\YHÝ[HJHÈ]\ÈB\HYÙ\ÖÙ\YNÂÛ\ÜÓ\ÝY
-	Ú\ËY\[ÉÊNÂÛ\ÜÓ\ÝY
-	Ú\ËY\Y	ÊNÂ\Y
-ÊÎÂ\]J
-NÂÙ]J
-NÂB[Ý[Û]
-HÂY
-\YH
-HÈ]\ÈB\YKNÂ\HYÙ\ÖÙ\YNÂÛ\ÜÓ\ÝY
-	Ú\ËY\[ÉÊNÂÛ\ÜÓ\Ý[[ÝJ	Ú\ËY\Y	ÊNÂ\]J
-NÂÙ]J
-NÂB^Y][\Ý[\	ØÛXÚÉË^
-NÂ]Y][\Ý[\	ØÛXÚÉË]NÂØÝ[Y[Y][\Ý[\	ÚÙ^YÝÛË[Ý[ÛJHÂY
-KÙ^HOOH	Ð\ÝÔYÚ	ÊHÈ^
+  function playPipeline() {
+    if (!pfSvg) { return; }
+    var all = Array.prototype.slice.call(pfSvg.querySelectorAll('[data-step]'));
+    pfTimers.forEach(function(t) { clearTimeout(t); });
+    pfTimers = [];
+    all.forEach(function(el) { el.classList.remove('pf-on'); });
+    void pfSvg.getBoundingClientRect();
+    var maxStep = 0;
+    all.forEach(function(el) { maxStep = Math.max(maxStep, parseInt(el.getAttribute('data-step'), 10)); });
+    for (var i = 1; i <= maxStep; i++) {
+      (function(stepNum) {
+        var t = setTimeout(function() {
+          all.forEach(function(el) {
+            if (parseInt(el.getAttribute('data-step'), 10) === stepNum) { el.classList.add('pf-on'); }
+          });
+        }, (stepNum - 1) * 220);
+        pfTimers.push(t);
+      })(i);
+    }
+  }
 
-NÈBY
-KÙ^HOOH	Ð\ÝÓY	ÊHÈ]
-NÈBJNÂ\]J
-NÂJJ
-NÂËÈ8¥ 8¥ YÝ\HYÚÞ8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ [Ý[Û
-HÂ\HØÝ[Y[Ù][[Y[RY
-	ÙYÌÊNÂ\XÚÙÜHØÝ[Y[Ù][[Y[RY
-	ÙYÌXÚÙÜ	ÊNÂ\ÛÜÙPHØÝ[Y[Ù][[Y[RY
-	ÙYÌÛÜÙIÊNÂ\Ü\HØÝ[Y[Ù][[Y[RY
-	ÙYÌÜ\	ÊNÂ\^[HØÝ[Y[Ù][[Y[RY
-	ÙYÌÊNÂY
-[]Ü\
-H]\Â[Ý[ÛÜ[
-HÂ[[ÝP]X]J	ÚY[ÊNÂÛ\ÜÓ\ÝY
-	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÚY[ÎÂB[Ý[ÛÛÜÙJ
-HÂÙ]]X]J	ÚY[Ë	ÉÊNÂÛ\ÜÓ\Ý[[ÝJ	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÉÎÂBÜ\Y][\Ý[\	ØÛXÚÉË[Ý[ÛJHÂY
-K\Ù]OOH^[^[ÛÛZ[ÊK\Ù]
-HK\Ù]OOHÜ\]Y\TÙ[XÝÜ	Ë[X\Z[YÉÊHÜ\ÛÛZ[ÊK\Ù]
-JHÂÜ[
-NÂBJNÂY
-XÚÙÜ
-HXÚÙÜY][\Ý[\	ØÛXÚÉËÛÜÙJNÂY
-ÛÜÙPHÛÜÙPY][\Ý[\	ØÛXÚÉËÛÜÙJNÂØÝ[Y[Y][\Ý[\	ÚÙ^YÝÛË[Ý[ÛJHÂY
-KÙ^HOOH	Ñ\ØØ\IÈ	Û\ÜÓ\ÝÛÛZ[Ê	Ú\Ë[Ü[ÊJHÈÛÜÙJ
-NÈBJNÂJJ
-NÂËÈ8¥ 8¥ YÝ\HÈYÚÞ8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ [Ý[Û
-HÂ\HØÝ[Y[Ù][[Y[RY
-	ÙYÌÓÊNÂ\XÚÙÜHØÝ[Y[Ù][[Y[RY
-	ÙYÌÐXÚÙÜ	ÊNÂ\ÛÜÙPHØÝ[Y[Ù][[Y[RY
-	ÙYÌÐÛÜÙIÊNÂ\Ü\HØÝ[Y[Ù][[Y[RY
-	ÙYÌÕÜ\	ÊNÂ\^[HØÝ[Y[Ù][[Y[RY
-	ÙYÌÐÊNÂY
-[]Ü\
-H]\Â[Ý[ÛÜ[
-HÂ[[ÝP]X]J	ÚY[ÊNÂÛ\ÜÓ\ÝY
-	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÚY[ÎÂB[Ý[ÛÛÜÙJ
-HÂÙ]]X]J	ÚY[Ë	ÉÊNÂÛ\ÜÓ\Ý[[ÝJ	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÉÎÂBÜ\Y][\Ý[\	ØÛXÚÉË[Ý[ÛJHÂY
-K\Ù]OOH^[^[ÛÛZ[ÊK\Ù]
-HK\Ù]OOHÜ\]Y\TÙ[XÝÜ	Ë[X\Z[YÉÊHÜ\ÛÛZ[ÊK\Ù]
-JHÂÜ[
-NÂBJNÂY
-XÚÙÜ
-HXÚÙÜY][\Ý[\	ØÛXÚÉËÛÜÙJNÂY
-ÛÜÙPHÛÜÙPY][\Ý[\	ØÛXÚÉËÛÜÙJNÂØÝ[Y[Y][\Ý[\	ÚÙ^YÝÛË[Ý[ÛJHÂY
-KÙ^HOOH	Ñ\ØØ\IÈ	Û\ÜÓ\ÝÛÛZ[Ê	Ú\Ë[Ü[ÊJHÈÛÜÙJ
-NÈBJNÂJJ
-NÂËÈ8¥ 8¥ YÝ\H
-YÚÞ8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ [Ý[Û
-HÂ\HØÝ[Y[Ù][[Y[RY
-	ÙYÍÊNÂ\XÚÙÜHØÝ[Y[Ù][[Y[RY
-	ÙYÍXÚÙÜ	ÊNÂ\ÛÜÙPHØÝ[Y[Ù][[Y[RY
-	ÙYÍÛÜÙIÊNÂ\Ü\HØÝ[Y[Ù][[Y[RY
-	ÙYÍÜ\	ÊNÂ\^[HØÝ[Y[Ù][[Y[RY
-	ÙYÍÊNÂY
-[]Ü\
-H]\Â[Ý[ÛÜ[
-HÂ[[ÝP]X]J	ÚY[ÊNÂÛ\ÜÓ\ÝY
-	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÚY[ÎÂB[Ý[ÛÛÜÙJ
-HÂÙ]]X]J	ÚY[Ë	ÉÊNÂÛ\ÜÓ\Ý[[ÝJ	Ú\Ë[Ü[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÉÎÂBÜ\Y][\Ý[\	ØÛXÚÉË[Ý[ÛJHÂY
-K\Ù]OOH^[^[ÛÛZ[ÊK\Ù]
-HK\Ù]OOHÜ\]Y\TÙ[XÝÜ	Ë[X\Z[YÉÊHÜ\ÛÛZ[ÊK\Ù]
-JHÂÜ[
-NÂBJNÂY
-XÚÙÜ
-HXÚÙÜY][\Ý[\	ØÛXÚÉËÛÜÙJNÂY
-ÛÜÙPHÛÜÙPY][\Ý[\	ØÛXÚÉËÛÜÙJNÂØÝ[Y[Y][\Ý[\	ÚÙ^YÝÛË[Ý[ÛJHÂY
-KÙ^HOOH	Ñ\ØØ\IÈ	Û\ÜÓ\ÝÛÛZ[Ê	Ú\Ë[Ü[ÊJHÈÛÜÙJ
-NÈBJNÂJJ
-NÂÜØÜ\
+  function update() {
+    counter.textContent = (flipped + 1) + ' / ' + total;
+    prevBtn.disabled = flipped === 0;
+    nextBtn.disabled = flipped === total - 1;
+    if (flipped === 0) { playPipeline(); }
+  }
+
+  function settle(p) {
+    setTimeout(function() { p.classList.remove('is-flipping'); }, 900);
+  }
+
+  function next() {
+    if (flipped >= total - 1) { return; }
+    var p = pages[flipped];
+    p.classList.add('is-flipping');
+    p.classList.add('is-flipped');
+    flipped++;
+    update();
+    settle(p);
+  }
+
+  function prev() {
+    if (flipped <= 0) { return; }
+    flipped--;
+    var p = pages[flipped];
+    p.classList.add('is-flipping');
+    p.classList.remove('is-flipped');
+    update();
+    settle(p);
+  }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight') { next(); }
+    if (e.key === 'ArrowLeft') { prev(); }
+  });
+
+  update();
+})();
+
+// ââ Figure 2 Lightbox âââââââââââââââââââââââââââââââ
+(function() {
+  var lb       = document.getElementById('fig2Lb');
+  var backdrop = document.getElementById('fig2Backdrop');
+  var closeBtn = document.getElementById('fig2Close');
+  var wrap     = document.getElementById('fig2Wrap');
+  var expandBtn = document.getElementById('fig2Btn');
+  if (!lb || !wrap) return;
+
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
+})();
+
+// ââ Figure 3 Lightbox âââââââââââââââââââââââââââââââ
+(function() {
+  var lb       = document.getElementById('fig3Lb');
+  var backdrop = document.getElementById('fig3Backdrop');
+  var closeBtn = document.getElementById('fig3Close');
+  var wrap     = document.getElementById('fig3Wrap');
+  var expandBtn = document.getElementById('fig3Btn');
+  if (!lb || !wrap) return;
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
+})();
+
+// ââ Figure 4 Lightbox âââââââââââââââââââââââââââââââ
+(function() {
+  var lb       = document.getElementById('fig4Lb');
+  var backdrop = document.getElementById('fig4Backdrop');
+  var closeBtn = document.getElementById('fig4Close');
+  var wrap     = document.getElementById('fig4Wrap');
+  var expandBtn = document.getElementById('fig4Btn');
+  if (!lb || !wrap) return;
+  function open() {
+    lb.removeAttribute('hidden');
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.setAttribute('hidden', '');
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  wrap.addEventListener('click', function(e) {
+    if (e.target === expandBtn || expandBtn.contains(e.target) || e.target === wrap.querySelector('.p2-map-img') || wrap.contains(e.target)) {
+      open();
+    }
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { close(); }
+  });
+})();
+</script>
