@@ -97,7 +97,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
 <h3>Study Area &amp; Street Network Diversity</h3>
-<p class="p2-intro">Mecklenburg County is divided into <strong>371 NPAs</strong>. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime (2022, 4 types) clusters spatially, demanding spatial models.</p>
+<p class="p2-intro">The City of Charlotte is divided into <strong>371 NPAs</strong>. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime (2022, 4 types) clusters spatially, demanding spatial models.</p>
 <div class="p2-grid">
   <figure class="p2-map">
     <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
@@ -113,7 +113,7 @@ permalink: /projects/urban-network-analysis/
         </svg>
       </button>
     </div>
-    <figcaption><strong>Fig. 2.</strong> Street network diversity across Mecklenburg County. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+    <figcaption><strong>Fig. 2.</strong> Street network diversity across Charlotte. <span class="fig-source"><a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
   </figure>
 
   <!-- Lightbox -->
