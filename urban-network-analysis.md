@@ -213,6 +213,9 @@ permalink: /projects/urban-network-analysis/
       </div>
     </div>
   </div>
+</div>
+</div>
+
 <div class="book-page" data-i="2">
 </div>
 
