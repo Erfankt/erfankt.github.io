@@ -97,7 +97,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
 <h3>Study Area &amp; Street Network Diversity</h3>
-<p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime clusters spatially, demanding spatial models.</p>
+<p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime in 2022 clusters spatially, demanding spatial models.</p>
 <div class="p2-grid">
   <figure class="p2-map">
     <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
@@ -212,15 +212,7 @@ permalink: /projects/urban-network-analysis/
         <p class="fig2-lb-cap">Property crime density across NPAs, per acre</p>
       </div>
     </div>
-    <div class="story-stats-row">
-      <div class="sstat"><span class="sstat-n">371</span><span class="sstat-l">NPAs</span></div>
-      <div class="sstat"><span class="sstat-n">2022</span><span class="sstat-l">Study year</span></div>
-      <div class="sstat"><span class="sstat-n">4</span><span class="sstat-l">Crime types</span></div>
-    </div>
   </div>
-</div>
-</div>
-
 <div class="book-page" data-i="2">
 </div>
 
