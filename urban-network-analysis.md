@@ -248,43 +248,43 @@ permalink: /projects/urban-network-analysis/
     <div class="metric-icons">
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Street density: total road length per area">
-          <line x1="5"  y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
-          <line x1="5"  y1="18" x2="45" y2="18" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
-          <line x1="5"  y1="26" x2="45" y2="26" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
-          <line x1="5"  y1="34" x2="45" y2="34" stroke="currentColor" stroke-width="1.1" opacity="0.28"/>
-          <line x1="13" y1="4"  x2="13" y2="38" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
-          <line x1="23" y1="4"  x2="23" y2="38" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
-          <line x1="33" y1="4"  x2="33" y2="38" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
-          <line x1="43" y1="4"  x2="43" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.28"/>
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Street density">
+          <line x1="5"  y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="5"  y1="18" x2="45" y2="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.2s"/>
+          <line x1="5"  y1="26" x2="45" y2="26" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.4s"/>
+          <line x1="5"  y1="34" x2="45" y2="34" stroke="currentColor" stroke-width="1.1" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.6s"/>
+          <line x1="13" y1="4"  x2="13" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.1s"/>
+          <line x1="23" y1="4"  x2="23" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.3s"/>
+          <line x1="33" y1="4"  x2="33" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.5s"/>
+          <line x1="43" y1="4"  x2="43" y2="38" stroke="currentColor" stroke-width="1.1" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.7s"/>
           <rect x="3" y="3" width="44" height="34" rx="2" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="3,2" opacity="0.55"/>
         </svg>
         <span>Street density</span>
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Intersection density: count of intersections per area">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Intersection density">
           <line x1="5"  y1="14" x2="45" y2="14" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
           <line x1="5"  y1="28" x2="45" y2="28" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
           <line x1="16" y1="4"  x2="16" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
           <line x1="28" y1="4"  x2="28" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
           <line x1="40" y1="4"  x2="40" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <circle cx="16" cy="14" r="3"   fill="var(--color-accent)"/>
-          <circle cx="28" cy="14" r="3"   fill="var(--color-accent)"/>
-          <circle cx="40" cy="14" r="3"   fill="var(--color-accent)"/>
-          <circle cx="16" cy="28" r="3"   fill="var(--color-accent)"/>
-          <circle cx="28" cy="28" r="3"   fill="var(--color-accent)"/>
-          <circle cx="40" cy="28" r="3"   fill="var(--color-accent)"/>
+          <circle cx="16" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0s"/>
+          <circle cx="28" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.25s"/>
+          <circle cx="40" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.5s"/>
+          <circle cx="16" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.75s"/>
+          <circle cx="28" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1s"/>
+          <circle cx="40" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1.25s"/>
         </svg>
         <span>Intersection density</span>
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Node degree: number of edges per node">
-          <line x1="25" y1="20" x2="8"  y2="8"  stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
-          <line x1="25" y1="20" x2="42" y2="8"  stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
-          <line x1="25" y1="20" x2="8"  y2="32" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
-          <line x1="25" y1="20" x2="42" y2="32" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. node degree">
+          <line x1="25" y1="20" x2="8"  y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="20" x2="42" y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.3s"/>
+          <line x1="25" y1="20" x2="8"  y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.6s"/>
+          <line x1="25" y1="20" x2="42" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.9s"/>
           <circle cx="8"  cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
           <circle cx="42" cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
           <circle cx="8"  cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
@@ -296,14 +296,14 @@ permalink: /projects/urban-network-analysis/
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Clustering coefficient: neighbours connected to each other">
-          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.2"/>
-          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.2"/>
-          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.2"/>
-          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.2"/>
-          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9"/>
-          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9"/>
-          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9"/>
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. clustering coefficient">
+          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.18"/>
+          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
+          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
+          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0.5s"/>
+          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="24" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:1s"/>
           <circle cx="13" cy="34" r="3.5" fill="var(--color-accent)"/>
           <circle cx="25" cy="12" r="3.5" fill="var(--color-accent)"/>
           <circle cx="37" cy="34" r="3.5" fill="var(--color-accent)"/>
@@ -312,13 +312,13 @@ permalink: /projects/urban-network-analysis/
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Average shortest path length between node pairs">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. shortest path">
           <line x1="9"  y1="20" x2="19" y2="10" stroke="currentColor" stroke-width="1" opacity="0.28"/>
           <line x1="19" y1="10" x2="32" y2="15" stroke="currentColor" stroke-width="1" opacity="0.28"/>
           <line x1="32" y1="15" x2="41" y2="20" stroke="currentColor" stroke-width="1" opacity="0.28"/>
-          <line x1="9"  y1="20" x2="21" y2="30" stroke="var(--color-accent)" stroke-width="2"/>
-          <line x1="21" y1="30" x2="33" y2="26" stroke="var(--color-accent)" stroke-width="2"/>
-          <line x1="33" y1="26" x2="41" y2="20" stroke="var(--color-accent)" stroke-width="2"/>
+          <line x1="9"  y1="20" x2="21" y2="30" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="21" y1="30" x2="33" y2="26" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.18s"/>
+          <line x1="33" y1="26" x2="41" y2="20" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.35s"/>
           <circle cx="9"  cy="20" r="4"   fill="var(--color-accent)"/>
           <circle cx="19" cy="10" r="2.5" fill="currentColor" opacity="0.32"/>
           <circle cx="21" cy="30" r="3"   fill="currentColor" opacity="0.6"/>
@@ -330,18 +330,18 @@ permalink: /projects/urban-network-analysis/
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Betweenness centrality: how often a node lies on shortest paths">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. betweenness centrality">
           <line x1="8"  y1="11" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
           <line x1="8"  y1="29" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
           <line x1="8"  y1="11" x2="8"  y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
-          <line x1="20" y1="20" x2="30" y2="20" stroke="var(--color-accent)" stroke-width="2.5"/>
+          <line x1="20" y1="20" x2="30" y2="20" stroke="var(--color-accent)" stroke-width="2.5" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
           <line x1="30" y1="20" x2="42" y2="11" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
           <line x1="30" y1="20" x2="42" y2="29" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
           <line x1="42" y1="11" x2="42" y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
           <circle cx="8"  cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
           <circle cx="8"  cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="20" cy="20" r="5"   fill="var(--color-accent)"/>
-          <circle cx="30" cy="20" r="5"   fill="var(--color-accent)"/>
+          <circle cx="20" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
+          <circle cx="30" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
           <circle cx="42" cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
           <circle cx="42" cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
         </svg>
@@ -349,7 +349,7 @@ permalink: /projects/urban-network-analysis/
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Closeness centrality: how close a node is to all others">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. closeness centrality">
           <line x1="25" y1="20" x2="10" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
           <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
           <line x1="25" y1="20" x2="40" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
@@ -364,23 +364,24 @@ permalink: /projects/urban-network-analysis/
           <circle cx="36" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
           <circle cx="14" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
           <circle cx="7"  cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="25" cy="20" r="0" fill="none" stroke="var(--color-accent)" stroke-width="1.8" style="animation:mi-ripple 2.2s ease-out infinite"/>
           <circle cx="25" cy="20" r="6"   fill="var(--color-accent)"/>
         </svg>
         <span>Avg. closeness</span>
       </div>
 
       <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="PageRank centrality: importance by quality of incoming links">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. PageRank centrality">
           <defs>
-            <marker id="prArr" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
-              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.65"/>
+            <marker id="prArr2" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.7"/>
             </marker>
           </defs>
-          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
-          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
-          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
-          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
-          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.45s"/>
+          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.9s"/>
+          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.35s"/>
+          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.8s"/>
           <circle cx="8"  cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
           <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.38"/>
           <circle cx="42" cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
@@ -392,6 +393,87 @@ permalink: /projects/urban-network-analysis/
       </div>
 
     </div>
+  </div>
+</div>
+</div>
+
+<div class="book-page" data-i="3">
+<div class="book-kicker">Page 4</div>
+<h3>Dimensionality Reduction</h3>
+<p>The 40 raw network variables across five buffer distances are highly collinear. PCA condensed them to <strong>four independent components</strong> that together capture <strong>70% of the total variance</strong>. The variable with the highest loading per component was then entered into each regression model.</p>
+<div class="measure-layout">
+  <div>
+    <svg viewBox="0 0 210 200" class="measure-svg" aria-label="PCA reduces 40 network variables to 4 principal components">
+      <!-- 40 input dots (8 rows × 5 cols) -->
+          <circle cx="16" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.00s"/>
+          <circle cx="31" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.06s"/>
+          <circle cx="46" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.12s"/>
+          <circle cx="61" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.18s"/>
+          <circle cx="76" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.24s"/>
+          <circle cx="16" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.30s"/>
+          <circle cx="31" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.36s"/>
+          <circle cx="46" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.42s"/>
+          <circle cx="61" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.48s"/>
+          <circle cx="76" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.54s"/>
+          <circle cx="16" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.60s"/>
+          <circle cx="31" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.66s"/>
+          <circle cx="46" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.72s"/>
+          <circle cx="61" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.78s"/>
+          <circle cx="76" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.84s"/>
+          <circle cx="16" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.90s"/>
+          <circle cx="31" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.96s"/>
+          <circle cx="46" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.02s"/>
+          <circle cx="61" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.08s"/>
+          <circle cx="76" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.14s"/>
+          <circle cx="16" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.20s"/>
+          <circle cx="31" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.26s"/>
+          <circle cx="46" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.32s"/>
+          <circle cx="61" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.38s"/>
+          <circle cx="76" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.44s"/>
+          <circle cx="16" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.50s"/>
+          <circle cx="31" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.56s"/>
+          <circle cx="46" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.62s"/>
+          <circle cx="61" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.68s"/>
+          <circle cx="76" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.74s"/>
+          <circle cx="16" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.80s"/>
+          <circle cx="31" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.86s"/>
+          <circle cx="46" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.92s"/>
+          <circle cx="61" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.98s"/>
+          <circle cx="76" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.04s"/>
+          <circle cx="16" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.10s"/>
+          <circle cx="31" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.16s"/>
+          <circle cx="46" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.22s"/>
+          <circle cx="61" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.28s"/>
+          <circle cx="76" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.34s"/>
+
+      <!-- funnel lines converging to 4 outputs -->
+      <line x1="85"  y1="18"  x2="155" y2="35"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <line x1="85"  y1="72"  x2="155" y2="35"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <line x1="85"  y1="18"  x2="155" y2="85"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.22"/>
+      <line x1="85"  y1="126" x2="155" y2="85"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <line x1="85"  y1="162" x2="155" y2="135" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <line x1="85"  y1="108" x2="155" y2="135" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.22"/>
+      <line x1="85"  y1="162" x2="155" y2="165" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <line x1="85"  y1="144" x2="155" y2="165" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
+      <!-- PCA label box -->
+      <rect x="96" y="85" width="48" height="28" rx="5" fill="var(--color-surface)" stroke="var(--color-accent)" stroke-width="1.4"/>
+      <text x="120" y="97"  text-anchor="middle" font-size="8"  fill="var(--color-accent)" font-weight="700">PCA</text>
+      <text x="120" y="108" text-anchor="middle" font-size="6.5" fill="var(--color-text-muted)">40 → 4</text>
+      <!-- 4 output nodes -->
+      <circle cx="175" cy="35"  r="13" fill="var(--color-accent)" opacity="0.85"/>
+      <circle cx="175" cy="85"  r="13" fill="var(--color-accent)" opacity="0.85"/>
+      <circle cx="175" cy="135" r="13" fill="var(--color-accent)" opacity="0.85"/>
+      <circle cx="175" cy="165" r="13" fill="var(--color-accent)" opacity="0.85"/>
+      <text x="175" y="38"  text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC1</text>
+      <text x="175" y="88"  text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC2</text>
+      <text x="175" y="138" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC3</text>
+      <text x="175" y="168" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC4</text>
+      <!-- axis labels -->
+      <text x="46"  y="192" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">40 network variables</text>
+      <text x="175" y="192" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">4 components</text>
+    </svg>
+  </div>
+  <div class="measure-right">
     <p class="measure-pca-head">PCA variance explained (4 retained components):</p>
     <div class="pca-bars">
       <div class="pca-row"><span class="pca-name">Intersection density</span><div class="pca-track"><div class="pca-fill" style="width:37%">26%</div></div></div>
@@ -404,8 +486,8 @@ permalink: /projects/urban-network-analysis/
 </div>
 </div>
 
-<div class="book-page" data-i="3">
-<div class="book-kicker">Page 4</div>
+<div class="book-page" data-i="4">
+<div class="book-kicker">Page 5</div>
 <h3>Results Across Four Models</h3>
 <p>The four retained network variables were tested in a standard negative-binomial GLM (baseline), a Spatial AutoRegressive model (SAR-NB), a Conditional AutoRegressive model (CAR-NB), and a Geographically Weighted model (GWR-NB) that lets coefficients vary across space.</p>
 <div class="rtable-wrap">
@@ -453,16 +535,16 @@ permalink: /projects/urban-network-analysis/
 <p><strong>Where effects are strongest:</strong> GWR reveals that intersection density&rsquo;s positive association peaks in the suburban mid-ring &mdash; consistent with a saturation effect where adding one more intersection to an already hyper-connected downtown block matters less than the same addition in a disconnected suburb.</p>
 </div>
 
-<div class="book-page" data-i="4">
-<div class="book-kicker">Page 5</div>
+<div class="book-page" data-i="5">
+<div class="book-kicker">Page 6</div>
 <h3>Three Takeaways</h3>
 <p><strong>Denser street grids see more property crime.</strong> Intersection density was the strongest and most consistent predictor across every model: neighborhoods with more connected, more permeable street networks experienced more property crime, even after controlling for socioeconomic conditions.</p>
 <p><strong>Accessibility cuts both ways.</strong> Neighborhoods that are easier to move through &mdash; shorter average network paths &mdash; tended to see more property crime, suggesting the same street layouts that serve residents' mobility can also extend offenders' reach.</p>
 <p><strong>Place and scale matter.</strong> The network effect showed up most clearly at mid-range buffer scales and was stronger in suburban neighborhoods than downtown &mdash; which is why the study pairs multi-scale network measures with spatial regression models (SAR, CAR, GWR) rather than a single citywide equation.</p>
 </div>
 
-<div class="book-page" data-i="5">
-<div class="book-kicker">Page 6</div>
+<div class="book-page" data-i="6">
+<div class="book-kicker">Page 7</div>
 <h3>Try It Yourself</h3>
 <p>The repository isn't just the paper's code &mdash; it's a point-and-click web app. Download it, double-click a launcher, and step through the same pipeline in your browser: no command line required.</p>
 <div class="book-note">Placeholder &mdash; 30&ndash;60 second GIF or video of the app walking through the pipeline stages. (Add media: assets/img/app-demo.gif)</div>
@@ -470,8 +552,8 @@ permalink: /projects/urban-network-analysis/
 <p><a class="book-btn book-btn-ghost" href="https://github.com/Erfankt/urban-network-analysis/releases/latest" target="_blank" rel="noopener">Latest release (v2.0.1) &rarr;</a></p>
 </div>
 
-<div class="book-page" data-i="6">
-<div class="book-kicker">Page 7</div>
+<div class="book-page" data-i="7">
+<div class="book-kicker">Page 8</div>
 <h3>Under the Hood</h3>
 <p><strong>Language &amp; libraries:</strong> Python, GeoPandas, NetworkX, scikit-learn, factor_analyzer</p>
 <p><strong>Methods:</strong> spatial statistics, principal component analysis, large-scale checkpointed computation</p>
@@ -479,8 +561,8 @@ permalink: /projects/urban-network-analysis/
 <p><strong>License:</strong> MIT &mdash; free to reuse, extend, or adapt to another city's data</p>
 </div>
 
-<div class="book-page" data-i="7">
-<div class="book-kicker">Page 8</div>
+<div class="book-page" data-i="8">
+<div class="book-kicker">Page 9</div>
 <h3>Cite This Work</h3>
 <p>Citation details (paper and software) are maintained in the repository's <a href="https://github.com/Erfankt/urban-network-analysis/blob/master/CITATION.cff" target="_blank" rel="noopener">CITATION.cff</a>.</p>
 <p><a class="book-btn book-btn-ghost" href="/projects/">&larr; Back to Projects</a></p>
@@ -809,27 +891,33 @@ text.pf-label.pf-on {
 }
 .metric-icons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.4em 0.5em;
-  margin: 0.3em 0 0.7em;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55em 0.3em;
+  margin: 0.4em 0 0.5em;
 }
 .mi-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.12em;
+  gap: 0.1em;
 }
 .mi-svg {
   width: 100%;
-  max-height: 38px;
+  max-height: 52px;
   color: var(--color-text-muted);
 }
 .mi-item span {
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   color: var(--color-text-muted);
-  line-height: 1.2;
+  line-height: 1.15;
 }
+/* Metric icon animations */
+@keyframes mi-draw   { 0%,5%{stroke-dashoffset:60} 65%,100%{stroke-dashoffset:0} }
+@keyframes mi-pulse  { 0%,100%{opacity:0.2} 50%{opacity:1} }
+@keyframes mi-travel { 0%,8%{stroke-dashoffset:90} 72%,100%{stroke-dashoffset:0} }
+@keyframes mi-ripple { 0%{r:0;opacity:0.7;stroke-width:1.8} 65%{opacity:0.1} 100%{r:22;opacity:0;stroke-width:0.3} }
+@keyframes mi-flash  { 0%,50%,100%{opacity:0.2} 62%{opacity:1} }
 .measure-pca-head {
   font-size: 0.82rem;
   font-weight: 600;
