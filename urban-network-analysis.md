@@ -97,76 +97,11 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="1">
 <div class="book-kicker">Page 2</div>
 <h3>Study Area &amp; Street Network Diversity</h3>
-<div class="p2-grid">
-  <figure class="p2-map">
-    <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
-      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-           alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
-           class="p2-map-img" id="fig2Img">
-      <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
-        <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-          <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-          <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-          <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-        </svg>
-      </button>
-    </div>
-    <figcaption>Street network diversity across Charlotte.</figcaption>
-  </figure>
+<div class="p2-layout">
 
-  <!-- Lightbox -->
-  <div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
-    <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
-    <div class="fig2-lb-box">
-      <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
-      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-           alt="Figure 2 full size: Diversity of street networks in the study area"
-           class="fig2-lb-img">
-      <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
-    </div>
-  </div>
-<figure class="npa-network-fig">
-<svg viewBox="0 0 175 112" class="npa-net-svg" aria-label="Street network inside a single NPA: nodes are intersections, edges are street segments">
-<polygon points="5,10 60,4 108,7 152,14 162,54 156,100 108,108 55,106 12,98 4,54" fill="var(--color-accent)" opacity="0.07" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
-<line x1="24" y1="22" x2="62" y2="12" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.0s"/>
-<line x1="62" y1="12" x2="102" y2="16" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.13s"/>
-<line x1="102" y1="16" x2="138" y2="22" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.26s"/>
-<line x1="18" y1="55" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.39s"/>
-<line x1="52" y1="52" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.52s"/>
-<line x1="88" y1="50" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.65s"/>
-<line x1="30" y1="90" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.78s"/>
-<line x1="64" y1="86" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.91s"/>
-<line x1="102" y1="88" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.04s"/>
-<line x1="24" y1="22" x2="18" y2="55" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.16s"/>
-<line x1="18" y1="55" x2="30" y2="90" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.29s"/>
-<line x1="62" y1="12" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.42s"/>
-<line x1="52" y1="52" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.55s"/>
-<line x1="102" y1="16" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.68s"/>
-<line x1="88" y1="50" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.81s"/>
-<line x1="138" y1="22" x2="150" y2="54" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.94s"/>
-<line x1="150" y1="54" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.07s"/>
-<line x1="124" y1="56" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.2s"/>
-<circle cx="24" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.4s"/>
-<circle cx="62" cy="12" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.47s"/>
-<circle cx="102" cy="16" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.53s"/>
-<circle cx="138" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.6s"/>
-<circle cx="150" cy="54" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.67s"/>
-<circle cx="18" cy="55" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.73s"/>
-<circle cx="52" cy="52" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.8s"/>
-<circle cx="88" cy="50" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.87s"/>
-<circle cx="124" cy="56" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.93s"/>
-<circle cx="30" cy="90" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.0s"/>
-<circle cx="64" cy="86" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.07s"/>
-<circle cx="102" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.13s"/>
-<circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
-<text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
-</svg>
-<figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
-</figure>
-  <div class="p2-concepts">
-    <p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime in 2022 clusters spatially, demanding spatial models.</p>
-
+  <!-- A: NPA choropleth animation + definition ─────────────────── -->
+  <div class="p2-cell">
+    <p class="p2-cell-hd">What is an NPA?</p>
 <figure class="npa-figure">
 <svg viewBox="0 0 320 195" class="npa-svg" aria-label="371 NPAs colored by property crime density">
 <style>
@@ -216,6 +151,12 @@ permalink: /projects/urban-network-analysis/
 </svg>
 <figcaption>Neighborhood Profile Areas (NPAs) are geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://maps.mecklenburgcountync.gov/qol/" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>).</figcaption>
 </figure>
+  </div><!-- /.p2-cell A -->
+
+  <!-- B: Street network patterns ───────────────────────────────── -->
+  <div class="p2-cell">
+    <p class="p2-cell-hd">Street Network Patterns</p>
+    <p class="p2-cell-note">Charlotte&rsquo;s neighborhoods range from dense Uptown grids to suburban cul-de-sac loops &mdash; a natural experiment in how street layout relates to crime.</p>
     <div class="nc-pair">
       <div class="nc-box">
         <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Dense grid street pattern">
@@ -246,60 +187,140 @@ permalink: /projects/urban-network-analysis/
         <p class="nc-lbl">Cul-de-sac<br>Suburbs &middot; low permeability</p>
       </div>
     </div>
-    <div class="nc-crime-pair">
-      <figure class="nc-crime-fig">
-        <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
-          <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
-               alt="Figure 3: Property crime counts across NPAs in 2022"
-               class="p2-map-img p2-map-img--xs" id="fig3Img">
-          <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
-            <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-              <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-              <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-              <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-            </svg>
-          </button>
-        </div>
-        <figcaption>Crime counts by NPA.</figcaption>
-      </figure>
-      <figure class="nc-crime-fig">
-        <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
-          <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
-               alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
-               class="p2-map-img p2-map-img--xs" id="fig4Img">
-          <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
-            <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-              <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-              <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-              <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-            </svg>
-          </button>
-        </div>
-        <figcaption>Crime density/acre.</figcaption>
-      </figure>
-    </div>
-    <div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
-      <div class="fig2-lb-backdrop" id="fig3Backdrop"></div>
-      <div class="fig2-lb-box">
-        <button class="fig2-lb-close" id="fig3Close" aria-label="Close">&#215;</button>
+  </div><!-- /.p2-cell B -->
+
+  <!-- C: Network diversity map (Figure g002) ───────────────────── -->
+  <div class="p2-cell">
+    <p class="p2-cell-hd">Network Diversity Across Charlotte</p>
+    <figure class="p2-map">
+      <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
+        <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+             alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
+             class="p2-map-img" id="fig2Img">
+        <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+          </svg>
+        </button>
+      </div>
+      <figcaption>Street network diversity across Charlotte (Figure 2).</figcaption>
+    </figure>
+  </div><!-- /.p2-cell C -->
+
+  <!-- D: Crime maps stacked ────────────────────────────────────── -->
+  <div class="p2-cell">
+    <p class="p2-cell-hd">Property Crime Distribution (2022)</p>
+    <figure class="p2-crime-fig">
+      <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
-             alt="Figure 3 full size: Property crime counts across NPAs in 2022"
-             class="fig2-lb-img">
-        <p class="fig2-lb-cap">Property crime counts across NPAs in 2022</p>
+             alt="Figure 3: Property crime counts across NPAs in 2022"
+             class="p2-map-img p2-map-img--sm" id="fig3Img">
+        <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+          </svg>
+        </button>
       </div>
-    </div>
-    <div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
-      <div class="fig2-lb-backdrop" id="fig4Backdrop"></div>
-      <div class="fig2-lb-box">
-        <button class="fig2-lb-close" id="fig4Close" aria-label="Close">&#215;</button>
+      <figcaption>Crime counts by NPA (Figure 3).</figcaption>
+    </figure>
+    <figure class="p2-crime-fig">
+      <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
-             alt="Figure 4 full size: Property crime density across NPAs (by acre) in 2022"
-             class="fig2-lb-img">
-        <p class="fig2-lb-cap">Property crime density across NPAs, per acre</p>
+             alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
+             class="p2-map-img p2-map-img--sm" id="fig4Img">
+        <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+            <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+            <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+            <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+          </svg>
+        </button>
       </div>
-    </div>
+      <figcaption>Crime density per acre (Figure 4).</figcaption>
+    </figure>
+  </div><!-- /.p2-cell D -->
+
+  <!-- E: Full-width — street network inside one NPA ────────────── -->
+  <div class="p2-cell p2-cell--full">
+    <p class="p2-cell-hd">Street Network Inside One NPA</p>
+    <figure class="npa-network-fig">
+      <svg viewBox="0 0 175 112" class="npa-net-svg" aria-label="Street network inside a single NPA: nodes are intersections, edges are street segments">
+        <polygon points="5,10 60,4 108,7 152,14 162,54 156,100 108,108 55,106 12,98 4,54" fill="var(--color-accent)" opacity="0.07" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+        <line x1="24" y1="22" x2="62" y2="12" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.0s"/>
+        <line x1="62" y1="12" x2="102" y2="16" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.13s"/>
+        <line x1="102" y1="16" x2="138" y2="22" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.26s"/>
+        <line x1="18" y1="55" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.39s"/>
+        <line x1="52" y1="52" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.52s"/>
+        <line x1="88" y1="50" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.65s"/>
+        <line x1="30" y1="90" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.78s"/>
+        <line x1="64" y1="86" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.91s"/>
+        <line x1="102" y1="88" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.04s"/>
+        <line x1="24" y1="22" x2="18" y2="55" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.16s"/>
+        <line x1="18" y1="55" x2="30" y2="90" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.29s"/>
+        <line x1="62" y1="12" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.42s"/>
+        <line x1="52" y1="52" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.55s"/>
+        <line x1="102" y1="16" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.68s"/>
+        <line x1="88" y1="50" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.81s"/>
+        <line x1="138" y1="22" x2="150" y2="54" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.94s"/>
+        <line x1="150" y1="54" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.07s"/>
+        <line x1="124" y1="56" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.2s"/>
+        <circle cx="24" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.4s"/>
+        <circle cx="62" cy="12" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.47s"/>
+        <circle cx="102" cy="16" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.53s"/>
+        <circle cx="138" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.6s"/>
+        <circle cx="150" cy="54" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.67s"/>
+        <circle cx="18" cy="55" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.73s"/>
+        <circle cx="52" cy="52" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.8s"/>
+        <circle cx="88" cy="50" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.87s"/>
+        <circle cx="124" cy="56" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.93s"/>
+        <circle cx="30" cy="90" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.0s"/>
+        <circle cx="64" cy="86" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.07s"/>
+        <circle cx="102" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.13s"/>
+        <circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
+        <text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
+      </svg>
+      <figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
+    </figure>
+  </div><!-- /.p2-cell E -->
+
+</div><!-- /.p2-layout -->
+
+<!-- Lightboxes (position:fixed overlays) -->
+<div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
+  <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
+  <div class="fig2-lb-box">
+    <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
+    <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+         alt="Figure 2 full size: Diversity of street networks in the study area"
+         class="fig2-lb-img">
+    <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
+  </div>
+</div>
+<div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
+  <div class="fig2-lb-backdrop" id="fig3Backdrop"></div>
+  <div class="fig2-lb-box">
+    <button class="fig2-lb-close" id="fig3Close" aria-label="Close">&#215;</button>
+    <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
+         alt="Figure 3 full size: Property crime counts across NPAs in 2022"
+         class="fig2-lb-img">
+    <p class="fig2-lb-cap">Property crime counts across NPAs in 2022</p>
+  </div>
+</div>
+<div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
+  <div class="fig2-lb-backdrop" id="fig4Backdrop"></div>
+  <div class="fig2-lb-box">
+    <button class="fig2-lb-close" id="fig4Close" aria-label="Close">&#215;</button>
+    <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
+         alt="Figure 4 full size: Property crime density across NPAs (by acre) in 2022"
+         class="fig2-lb-img">
+    <p class="fig2-lb-cap">Property crime density across NPAs, per acre</p>
   </div>
 </div>
 </div>
@@ -725,13 +746,33 @@ text.pf-label.pf-on {
   margin: 0.9em 0;
 }
 /* ── Page 2: Study Area ─────────────────────────── */
-.p2-intro { margin: 0 0 0.55em; font-size: 0.88rem; line-height: 1.45; }
-.p2-grid {
+.p2-layout {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em 1.3em;
   align-items: start;
 }
+.p2-cell { min-width: 0; }
+.p2-cell--full { grid-column: 1 / -1; text-align: center; }
+.p2-cell-hd {
+  font-size: 0.67rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0 0 0.5em;
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid var(--color-border);
+}
+.p2-cell-note {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin: 0 0 0.6em;
+}
+.p2-crime-fig { margin: 0 0 0.5em; }
+.p2-crime-fig:last-child { margin-bottom: 0; }
+.p2-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; }
 .p2-map { margin: 0; }
 .p2-map-img {
   width: 100%;
@@ -750,7 +791,7 @@ text.pf-label.pf-on {
   line-height: 1.4;
 }
 .fig-source { font-style: normal; font-size: 0.7rem; opacity: 0.75; }
-.p2-concepts { display: flex; flex-direction: column; gap: 0.55em; }
+/* .p2-concepts removed — using .p2-layout cells */
 .nc-pair {
   display: flex;
   gap: 0.8em;
@@ -855,11 +896,8 @@ text.pf-label.pf-on {
   margin: 0;
 }
 .fig2-lb-cap a { color: #8bbfff; }
-/* ── Crime maps pair (Page 2 right column) ─────── */
-.nc-crime-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em; margin-top: 0.4em; }
-.nc-crime-fig { margin: 0; }
-.nc-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; }
-.p2-map-img--xs { max-height: 130px; object-fit: contain; width: 100%; display: block; }
+/* ── Crime maps (Page 2 right column, stacked) ──── */
+.p2-map-img--sm { max-height: 155px; object-fit: contain; width: 100%; display: block; }
 .story-stats-row {
   display: flex;
   gap: 0.7em;
@@ -964,9 +1002,9 @@ text.pf-label.pf-on {
 }
 /* Metric icon animations */
 .npa-network-fig {
-  grid-column: 1;
-  margin: 0.7em 0 0;
+  margin: 0.4em 0 0;
   text-align: center;
+  display: inline-block;
 }
 .npa-net-svg {
   width: 100%;
@@ -986,7 +1024,7 @@ text.pf-label.pf-on {
 }
 
 .npa-figure {
-  margin: 1.1em 0 0.4em;
+  margin: 0 0 0.4em;
   text-align: center;
 }
 .npa-figure .npa-svg {
