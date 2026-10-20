@@ -153,6 +153,49 @@ permalink: /projects/urban-network-analysis/
 </figure>
   </div><!-- /.p2-cell A -->
 
+  <!-- E: Street network inside one NPA ──────────────────────────── -->
+  <div class="p2-cell">
+    <p class="p2-cell-hd">Street Network Inside One NPA</p>
+    <figure class="npa-network-fig">
+      <svg viewBox="0 0 175 112" class="npa-net-svg" aria-label="Street network inside a single NPA: nodes are intersections, edges are street segments">
+        <polygon points="5,10 60,4 108,7 152,14 162,54 156,100 108,108 55,106 12,98 4,54" fill="var(--color-accent)" opacity="0.07" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+        <line x1="24" y1="22" x2="62" y2="12" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.0s"/>
+        <line x1="62" y1="12" x2="102" y2="16" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.13s"/>
+        <line x1="102" y1="16" x2="138" y2="22" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.26s"/>
+        <line x1="18" y1="55" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.39s"/>
+        <line x1="52" y1="52" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.52s"/>
+        <line x1="88" y1="50" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.65s"/>
+        <line x1="30" y1="90" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.78s"/>
+        <line x1="64" y1="86" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.91s"/>
+        <line x1="102" y1="88" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.04s"/>
+        <line x1="24" y1="22" x2="18" y2="55" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.16s"/>
+        <line x1="18" y1="55" x2="30" y2="90" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.29s"/>
+        <line x1="62" y1="12" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.42s"/>
+        <line x1="52" y1="52" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.55s"/>
+        <line x1="102" y1="16" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.68s"/>
+        <line x1="88" y1="50" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.81s"/>
+        <line x1="138" y1="22" x2="150" y2="54" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.94s"/>
+        <line x1="150" y1="54" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.07s"/>
+        <line x1="124" y1="56" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.2s"/>
+        <circle cx="24" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.4s"/>
+        <circle cx="62" cy="12" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.47s"/>
+        <circle cx="102" cy="16" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.53s"/>
+        <circle cx="138" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.6s"/>
+        <circle cx="150" cy="54" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.67s"/>
+        <circle cx="18" cy="55" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.73s"/>
+        <circle cx="52" cy="52" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.8s"/>
+        <circle cx="88" cy="50" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.87s"/>
+        <circle cx="124" cy="56" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.93s"/>
+        <circle cx="30" cy="90" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.0s"/>
+        <circle cx="64" cy="86" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.07s"/>
+        <circle cx="102" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.13s"/>
+        <circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
+        <text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
+      </svg>
+      <figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
+    </figure>
+  </div><!-- /.p2-cell E -->
+
   <!-- B: Street network patterns ───────────────────────────────── -->
   <div class="p2-cell">
     <p class="p2-cell-hd">Street Network Patterns</p>
@@ -210,9 +253,10 @@ permalink: /projects/urban-network-analysis/
     </figure>
   </div><!-- /.p2-cell C -->
 
-  <!-- D: Crime maps stacked ────────────────────────────────────── -->
-  <div class="p2-cell">
+  <!-- D: Crime maps side by side ──────────────────────────────── -->
+  <div class="p2-cell p2-cell--full">
     <p class="p2-cell-hd">Property Crime Distribution (2022)</p>
+    <div class="p2-crime-pair-row">
     <figure class="p2-crime-fig">
       <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
@@ -245,50 +289,8 @@ permalink: /projects/urban-network-analysis/
       </div>
       <figcaption>Crime density per acre (Figure 4).</figcaption>
     </figure>
+    </div><!-- /.p2-crime-pair-row -->
   </div><!-- /.p2-cell D -->
-
-  <!-- E: Full-width — street network inside one NPA ────────────── -->
-  <div class="p2-cell p2-cell--full">
-    <p class="p2-cell-hd">Street Network Inside One NPA</p>
-    <figure class="npa-network-fig">
-      <svg viewBox="0 0 175 112" class="npa-net-svg" aria-label="Street network inside a single NPA: nodes are intersections, edges are street segments">
-        <polygon points="5,10 60,4 108,7 152,14 162,54 156,100 108,108 55,106 12,98 4,54" fill="var(--color-accent)" opacity="0.07" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
-        <line x1="24" y1="22" x2="62" y2="12" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.0s"/>
-        <line x1="62" y1="12" x2="102" y2="16" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.13s"/>
-        <line x1="102" y1="16" x2="138" y2="22" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.26s"/>
-        <line x1="18" y1="55" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.39s"/>
-        <line x1="52" y1="52" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.52s"/>
-        <line x1="88" y1="50" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.65s"/>
-        <line x1="30" y1="90" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.78s"/>
-        <line x1="64" y1="86" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.91s"/>
-        <line x1="102" y1="88" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.04s"/>
-        <line x1="24" y1="22" x2="18" y2="55" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.16s"/>
-        <line x1="18" y1="55" x2="30" y2="90" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.29s"/>
-        <line x1="62" y1="12" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.42s"/>
-        <line x1="52" y1="52" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.55s"/>
-        <line x1="102" y1="16" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.68s"/>
-        <line x1="88" y1="50" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.81s"/>
-        <line x1="138" y1="22" x2="150" y2="54" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.94s"/>
-        <line x1="150" y1="54" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.07s"/>
-        <line x1="124" y1="56" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.2s"/>
-        <circle cx="24" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.4s"/>
-        <circle cx="62" cy="12" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.47s"/>
-        <circle cx="102" cy="16" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.53s"/>
-        <circle cx="138" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.6s"/>
-        <circle cx="150" cy="54" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.67s"/>
-        <circle cx="18" cy="55" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.73s"/>
-        <circle cx="52" cy="52" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.8s"/>
-        <circle cx="88" cy="50" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.87s"/>
-        <circle cx="124" cy="56" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.93s"/>
-        <circle cx="30" cy="90" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.0s"/>
-        <circle cx="64" cy="86" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.07s"/>
-        <circle cx="102" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.13s"/>
-        <circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
-        <text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
-      </svg>
-      <figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
-    </figure>
-  </div><!-- /.p2-cell E -->
 
 </div><!-- /.p2-layout -->
 
@@ -770,9 +772,11 @@ text.pf-label.pf-on {
   line-height: 1.4;
   margin: 0 0 0.6em;
 }
+.p2-crime-pair-row { display: flex; gap: 1.2em; justify-content: center; align-items: flex-start; }
+.p2-crime-pair-row .p2-crime-fig { flex: 1; max-width: 280px; margin: 0; }
 .p2-crime-fig { margin: 0 0 0.5em; }
 .p2-crime-fig:last-child { margin-bottom: 0; }
-.p2-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; }
+.p2-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; text-align: center; }
 .p2-map { margin: 0; }
 .p2-map-img {
   width: 100%;
@@ -897,7 +901,7 @@ text.pf-label.pf-on {
 }
 .fig2-lb-cap a { color: #8bbfff; }
 /* ── Crime maps (Page 2 right column, stacked) ──── */
-.p2-map-img--sm { max-height: 155px; object-fit: contain; width: 100%; display: block; }
+.p2-map-img--sm { max-height: 180px; object-fit: contain; width: 100%; display: block; }
 .story-stats-row {
   display: flex;
   gap: 0.7em;
