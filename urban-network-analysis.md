@@ -245,16 +245,153 @@ permalink: /projects/urban-network-analysis/
   </div>
   <div class="measure-right">
     <p class="measure-eq"><strong>8 metrics &times; 5 buffers = 40 variables</strong></p>
-    <ul class="measure-list">
-      <li>Street density</li>
-      <li>Intersection density</li>
-      <li>Avg. node degree</li>
-      <li>Avg. clustering coefficient</li>
-      <li>Avg. shortest path</li>
-      <li>Avg. betweenness centrality</li>
-      <li>Avg. closeness centrality</li>
-      <li>Avg. PageRank centrality</li>
-    </ul>
+    <div class="metric-icons">
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Street density: total road length per area">
+          <line x1="5"  y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
+          <line x1="5"  y1="18" x2="45" y2="18" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
+          <line x1="5"  y1="26" x2="45" y2="26" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
+          <line x1="5"  y1="34" x2="45" y2="34" stroke="currentColor" stroke-width="1.1" opacity="0.28"/>
+          <line x1="13" y1="4"  x2="13" y2="38" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
+          <line x1="23" y1="4"  x2="23" y2="38" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
+          <line x1="33" y1="4"  x2="33" y2="38" stroke="currentColor" stroke-width="1.3" opacity="0.45"/>
+          <line x1="43" y1="4"  x2="43" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.28"/>
+          <rect x="3" y="3" width="44" height="34" rx="2" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="3,2" opacity="0.55"/>
+        </svg>
+        <span>Street density</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Intersection density: count of intersections per area">
+          <line x1="5"  y1="14" x2="45" y2="14" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="5"  y1="28" x2="45" y2="28" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="16" y1="4"  x2="16" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="28" y1="4"  x2="28" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="40" y1="4"  x2="40" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <circle cx="16" cy="14" r="3"   fill="var(--color-accent)"/>
+          <circle cx="28" cy="14" r="3"   fill="var(--color-accent)"/>
+          <circle cx="40" cy="14" r="3"   fill="var(--color-accent)"/>
+          <circle cx="16" cy="28" r="3"   fill="var(--color-accent)"/>
+          <circle cx="28" cy="28" r="3"   fill="var(--color-accent)"/>
+          <circle cx="40" cy="28" r="3"   fill="var(--color-accent)"/>
+        </svg>
+        <span>Intersection density</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Node degree: number of edges per node">
+          <line x1="25" y1="20" x2="8"  y2="8"  stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+          <line x1="25" y1="20" x2="42" y2="8"  stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+          <line x1="25" y1="20" x2="8"  y2="32" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+          <line x1="25" y1="20" x2="42" y2="32" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+          <circle cx="8"  cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="42" cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="8"  cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="42" cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="25" cy="20" r="6.5" fill="var(--color-accent)"/>
+          <text x="25" y="23.5" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="700">4</text>
+        </svg>
+        <span>Avg. node degree</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Clustering coefficient: neighbours connected to each other">
+          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.2"/>
+          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.2"/>
+          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.2"/>
+          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9"/>
+          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9"/>
+          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9"/>
+          <circle cx="13" cy="34" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="25" cy="12" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="37" cy="34" r="3.5" fill="var(--color-accent)"/>
+        </svg>
+        <span>Avg. clustering coeff.</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Average shortest path length between node pairs">
+          <line x1="9"  y1="20" x2="19" y2="10" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="19" y1="10" x2="32" y2="15" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="32" y1="15" x2="41" y2="20" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="9"  y1="20" x2="21" y2="30" stroke="var(--color-accent)" stroke-width="2"/>
+          <line x1="21" y1="30" x2="33" y2="26" stroke="var(--color-accent)" stroke-width="2"/>
+          <line x1="33" y1="26" x2="41" y2="20" stroke="var(--color-accent)" stroke-width="2"/>
+          <circle cx="9"  cy="20" r="4"   fill="var(--color-accent)"/>
+          <circle cx="19" cy="10" r="2.5" fill="currentColor" opacity="0.32"/>
+          <circle cx="21" cy="30" r="3"   fill="currentColor" opacity="0.6"/>
+          <circle cx="32" cy="15" r="2.5" fill="currentColor" opacity="0.32"/>
+          <circle cx="33" cy="26" r="3"   fill="currentColor" opacity="0.6"/>
+          <circle cx="41" cy="20" r="4"   fill="var(--color-accent)"/>
+        </svg>
+        <span>Avg. shortest path</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Betweenness centrality: how often a node lies on shortest paths">
+          <line x1="8"  y1="11" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="8"  y1="29" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="8"  y1="11" x2="8"  y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
+          <line x1="20" y1="20" x2="30" y2="20" stroke="var(--color-accent)" stroke-width="2.5"/>
+          <line x1="30" y1="20" x2="42" y2="11" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="30" y1="20" x2="42" y2="29" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="42" y1="11" x2="42" y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
+          <circle cx="8"  cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="8"  cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="20" cy="20" r="5"   fill="var(--color-accent)"/>
+          <circle cx="30" cy="20" r="5"   fill="var(--color-accent)"/>
+          <circle cx="42" cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="42" cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
+        </svg>
+        <span>Avg. betweenness</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Closeness centrality: how close a node is to all others">
+          <line x1="25" y1="20" x2="10" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="40" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="43" y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="36" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="14" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="7"  y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <circle cx="10" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="40" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="43" cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="36" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="14" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="7"  cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="25" cy="20" r="6"   fill="var(--color-accent)"/>
+        </svg>
+        <span>Avg. closeness</span>
+      </div>
+
+      <div class="mi-item">
+        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="PageRank centrality: importance by quality of incoming links">
+          <defs>
+            <marker id="prArr" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.65"/>
+            </marker>
+          </defs>
+          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" opacity="0.45" marker-end="url(#prArr)"/>
+          <circle cx="8"  cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="42" cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="43" cy="24" r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="8"  cy="30" r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="25" cy="21" r="7"   fill="var(--color-accent)"/>
+        </svg>
+        <span>Avg. PageRank</span>
+      </div>
+
+    </div>
     <p class="measure-pca-head">PCA variance explained (4 retained components):</p>
     <div class="pca-bars">
       <div class="pca-row"><span class="pca-name">Intersection density</span><div class="pca-track"><div class="pca-fill" style="width:37%">26%</div></div></div>
@@ -670,12 +807,28 @@ text.pf-label.pf-on {
 .measure-eq {
   margin: 0 0 0.5em;
 }
-.measure-list {
-  margin: 0 0 0.8em 1.2em;
-  padding: 0;
-  font-size: 0.83rem;
+.metric-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4em 0.5em;
+  margin: 0.3em 0 0.7em;
+}
+.mi-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.12em;
+}
+.mi-svg {
+  width: 100%;
+  max-height: 38px;
   color: var(--color-text-muted);
-  line-height: 1.7;
+}
+.mi-item span {
+  font-size: 0.62rem;
+  color: var(--color-text-muted);
+  line-height: 1.2;
 }
 .measure-pca-head {
   font-size: 0.82rem;
