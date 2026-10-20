@@ -176,7 +176,7 @@ permalink: /projects/urban-network-analysis/
 <text x="100" y="193" font-size="7.5" fill="currentColor" opacity="0.7" text-anchor="end">High</text>
 <text x="106" y="187" font-size="7.5" fill="currentColor" opacity="0.65">Crime density</text>
 </svg>
-<figcaption>Neighborhood Profile Areas (NPAs) are the 371 geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://www.charlottenc.gov/Streets-and-Neighborhoods/Neighborhoods/NPA" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>). Darker shading indicates higher property crime density.</figcaption>
+<figcaption>Neighborhood Profile Areas (NPAs) are geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://maps.mecklenburgcountync.gov/qol/" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>). Darker shading indicates higher property crime density.</figcaption>
 </figure>
     <div class="nc-pair">
       <div class="nc-box">
