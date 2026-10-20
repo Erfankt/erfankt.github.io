@@ -485,30 +485,39 @@ permalink: /projects/urban-network-analysis/
 
 <div class="book-page" data-i="3">
 <div class="book-kicker">Page 4</div>
-<h3>Dimensionality Reduction</h3>
-<p>The 40 raw network variables across five buffer distances are highly collinear. PCA condensed them to <strong>four independent components</strong> that together capture <strong>70% of the total variance</strong>. The variable with the highest loading per component was then entered into each regression model.</p>
+<h3>From 8 Metrics to 40 Variables</h3>
+<p>Each street-network metric was computed not just <em>inside</em> each NPA boundary, but also at <strong>five buffer distances</strong> around every NPA centroid — 0.1, 0.25, 0.5, 0.75, and 1 mile — capturing how the surrounding street environment changes with scale. This yields <strong>8&nbsp;metrics&nbsp;&times;&nbsp;5&nbsp;distances&nbsp;=&nbsp;40&nbsp;variables</strong> per neighborhood. Because these 40 variables are highly collinear, PCA condensed them to <strong>four independent components</strong> capturing <strong>70% of the variance</strong>.</p>
 <div class="measure-layout">
   <div>
-    <svg viewBox="0 0 220 210" class="measure-svg" aria-label="Five concentric buffer rings around a neighborhood center with illustrative street segments">
-      <circle cx="110" cy="105" r="98" fill="none" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="4,3" opacity="0.55"/>
-      <circle cx="110" cy="105" r="78" fill="none" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="4,3" opacity="0.65"/>
-      <circle cx="110" cy="105" r="56" fill="none" stroke="var(--color-border)" stroke-width="1.3" opacity="0.8"/>
-      <circle cx="110" cy="105" r="34" fill="none" stroke="var(--color-border)" stroke-width="1.3"/>
-      <circle cx="110" cy="105" r="16" fill="none" stroke="var(--color-accent)" stroke-width="1.8"/>
-      <rect x="97" y="92" width="26" height="26" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="1.4"/>
-      <text x="110" y="108" text-anchor="middle" font-size="7" fill="var(--color-accent)" font-weight="700">NPA</text>
-      <line x1="92" y1="93" x2="72" y2="77" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.45"/>
-      <line x1="72" y1="77" x2="46" y2="82" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.45"/>
-      <line x1="128" y1="93" x2="150" y2="78" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.45"/>
-      <line x1="150" y1="78" x2="174" y2="86" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.45"/>
-      <line x1="110" y1="118" x2="98" y2="148" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.45"/>
-      <line x1="98" y1="148" x2="104" y2="175" stroke="var(--color-text-muted)" stroke-width="0.9" opacity="0.35"/>
-      <text x="128" y="90" font-size="7.5" fill="var(--color-text-muted)">0.1 mi</text>
-      <text x="146" y="74" font-size="7.5" fill="var(--color-text-muted)">0.25 mi</text>
-      <text x="160" y="54" font-size="7.5" fill="var(--color-text-muted)">0.5 mi</text>
-      <text x="172" y="35" font-size="7.5" fill="var(--color-text-muted)">0.75 mi</text>
-      <text x="185" y="16" font-size="7.5" fill="var(--color-text-muted)">1 mi</text>
+    <svg viewBox="0 0 220 210" class="measure-svg" aria-label="Five concentric buffer rings expanding one by one around an NPA centroid">
+      <!-- NPA centre -->
+      <rect x="97" y="92" width="26" height="26" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="1.4" style="animation:buf-npa 12s ease-in-out infinite"/>
+      <text x="110" y="108" text-anchor="middle" font-size="7" fill="var(--color-accent)" font-weight="700" style="animation:buf-npa 12s ease-in-out infinite">NPA</text>
+      <!-- Ring 1 · 0.1 mi · r=16 · circumference≈101 -->
+      <circle cx="110" cy="105" r="16" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-dasharray="101" stroke-dashoffset="101" style="animation:buf-r1 12s ease-in-out infinite"/>
+      <!-- Ring 2 · 0.25 mi · r=34 · circumference≈214 -->
+      <circle cx="110" cy="105" r="34" fill="none" stroke="var(--color-border)" stroke-width="1.3" stroke-dasharray="214" stroke-dashoffset="214" style="animation:buf-r2 12s ease-in-out infinite"/>
+      <!-- Ring 3 · 0.5 mi · r=56 · circumference≈352 -->
+      <circle cx="110" cy="105" r="56" fill="none" stroke="var(--color-border)" stroke-width="1.3" stroke-dasharray="352" stroke-dashoffset="352" style="animation:buf-r3 12s ease-in-out infinite"/>
+      <!-- Ring 4 · 0.75 mi · r=78 · circumference≈490 -->
+      <circle cx="110" cy="105" r="78" fill="none" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="490" stroke-dashoffset="490" style="animation:buf-r4 12s ease-in-out infinite"/>
+      <!-- Ring 5 · 1 mi · r=98 · circumference≈616 -->
+      <circle cx="110" cy="105" r="98" fill="none" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="616" stroke-dashoffset="616" style="animation:buf-r5 12s ease-in-out infinite"/>
+      <!-- Street segments that spread from the NPA outward -->
+      <line x1="92" y1="93" x2="72" y2="77" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <line x1="72" y1="77" x2="46" y2="82" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <line x1="128" y1="93" x2="150" y2="78" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <line x1="150" y1="78" x2="174" y2="86" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <line x1="110" y1="118" x2="98" y2="148" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <line x1="98" y1="148" x2="104" y2="175" stroke="var(--color-text-muted)" stroke-width="0.9" stroke-dasharray="50" stroke-dashoffset="50" style="animation:buf-seg 12s ease-in-out infinite"/>
+      <!-- Distance labels — appear after all rings are drawn -->
+      <text x="128" y="90" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.1 mi</text>
+      <text x="146" y="74" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.25 mi</text>
+      <text x="160" y="54" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.5 mi</text>
+      <text x="172" y="35" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.75 mi</text>
+      <text x="185" y="16" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">1 mi</text>
     </svg>
+    <p class="buf-eq">8 metrics &times; 5 buffers&nbsp;=&nbsp;<strong class="buf-eq-n">40 variables</strong></p>
   </div>
   <div class="measure-right">
     <p class="measure-pca-head">PCA variance explained (4 retained components):</p>
@@ -1052,6 +1061,17 @@ text.pf-label.pf-on {
 @keyframes mi-travel { 0%,8%{stroke-dashoffset:90} 72%,100%{stroke-dashoffset:0} }
 @keyframes mi-ripple { 0%{r:0;opacity:0.7;stroke-width:1.8} 65%{opacity:0.1} 100%{r:22;opacity:0;stroke-width:0.3} }
 @keyframes mi-flash  { 0%,50%,100%{opacity:0.2} 62%{opacity:1} }
+/* ── Buffer ring animations (Page 4) ─────────────────────────────── */
+@keyframes buf-npa { 0%{opacity:0} 5%{opacity:1} 80%{opacity:1} 90%{opacity:0} 100%{opacity:0} }
+@keyframes buf-r1  { 0%{stroke-dashoffset:101;opacity:0} 4%{opacity:1} 18%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:101;opacity:0} }
+@keyframes buf-r2  { 0%,10%{stroke-dashoffset:214;opacity:0} 14%{opacity:1} 30%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:214;opacity:0} }
+@keyframes buf-r3  { 0%,22%{stroke-dashoffset:352;opacity:0} 26%{opacity:1} 44%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:352;opacity:0} }
+@keyframes buf-r4  { 0%,34%{stroke-dashoffset:490;opacity:0} 38%{opacity:1} 56%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:490;opacity:0} }
+@keyframes buf-r5  { 0%,46%{stroke-dashoffset:616;opacity:0} 50%{opacity:1} 70%{stroke-dashoffset:0;opacity:1} 77%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:616;opacity:0} }
+@keyframes buf-seg { 0%,10%{stroke-dashoffset:50;opacity:0} 14%{opacity:0.4} 25%{stroke-dashoffset:0;opacity:0.45} 75%{opacity:0.45} 88%{opacity:0} 100%{stroke-dashoffset:50;opacity:0} }
+@keyframes buf-lbl { 0%,65%{opacity:0} 72%{opacity:1} 80%{opacity:1} 90%{opacity:0} 100%{opacity:0} }
+.buf-eq { font-size:0.82rem; text-align:center; margin:0.4em 0 0; color:var(--color-text-muted); }
+.buf-eq-n { color:var(--color-accent); font-size:1rem; }
 .measure-pca-head {
   font-size: 0.82rem;
   font-weight: 600;
