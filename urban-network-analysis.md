@@ -126,6 +126,44 @@ permalink: /projects/urban-network-analysis/
       <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
     </div>
   </div>
+<figure class="npa-network-fig">
+<svg viewBox="0 0 175 112" class="npa-net-svg" aria-label="Street network inside a single NPA: nodes are intersections, edges are street segments">
+<polygon points="5,10 60,4 108,7 152,14 162,54 156,100 108,108 55,106 12,98 4,54" fill="var(--color-accent)" opacity="0.07" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+<line x1="24" y1="22" x2="62" y2="12" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.0s"/>
+<line x1="62" y1="12" x2="102" y2="16" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.13s"/>
+<line x1="102" y1="16" x2="138" y2="22" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.26s"/>
+<line x1="18" y1="55" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.39s"/>
+<line x1="52" y1="52" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.52s"/>
+<line x1="88" y1="50" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.65s"/>
+<line x1="30" y1="90" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.78s"/>
+<line x1="64" y1="86" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:0.91s"/>
+<line x1="102" y1="88" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.04s"/>
+<line x1="24" y1="22" x2="18" y2="55" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.16s"/>
+<line x1="18" y1="55" x2="30" y2="90" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.29s"/>
+<line x1="62" y1="12" x2="52" y2="52" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.42s"/>
+<line x1="52" y1="52" x2="64" y2="86" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.55s"/>
+<line x1="102" y1="16" x2="88" y2="50" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.68s"/>
+<line x1="88" y1="50" x2="102" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.81s"/>
+<line x1="138" y1="22" x2="150" y2="54" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:1.94s"/>
+<line x1="150" y1="54" x2="124" y2="56" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.07s"/>
+<line x1="124" y1="56" x2="138" y2="88" stroke="currentColor" stroke-width="1.35" stroke-dasharray="60" style="animation:mi-draw 5s ease-in-out infinite;animation-delay:2.2s"/>
+<circle cx="24" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.4s"/>
+<circle cx="62" cy="12" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.47s"/>
+<circle cx="102" cy="16" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.53s"/>
+<circle cx="138" cy="22" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.6s"/>
+<circle cx="150" cy="54" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.67s"/>
+<circle cx="18" cy="55" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.73s"/>
+<circle cx="52" cy="52" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.8s"/>
+<circle cx="88" cy="50" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.87s"/>
+<circle cx="124" cy="56" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:2.93s"/>
+<circle cx="30" cy="90" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.0s"/>
+<circle cx="64" cy="86" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.07s"/>
+<circle cx="102" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.13s"/>
+<circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
+<text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
+</svg>
+<figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
+</figure>
   <div class="p2-concepts">
     <p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime in 2022 clusters spatially, demanding spatial models.</p>
 
@@ -176,7 +214,7 @@ permalink: /projects/urban-network-analysis/
 <text x="100" y="193" font-size="7.5" fill="currentColor" opacity="0.7" text-anchor="end">High</text>
 <text x="106" y="187" font-size="7.5" fill="currentColor" opacity="0.65">Crime density</text>
 </svg>
-<figcaption>Neighborhood Profile Areas (NPAs) are geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://maps.mecklenburgcountync.gov/qol/" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>). Darker shading indicates higher property crime density.</figcaption>
+<figcaption>Neighborhood Profile Areas (NPAs) are geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://maps.mecklenburgcountync.gov/qol/" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>).</figcaption>
 </figure>
     <div class="nc-pair">
       <div class="nc-box">
@@ -925,6 +963,28 @@ text.pf-label.pf-on {
   line-height: 1.3;
 }
 /* Metric icon animations */
+.npa-network-fig {
+  grid-column: 1;
+  margin: 0.7em 0 0;
+  text-align: center;
+}
+.npa-net-svg {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  display: inline-block;
+  color: var(--color-text-muted);
+}
+.npa-network-fig figcaption {
+  font-size: 0.66rem;
+  color: var(--color-text-muted);
+  margin-top: 0.3em;
+  line-height: 1.35;
+  max-width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .npa-figure {
   margin: 1.1em 0 0.4em;
   text-align: center;
