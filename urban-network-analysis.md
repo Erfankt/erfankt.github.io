@@ -272,16 +272,16 @@ permalink: /projects/urban-network-analysis/
   </tr>
   <tr>
     <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. clustering coeff.">
-          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.18"/>
-          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.18"/>
-          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
-          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
-          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0.5s"/>
-          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="24" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:1s"/>
-          <circle cx="13" cy="34" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="25" cy="12" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="37" cy="34" r="3.5" fill="var(--color-accent)"/>
+          <!-- Node A (center-left) connected to B (top) and C (right) — gray edges always visible -->
+          <line x1="10" y1="35" x2="25" y2="7"  stroke="currentColor" stroke-width="1.4" opacity="0.42"/>
+          <line x1="10" y1="35" x2="40" y2="35" stroke="currentColor" stroke-width="1.4" opacity="0.42"/>
+          <!-- The "closing" B-C edge draws in = neighbors connect = high clustering = triangle! -->
+          <line x1="25" y1="7" x2="40" y2="35" stroke="var(--color-accent)" stroke-width="2.4" stroke-dasharray="60" style="animation:mi-draw 3s ease-in-out infinite"/>
+          <!-- Node A: gray (ego node) -->
+          <circle cx="10" cy="35" r="4.5" fill="currentColor" opacity="0.48"/>
+          <!-- Nodes B and C pulse when triangle closes -->
+          <circle cx="25" cy="7"  r="4.5" fill="var(--color-accent)" style="animation:mi-pulse 3s ease-in-out infinite;animation-delay:1.8s"/>
+          <circle cx="40" cy="35" r="4.5" fill="var(--color-accent)" style="animation:mi-pulse 3s ease-in-out infinite;animation-delay:2s"/>
         </svg></td>
     <td class="mt-name">Avg. clustering coeff.</td>
     <td class="mt-desc">Are your neighbors connected to each other? High = tightly-knit grid blocks; low = branching cul-de-sacs</td>
@@ -325,22 +325,22 @@ permalink: /projects/urban-network-analysis/
   </tr>
   <tr>
     <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. closeness">
-          <line x1="25" y1="20" x2="10" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="40" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="43" y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="36" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="14" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="7"  y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <circle cx="10" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="40" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="43" cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="36" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="14" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="7"  cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="25" cy="20" r="0" fill="none" stroke="var(--color-accent)" stroke-width="1.8" style="animation:mi-ripple 2.2s ease-out infinite"/>
-          <circle cx="25" cy="20" r="6"   fill="var(--color-accent)"/>
+          <!-- 6 static spokes from hub to outer nodes -->
+          <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <line x1="25" y1="20" x2="42" y2="12" stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <line x1="25" y1="20" x2="42" y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <line x1="25" y1="20" x2="25" y2="37" stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <line x1="25" y1="20" x2="8"  y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <line x1="25" y1="20" x2="8"  y2="12" stroke="currentColor" stroke-width="1.2" opacity="0.38"/>
+          <!-- Outer nodes flash in rapid sequence = hub reaches ALL in one hop = high closeness -->
+          <circle cx="25" cy="5"  r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:0.55s"/>
+          <circle cx="42" cy="12" r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:0.70s"/>
+          <circle cx="42" cy="30" r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:0.85s"/>
+          <circle cx="25" cy="37" r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:1.00s"/>
+          <circle cx="8"  cy="30" r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:1.15s"/>
+          <circle cx="8"  cy="12" r="3" fill="var(--color-accent)" opacity="0.2" style="animation:mi-flash 2.4s ease-in-out infinite;animation-delay:1.30s"/>
+          <!-- Center hub pulses to "send" signal — one pulse, all reached quickly -->
+          <circle cx="25" cy="20" r="6.5" fill="var(--color-accent)" style="animation:mi-pulse 2.4s ease-in-out infinite"/>
         </svg></td>
     <td class="mt-name">Avg. closeness</td>
     <td class="mt-desc">How quickly any corner can reach every other point — high = central hub, low = tucked-away dead end</td>
@@ -348,21 +348,24 @@ permalink: /projects/urban-network-analysis/
   <tr>
     <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. PageRank">
           <defs>
-            <marker id="prArr2" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
-              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.7"/>
+            <marker id="prArr3" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.85"/>
             </marker>
           </defs>
-          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.45s"/>
-          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.9s"/>
-          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.35s"/>
-          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.8s"/>
-          <circle cx="8"  cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="42" cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="43" cy="24" r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="8"  cy="30" r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="25" cy="21" r="7"   fill="var(--color-accent)"/>
+          <!-- Peripheral nodes of varying sizes (their own rank) -->
+          <circle cx="8"  cy="8"  r="3.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="26" cy="4"  r="2.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="44" cy="10" r="4"   fill="currentColor" opacity="0.5"/>
+          <circle cx="44" cy="30" r="2.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="12" cy="32" r="3"   fill="currentColor" opacity="0.4"/>
+          <!-- Arrows draw in FROM periphery TOWARD center, one by one = incoming links accumulate rank -->
+          <line x1="12" y1="11" x2="20" y2="16" stroke="var(--color-accent)" stroke-width="1.7" marker-end="url(#prArr3)" stroke-dasharray="60" style="animation:mi-draw 3.2s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="26" y1="7"  x2="26" y2="15" stroke="var(--color-accent)" stroke-width="1.7" marker-end="url(#prArr3)" stroke-dasharray="60" style="animation:mi-draw 3.2s ease-in-out infinite;animation-delay:0.4s"/>
+          <line x1="40" y1="12" x2="31" y2="17" stroke="var(--color-accent)" stroke-width="1.7" marker-end="url(#prArr3)" stroke-dasharray="60" style="animation:mi-draw 3.2s ease-in-out infinite;animation-delay:0.8s"/>
+          <line x1="41" y1="28" x2="32" y2="22" stroke="var(--color-accent)" stroke-width="1.7" marker-end="url(#prArr3)" stroke-dasharray="60" style="animation:mi-draw 3.2s ease-in-out infinite;animation-delay:1.2s"/>
+          <line x1="15" y1="31" x2="21" y2="24" stroke="var(--color-accent)" stroke-width="1.7" marker-end="url(#prArr3)" stroke-dasharray="60" style="animation:mi-draw 3.2s ease-in-out infinite;animation-delay:1.6s"/>
+          <!-- Center node: largest, pulses as rank accumulates from all incoming links -->
+          <circle cx="26" cy="20" r="7" fill="var(--color-accent)" style="animation:mi-pulse 3.2s ease-in-out infinite;animation-delay:2.2s"/>
         </svg></td>
     <td class="mt-name">Avg. PageRank</td>
     <td class="mt-desc">Which intersections attract the most traffic — scored by how many important roads lead into them, like Google's ranking</td>
@@ -846,13 +849,13 @@ text.pf-label.pf-on {
   border-top: 1px solid var(--color-border);
 }
 .mt-icon {
-  width: 60px;
+  width: 72px;
   padding: 0.26em 0.3em 0.26em 0;
   vertical-align: middle;
 }
 .mt-icon svg {
-  width: 60px;
-  height: 48px;
+  width: 72px;
+  height: 58px;
   display: block;
   color: var(--color-text-muted);
 }
