@@ -92,6 +92,55 @@ permalink: /projects/urban-network-analysis/
 </svg>
 <figcaption>Data pipeline: the county, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
 </figure>
+<figure class="npa-figure">
+<svg viewBox="0 0 320 195" class="npa-svg" aria-label="371 NPAs colored by property crime density">
+<style>
+@keyframes npa-in { 0%,2%{opacity:0;transform:scale(0.96);transform-origin:50% 50%} 28%,100%{opacity:1;transform:scale(1);transform-origin:50% 50%} }
+@keyframes npa-hot { 0%,55%,100%{opacity:var(--npa-op,0.5)} 70%,80%{opacity:1} }
+</style>
+<polygon points="0,0 64,0 73,59 0,65" fill="var(--color-accent)" opacity="0.10" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.62s"/>
+<polygon points="64,0 128,0 117,64 73,59" fill="var(--color-accent)" opacity="0.18" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:0.90s"/>
+<polygon points="128,0 192,0 188,63 117,64" fill="var(--color-accent)" opacity="0.30" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:0.18s"/>
+<polygon points="192,0 256,0 249,59 188,63" fill="var(--color-accent)" opacity="0.20" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.08s"/>
+<polygon points="256,0 320,0 320,65 249,59" fill="var(--color-accent)" opacity="0.10" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.80s"/>
+<polygon points="0,65 73,59 74,138 0,130" fill="var(--color-accent)" opacity="0.22" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:2.34s"/>
+<polygon points="73,59 117,64 119,139 74,138" fill="var(--color-accent)" opacity="0.55" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="--npa-op:0.55;animation:npa-in 0.7s ease-out both,npa-hot 3s 1.16s ease-in-out infinite"/>
+<polygon points="117,64 188,63 194,122 119,139" fill="var(--color-accent)" opacity="0.92" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="--npa-op:0.92;animation:npa-in 0.7s ease-out both,npa-hot 3s 0.80s ease-in-out infinite"/>
+<polygon points="188,63 249,59 245,123 194,122" fill="var(--color-accent)" opacity="0.68" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="--npa-op:0.68;animation:npa-in 0.7s ease-out both,npa-hot 3s 1.34s ease-in-out infinite"/>
+<polygon points="249,59 320,65 320,130 245,123" fill="var(--color-accent)" opacity="0.27" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:2.52s"/>
+<polygon points="0,130 74,138 64,195 0,195" fill="var(--color-accent)" opacity="0.14" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.98s"/>
+<polygon points="74,138 119,139 128,195 64,195" fill="var(--color-accent)" opacity="0.38" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.26s"/>
+<polygon points="119,139 194,122 192,195 128,195" fill="var(--color-accent)" opacity="0.72" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="--npa-op:0.72;animation:npa-in 0.7s ease-out both,npa-hot 3s 1.52s ease-in-out infinite"/>
+<polygon points="194,122 245,123 256,195 192,195" fill="var(--color-accent)" opacity="0.48" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:1.44s"/>
+<polygon points="245,123 320,130 320,195 256,195" fill="var(--color-accent)" opacity="0.16" stroke="var(--color-bg,#fff)" stroke-width="1.2" style="animation:npa-in 0.7s ease-out both;animation-delay:2.16s"/>
+<g opacity="0.22">
+<polygon points="0,0 64,0 73,59 0,65" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="64,0 128,0 117,64 73,59" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="128,0 192,0 188,63 117,64" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="192,0 256,0 249,59 188,63" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="256,0 320,0 320,65 249,59" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="0,65 73,59 74,138 0,130" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="73,59 117,64 119,139 74,138" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="117,64 188,63 194,122 119,139" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="188,63 249,59 245,123 194,122" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="249,59 320,65 320,130 245,123" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="0,130 74,138 64,195 0,195" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="74,138 119,139 128,195 64,195" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="119,139 194,122 192,195 128,195" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="194,122 245,123 256,195 192,195" fill="none" stroke="currentColor" stroke-width="0.6"/>
+<polygon points="245,123 320,130 320,195 256,195" fill="none" stroke="currentColor" stroke-width="0.6"/>
+</g>
+<defs><linearGradient id="lgCrime" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0.1"/>
+<stop offset="100%" stop-color="var(--color-accent)" stop-opacity="1"/>
+</linearGradient></defs>
+<rect x="8" y="178" width="90" height="9" rx="2" fill="url(#lgCrime)" stroke="currentColor" stroke-width="0.5" opacity="0.7"/>
+<text x="8" y="193" font-size="7.5" fill="currentColor" opacity="0.7">Low</text>
+<text x="100" y="193" font-size="7.5" fill="currentColor" opacity="0.7" text-anchor="end">High</text>
+<text x="106" y="187" font-size="7.5" fill="currentColor" opacity="0.65">Crime density</text>
+</svg>
+<figcaption>Charlotte is divided into 371 Neighborhood Profile Areas (NPAs) &mdash; irregular geographic units used by the city for planning. Each NPA is shaded here by property crime density: darker = more crime. Street-network metrics were computed separately for each NPA.</figcaption>
+</figure>
 </div>
 
 <div class="book-page" data-i="1">
@@ -219,8 +268,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="2">
 <div class="book-kicker">Page 3</div>
 <h3>Measuring the Street Network</h3>
-<p>For each of the 371 NPAs, eight network metrics were computed at five buffer distances &mdash; yielding 40 variables per neighborhood. Principal component analysis then distilled these into <strong>four independent components</strong> capturing 70% of the variance, with the highest-loading variable per component entering the regression models.</p>
-<p class="measure-eq"><strong>8 metrics &times; 5 buffers = 40 variables</strong></p>
+<p>For each of the 371 NPAs, eight street-network metrics were computed &mdash; each one capturing a different dimension of how streets connect, flow, and organize within a neighborhood.</p>
 <table class="metric-table">
   <tr>
     <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Street density">
@@ -876,6 +924,26 @@ text.pf-label.pf-on {
   line-height: 1.3;
 }
 /* Metric icon animations */
+.npa-figure {
+  margin: 1.1em 0 0.4em;
+  text-align: center;
+}
+.npa-figure .npa-svg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: inline-block;
+  color: var(--color-text-muted);
+}
+.npa-figure figcaption {
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  margin-top: 0.35em;
+  line-height: 1.35;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @keyframes mi-draw   { 0%,5%{stroke-dashoffset:60} 65%,100%{stroke-dashoffset:0} }
 @keyframes mi-pulse  { 0%,100%{opacity:0.2} 50%{opacity:1} }
 @keyframes mi-travel { 0%,8%{stroke-dashoffset:90} 72%,100%{stroke-dashoffset:0} }
