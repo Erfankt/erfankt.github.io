@@ -52,7 +52,7 @@ permalink: /projects/urban-network-analysis/
 <g class="pf-node" data-step="8">
 <rect x="260" y="170" width="200" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="360" y="195" text-anchor="middle" font-size="12">Buffer at 5 scales</text>
-<text x="360" y="212" text-anchor="middle" font-size="12">(0.1â1 mile)</text>
+<text x="360" y="212" text-anchor="middle" font-size="12">(0.1–1 mile)</text>
 </g>
 <g class="pf-arrow pf-arrow-h" data-step="9" style="transform-origin:240px 200px">
 <line x1="240" y1="200" x2="260" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
@@ -70,7 +70,7 @@ permalink: /projects/urban-network-analysis/
 </g>
 <g class="pf-node" data-step="13">
 <rect x="750" y="170" width="230" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
-<text x="865" y="195" text-anchor="middle" font-size="12">PCA: 40 measures â</text>
+<text x="865" y="195" text-anchor="middle" font-size="12">PCA: 40 measures →</text>
 <text x="865" y="212" text-anchor="middle" font-size="12">4 components</text>
 </g>
 <g class="pf-arrow pf-arrow-h" data-step="14" style="transform-origin:980px 200px">
@@ -84,7 +84,7 @@ permalink: /projects/urban-network-analysis/
 <g class="pf-node" data-step="16">
 <rect x="1290" y="170" width="330" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
 <text x="1455" y="195" text-anchor="middle" font-size="12">Spatial models</text>
-<text x="1455" y="212" text-anchor="middle" font-size="12">(OLS Â· SAR Â· CAR Â· GWR)</text>
+<text x="1455" y="212" text-anchor="middle" font-size="12">(OLS · SAR · CAR · GWR)</text>
 </g>
 <g class="pf-arrow pf-arrow-h" data-step="17" style="transform-origin:1260px 200px">
 <line x1="1260" y1="200" x2="1290" y2="200" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
@@ -214,9 +214,6 @@ permalink: /projects/urban-network-analysis/
     </div>
   </div>
 </div>
-</div>
-
-<div class="book-page" data-i="2">
 </div>
 
 <div class="book-page" data-i="2">
@@ -494,7 +491,7 @@ text.pf-label.pf-on {
   padding-left: 0.9em;
   margin: 0.9em 0;
 }
-/* ââ Page 2: Study Area âââââââââââââââââââââââââââ */
+/* ── Page 2: Study Area ─────────────────────────── */
 .p2-intro { margin: 0 0 0.55em; font-size: 0.88rem; line-height: 1.45; }
 .p2-grid {
   display: grid;
@@ -540,7 +537,7 @@ text.pf-label.pf-on {
   margin: 0;
   line-height: 1.35;
 }
-/* ââ Figure 2 expand / lightbox âââââââââââââââââ */
+/* ── Figure 2 expand / lightbox ───────────────── */
 .p2-map-wrap {
   position: relative;
   cursor: zoom-in;
@@ -625,7 +622,7 @@ text.pf-label.pf-on {
   margin: 0;
 }
 .fig2-lb-cap a { color: #8bbfff; }
-/* ââ Crime maps pair (Page 2 right column) âââââââ */
+/* ── Crime maps pair (Page 2 right column) ─────── */
 .nc-crime-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em; margin-top: 0.4em; }
 .nc-crime-fig { margin: 0; }
 .nc-crime-fig figcaption { font-size: 0.68rem; color: var(--color-text-muted); margin-top: 0.25em; line-height: 1.3; }
@@ -656,7 +653,7 @@ text.pf-label.pf-on {
   color: var(--color-text-muted);
   margin-top: 0.15em;
 }
-/* ââ Page 3: Measurement ââââââââââââââââââââââââââ */
+/* ── Page 3: Measurement ────────────────────────── */
 .measure-layout {
   display: grid;
   grid-template-columns: 210px 1fr;
@@ -725,7 +722,7 @@ text.pf-label.pf-on {
   color: var(--color-text-muted);
   margin-top: 0.8em;
 }
-/* ââ Page 4: Results Table ââââââââââââââââââââââââ */
+/* ── Page 4: Results Table ──────────────────────── */
 .rtable-wrap {
   overflow-x: auto;
   margin: 0.7em 0 0.3em;
@@ -920,7 +917,7 @@ text.pf-label.pf-on {
   update();
 })();
 
-// ââ Figure 2 Lightbox âââââââââââââââââââââââââââââââ
+// ── Figure 2 Lightbox ───────────────────────────────
 (function() {
   var lb       = document.getElementById('fig2Lb');
   var backdrop = document.getElementById('fig2Backdrop');
@@ -952,7 +949,7 @@ text.pf-label.pf-on {
   });
 })();
 
-// ââ Figure 3 Lightbox âââââââââââââââââââââââââââââââ
+// ── Figure 3 Lightbox ───────────────────────────────
 (function() {
   var lb       = document.getElementById('fig3Lb');
   var backdrop = document.getElementById('fig3Backdrop');
@@ -982,7 +979,7 @@ text.pf-label.pf-on {
   });
 })();
 
-// ââ Figure 4 Lightbox âââââââââââââââââââââââââââââââ
+// ── Figure 4 Lightbox ───────────────────────────────
 (function() {
   var lb       = document.getElementById('fig4Lb');
   var backdrop = document.getElementById('fig4Backdrop');
