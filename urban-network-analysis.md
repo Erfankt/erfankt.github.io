@@ -92,6 +92,43 @@ permalink: /projects/urban-network-analysis/
 </svg>
 <figcaption>Data pipeline: the county, simplified, and built into a network graph. Each of the city's 371 Neighborhood Profile Areas is surrounded by five buffer distances (0.1&ndash;1 mile), yielding 40 network measures (8 per buffer scale). Principal component analysis reduces these to four components, one representative variable each, forming the final modeling dataset.</figcaption>
 </figure>
+</div>
+
+<div class="book-page" data-i="1">
+<div class="book-kicker">Page 2</div>
+<h3>Study Area &amp; Street Network Diversity</h3>
+<div class="p2-grid">
+  <figure class="p2-map">
+    <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
+      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+           alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
+           class="p2-map-img" id="fig2Img">
+      <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
+        <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
+          <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
+          <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
+          <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
+        </svg>
+      </button>
+    </div>
+    <figcaption>Street network diversity across Charlotte.</figcaption>
+  </figure>
+
+  <!-- Lightbox -->
+  <div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
+    <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
+    <div class="fig2-lb-box">
+      <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
+      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
+           alt="Figure 2 full size: Diversity of street networks in the study area"
+           class="fig2-lb-img">
+      <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
+    </div>
+  </div>
+  <div class="p2-concepts">
+    <p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime in 2022 clusters spatially, demanding spatial models.</p>
+
 <figure class="npa-figure">
 <svg viewBox="0 0 320 195" class="npa-svg" aria-label="371 NPAs colored by property crime density">
 <style>
@@ -139,44 +176,8 @@ permalink: /projects/urban-network-analysis/
 <text x="100" y="193" font-size="7.5" fill="currentColor" opacity="0.7" text-anchor="end">High</text>
 <text x="106" y="187" font-size="7.5" fill="currentColor" opacity="0.65">Crime density</text>
 </svg>
-<figcaption>Charlotte is divided into 371 Neighborhood Profile Areas (NPAs) &mdash; irregular geographic units used by the city for planning. Each NPA is shaded here by property crime density: darker = more crime. Street-network metrics were computed separately for each NPA.</figcaption>
+<figcaption>Neighborhood Profile Areas (NPAs) are the 371 geographic planning units defined by the City of Charlotte and Mecklenburg County to monitor and compare neighborhood conditions, housing, and quality-of-life indicators across the city (<a href="https://www.charlottenc.gov/Streets-and-Neighborhoods/Neighborhoods/NPA" target="_blank" rel="noopener">City of Charlotte, NPA Program</a>). Darker shading indicates higher property crime density.</figcaption>
 </figure>
-</div>
-
-<div class="book-page" data-i="1">
-<div class="book-kicker">Page 2</div>
-<h3>Study Area &amp; Street Network Diversity</h3>
-<div class="p2-grid">
-  <figure class="p2-map">
-    <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
-      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-           alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
-           class="p2-map-img" id="fig2Img">
-      <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
-        <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <polyline points="3,8 3,3 8,3"/><line x1="3" y1="3" x2="9" y2="9"/>
-          <polyline points="12,3 17,3 17,8"/><line x1="17" y1="3" x2="11" y2="9"/>
-          <polyline points="3,12 3,17 8,17"/><line x1="3" y1="17" x2="9" y2="11"/>
-          <polyline points="17,12 17,17 12,17"/><line x1="17" y1="17" x2="11" y2="11"/>
-        </svg>
-      </button>
-    </div>
-    <figcaption>Street network diversity across Charlotte.</figcaption>
-  </figure>
-
-  <!-- Lightbox -->
-  <div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
-    <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
-    <div class="fig2-lb-box">
-      <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
-      <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-           alt="Figure 2 full size: Diversity of street networks in the study area"
-           class="fig2-lb-img">
-      <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
-    </div>
-  </div>
-  <div class="p2-concepts">
-    <p class="p2-intro">The City of Charlotte is divided into 371 NPAs. Street networks range from dense Uptown grids to suburban cul-de-sac loops &mdash; an ideal natural experiment. Property crime in 2022 clusters spatially, demanding spatial models.</p>
     <div class="nc-pair">
       <div class="nc-box">
         <svg viewBox="0 0 100 100" class="nc-svg" aria-label="Dense grid street pattern">
