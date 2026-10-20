@@ -220,6 +220,160 @@ permalink: /projects/urban-network-analysis/
 <div class="book-kicker">Page 3</div>
 <h3>Measuring the Street Network</h3>
 <p>For each of the 371 NPAs, eight network metrics were computed at five buffer distances &mdash; yielding 40 variables per neighborhood. Principal component analysis then distilled these into <strong>four independent components</strong> capturing 70% of the variance, with the highest-loading variable per component entering the regression models.</p>
+<p class="measure-eq"><strong>8 metrics &times; 5 buffers = 40 variables</strong></p>
+<table class="metric-table">
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Street density">
+          <line x1="5"  y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="5"  y1="18" x2="45" y2="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.2s"/>
+          <line x1="5"  y1="26" x2="45" y2="26" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.4s"/>
+          <line x1="5"  y1="34" x2="45" y2="34" stroke="currentColor" stroke-width="1.1" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.6s"/>
+          <line x1="13" y1="4"  x2="13" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.1s"/>
+          <line x1="23" y1="4"  x2="23" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.3s"/>
+          <line x1="33" y1="4"  x2="33" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.5s"/>
+          <line x1="43" y1="4"  x2="43" y2="38" stroke="currentColor" stroke-width="1.1" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.7s"/>
+          <rect x="3" y="3" width="44" height="34" rx="2" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="3,2" opacity="0.55"/>
+        </svg></td>
+    <td class="mt-name">Street density</td>
+    <td class="mt-desc">Total road length packed into a given area — denser streets mean more route choices within walking distance</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Intersection density">
+          <line x1="5"  y1="14" x2="45" y2="14" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="5"  y1="28" x2="45" y2="28" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="16" y1="4"  x2="16" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="28" y1="4"  x2="28" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <line x1="40" y1="4"  x2="40" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
+          <circle cx="16" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0s"/>
+          <circle cx="28" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.25s"/>
+          <circle cx="40" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.5s"/>
+          <circle cx="16" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.75s"/>
+          <circle cx="28" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1s"/>
+          <circle cx="40" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1.25s"/>
+        </svg></td>
+    <td class="mt-name">Intersection density</td>
+    <td class="mt-desc">Number of street corners per area — more corners means more ways to navigate without backtracking</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. node degree">
+          <line x1="25" y1="20" x2="8"  y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="20" x2="42" y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.3s"/>
+          <line x1="25" y1="20" x2="8"  y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.6s"/>
+          <line x1="25" y1="20" x2="42" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.9s"/>
+          <circle cx="8"  cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="42" cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="8"  cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="42" cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
+          <circle cx="25" cy="20" r="6.5" fill="var(--color-accent)"/>
+          <text x="25" y="23.5" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="700">4</text>
+        </svg></td>
+    <td class="mt-name">Avg. node degree</td>
+    <td class="mt-desc">Average number of roads meeting at each junction — a 4-way cross = full grid, a dead end = 1</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. clustering coeff.">
+          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.18"/>
+          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
+          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
+          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0.5s"/>
+          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="24" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:1s"/>
+          <circle cx="13" cy="34" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="25" cy="12" r="3.5" fill="var(--color-accent)"/>
+          <circle cx="37" cy="34" r="3.5" fill="var(--color-accent)"/>
+        </svg></td>
+    <td class="mt-name">Avg. clustering coeff.</td>
+    <td class="mt-desc">Are your neighbors connected to each other? High = tightly-knit grid blocks; low = branching cul-de-sacs</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. shortest path">
+          <line x1="9"  y1="20" x2="19" y2="10" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="19" y1="10" x2="32" y2="15" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="32" y1="15" x2="41" y2="20" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <line x1="9"  y1="20" x2="21" y2="30" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="21" y1="30" x2="33" y2="26" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.18s"/>
+          <line x1="33" y1="26" x2="41" y2="20" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.35s"/>
+          <circle cx="9"  cy="20" r="4"   fill="var(--color-accent)"/>
+          <circle cx="19" cy="10" r="2.5" fill="currentColor" opacity="0.32"/>
+          <circle cx="21" cy="30" r="3"   fill="currentColor" opacity="0.6"/>
+          <circle cx="32" cy="15" r="2.5" fill="currentColor" opacity="0.32"/>
+          <circle cx="33" cy="26" r="3"   fill="currentColor" opacity="0.6"/>
+          <circle cx="41" cy="20" r="4"   fill="var(--color-accent)"/>
+        </svg></td>
+    <td class="mt-name">Avg. shortest path</td>
+    <td class="mt-desc">Typical number of steps to travel across the whole network — shorter = easier to reach any destination</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. betweenness">
+          <line x1="8"  y1="11" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="8"  y1="29" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="8"  y1="11" x2="8"  y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
+          <line x1="20" y1="20" x2="30" y2="20" stroke="var(--color-accent)" stroke-width="2.5" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
+          <line x1="30" y1="20" x2="42" y2="11" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="30" y1="20" x2="42" y2="29" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="42" y1="11" x2="42" y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
+          <circle cx="8"  cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="8"  cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="20" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
+          <circle cx="30" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
+          <circle cx="42" cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="42" cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
+        </svg></td>
+    <td class="mt-name">Avg. betweenness</td>
+    <td class="mt-desc">Which intersections are unavoidable chokepoints that most routes must pass through — like a bridge on an island</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. closeness">
+          <line x1="25" y1="20" x2="10" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="40" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="43" y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="36" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="14" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <line x1="25" y1="20" x2="7"  y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+          <circle cx="10" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="40" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="43" cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="36" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="14" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="7"  cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
+          <circle cx="25" cy="20" r="0" fill="none" stroke="var(--color-accent)" stroke-width="1.8" style="animation:mi-ripple 2.2s ease-out infinite"/>
+          <circle cx="25" cy="20" r="6"   fill="var(--color-accent)"/>
+        </svg></td>
+    <td class="mt-name">Avg. closeness</td>
+    <td class="mt-desc">How quickly any corner can reach every other point — high = central hub, low = tucked-away dead end</td>
+  </tr>
+  <tr>
+    <td class="mt-icon"><svg viewBox="0 0 50 40" aria-label="Avg. PageRank">
+          <defs>
+            <marker id="prArr2" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.7"/>
+            </marker>
+          </defs>
+          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0s"/>
+          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.45s"/>
+          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.9s"/>
+          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.35s"/>
+          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.8s"/>
+          <circle cx="8"  cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="42" cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="43" cy="24" r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="8"  cy="30" r="2.5" fill="currentColor" opacity="0.38"/>
+          <circle cx="25" cy="21" r="7"   fill="var(--color-accent)"/>
+        </svg></td>
+    <td class="mt-name">Avg. PageRank</td>
+    <td class="mt-desc">Which intersections attract the most traffic — scored by how many important roads lead into them, like Google's ranking</td>
+  </tr>
+</table>
+</div>
+
+<div class="book-page" data-i="3">
+<div class="book-kicker">Page 4</div>
+<h3>Dimensionality Reduction</h3>
+<p>The 40 raw network variables across five buffer distances are highly collinear. PCA condensed them to <strong>four independent components</strong> that together capture <strong>70% of the total variance</strong>. The variable with the highest loading per component was then entered into each regression model.</p>
 <div class="measure-layout">
   <div>
     <svg viewBox="0 0 220 210" class="measure-svg" aria-label="Five concentric buffer rings around a neighborhood center with illustrative street segments">
@@ -241,236 +395,6 @@ permalink: /projects/urban-network-analysis/
       <text x="160" y="54" font-size="7.5" fill="var(--color-text-muted)">0.5 mi</text>
       <text x="172" y="35" font-size="7.5" fill="var(--color-text-muted)">0.75 mi</text>
       <text x="185" y="16" font-size="7.5" fill="var(--color-text-muted)">1 mi</text>
-    </svg>
-  </div>
-  <div class="measure-right">
-    <p class="measure-eq"><strong>8 metrics &times; 5 buffers = 40 variables</strong></p>
-    <div class="metric-icons">
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Street density">
-          <line x1="5"  y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="5"  y1="18" x2="45" y2="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.2s"/>
-          <line x1="5"  y1="26" x2="45" y2="26" stroke="currentColor" stroke-width="1.3" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.4s"/>
-          <line x1="5"  y1="34" x2="45" y2="34" stroke="currentColor" stroke-width="1.1" stroke-dasharray="40" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.6s"/>
-          <line x1="13" y1="4"  x2="13" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.1s"/>
-          <line x1="23" y1="4"  x2="23" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.3s"/>
-          <line x1="33" y1="4"  x2="33" y2="38" stroke="currentColor" stroke-width="1.3" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.5s"/>
-          <line x1="43" y1="4"  x2="43" y2="38" stroke="currentColor" stroke-width="1.1" stroke-dasharray="34" style="animation:mi-draw 2.8s ease-in-out infinite;animation-delay:0.7s"/>
-          <rect x="3" y="3" width="44" height="34" rx="2" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="3,2" opacity="0.55"/>
-        </svg>
-        <span>Street density</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Intersection density">
-          <line x1="5"  y1="14" x2="45" y2="14" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <line x1="5"  y1="28" x2="45" y2="28" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <line x1="16" y1="4"  x2="16" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <line x1="28" y1="4"  x2="28" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <line x1="40" y1="4"  x2="40" y2="38" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
-          <circle cx="16" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0s"/>
-          <circle cx="28" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.25s"/>
-          <circle cx="40" cy="14" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.5s"/>
-          <circle cx="16" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:0.75s"/>
-          <circle cx="28" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1s"/>
-          <circle cx="40" cy="28" r="3" fill="var(--color-accent)" style="animation:mi-pulse 2s ease-in-out infinite;animation-delay:1.25s"/>
-        </svg>
-        <span>Intersection density</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. node degree">
-          <line x1="25" y1="20" x2="8"  y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="25" y1="20" x2="42" y2="8"  stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.3s"/>
-          <line x1="25" y1="20" x2="8"  y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.6s"/>
-          <line x1="25" y1="20" x2="42" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="20" style="animation:mi-draw 2.2s ease-in-out infinite;animation-delay:0.9s"/>
-          <circle cx="8"  cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
-          <circle cx="42" cy="8"  r="3.5" fill="currentColor" opacity="0.35"/>
-          <circle cx="8"  cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
-          <circle cx="42" cy="32" r="3.5" fill="currentColor" opacity="0.35"/>
-          <circle cx="25" cy="20" r="6.5" fill="var(--color-accent)"/>
-          <text x="25" y="23.5" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="700">4</text>
-        </svg>
-        <span>Avg. node degree</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. clustering coefficient">
-          <line x1="5"  y1="32" x2="25" y2="7"  stroke="currentColor" stroke-width="1" opacity="0.18"/>
-          <line x1="25" y1="7"  x2="45" y2="32" stroke="currentColor" stroke-width="1" opacity="0.18"/>
-          <circle cx="5"  cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
-          <circle cx="45" cy="32" r="2.5" fill="currentColor" opacity="0.18"/>
-          <line x1="13" y1="34" x2="25" y2="12" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="25" y1="12" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="26" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:0.5s"/>
-          <line x1="13" y1="34" x2="37" y2="34" stroke="var(--color-accent)" stroke-width="1.9" stroke-dasharray="24" style="animation:mi-draw 2.4s ease-in-out infinite;animation-delay:1s"/>
-          <circle cx="13" cy="34" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="25" cy="12" r="3.5" fill="var(--color-accent)"/>
-          <circle cx="37" cy="34" r="3.5" fill="var(--color-accent)"/>
-        </svg>
-        <span>Avg. clustering coeff.</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. shortest path">
-          <line x1="9"  y1="20" x2="19" y2="10" stroke="currentColor" stroke-width="1" opacity="0.28"/>
-          <line x1="19" y1="10" x2="32" y2="15" stroke="currentColor" stroke-width="1" opacity="0.28"/>
-          <line x1="32" y1="15" x2="41" y2="20" stroke="currentColor" stroke-width="1" opacity="0.28"/>
-          <line x1="9"  y1="20" x2="21" y2="30" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="21" y1="30" x2="33" y2="26" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.18s"/>
-          <line x1="33" y1="26" x2="41" y2="20" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="90" style="animation:mi-travel 2.6s ease-in-out infinite;animation-delay:0.35s"/>
-          <circle cx="9"  cy="20" r="4"   fill="var(--color-accent)"/>
-          <circle cx="19" cy="10" r="2.5" fill="currentColor" opacity="0.32"/>
-          <circle cx="21" cy="30" r="3"   fill="currentColor" opacity="0.6"/>
-          <circle cx="32" cy="15" r="2.5" fill="currentColor" opacity="0.32"/>
-          <circle cx="33" cy="26" r="3"   fill="currentColor" opacity="0.6"/>
-          <circle cx="41" cy="20" r="4"   fill="var(--color-accent)"/>
-        </svg>
-        <span>Avg. shortest path</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. betweenness centrality">
-          <line x1="8"  y1="11" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-          <line x1="8"  y1="29" x2="20" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-          <line x1="8"  y1="11" x2="8"  y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
-          <line x1="20" y1="20" x2="30" y2="20" stroke="var(--color-accent)" stroke-width="2.5" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
-          <line x1="30" y1="20" x2="42" y2="11" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-          <line x1="30" y1="20" x2="42" y2="29" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-          <line x1="42" y1="11" x2="42" y2="29" stroke="currentColor" stroke-width="1"   opacity="0.28"/>
-          <circle cx="8"  cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="8"  cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="20" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
-          <circle cx="30" cy="20" r="5"   fill="var(--color-accent)" style="animation:mi-pulse 1.8s ease-in-out infinite"/>
-          <circle cx="42" cy="11" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="42" cy="29" r="2.5" fill="currentColor" opacity="0.45"/>
-        </svg>
-        <span>Avg. betweenness</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. closeness centrality">
-          <line x1="25" y1="20" x2="10" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="25" y2="5"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="40" y2="7"  stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="43" y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="36" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="14" y2="35" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <line x1="25" y1="20" x2="7"  y2="22" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
-          <circle cx="10" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="40" cy="7"  r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="43" cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="36" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="14" cy="35" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="7"  cy="22" r="2.5" fill="currentColor" opacity="0.45"/>
-          <circle cx="25" cy="20" r="0" fill="none" stroke="var(--color-accent)" stroke-width="1.8" style="animation:mi-ripple 2.2s ease-out infinite"/>
-          <circle cx="25" cy="20" r="6"   fill="var(--color-accent)"/>
-        </svg>
-        <span>Avg. closeness</span>
-      </div>
-
-      <div class="mi-item">
-        <svg viewBox="0 0 50 40" class="mi-svg" aria-label="Avg. PageRank centrality">
-          <defs>
-            <marker id="prArr2" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
-              <path d="M0,0 L5,2 L0,4 Z" fill="var(--color-accent)" opacity="0.7"/>
-            </marker>
-          </defs>
-          <line x1="8"  y1="8"  x2="20" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0s"/>
-          <line x1="25" y1="5"  x2="25" y2="14" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.45s"/>
-          <line x1="42" y1="8"  x2="30" y2="18" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:0.9s"/>
-          <line x1="43" y1="24" x2="32" y2="21" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.35s"/>
-          <line x1="8"  y1="30" x2="19" y2="23" stroke="currentColor" stroke-width="1.2" marker-end="url(#prArr2)" style="animation:mi-flash 3s ease-in-out infinite;animation-delay:1.8s"/>
-          <circle cx="8"  cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="25" cy="5"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="42" cy="8"  r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="43" cy="24" r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="8"  cy="30" r="2.5" fill="currentColor" opacity="0.38"/>
-          <circle cx="25" cy="21" r="7"   fill="var(--color-accent)"/>
-        </svg>
-        <span>Avg. PageRank</span>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="book-page" data-i="3">
-<div class="book-kicker">Page 4</div>
-<h3>Dimensionality Reduction</h3>
-<p>The 40 raw network variables across five buffer distances are highly collinear. PCA condensed them to <strong>four independent components</strong> that together capture <strong>70% of the total variance</strong>. The variable with the highest loading per component was then entered into each regression model.</p>
-<div class="measure-layout">
-  <div>
-    <svg viewBox="0 0 210 200" class="measure-svg" aria-label="PCA reduces 40 network variables to 4 principal components">
-      <!-- 40 input dots (8 rows × 5 cols) -->
-          <circle cx="16" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.00s"/>
-          <circle cx="31" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.06s"/>
-          <circle cx="46" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.12s"/>
-          <circle cx="61" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.18s"/>
-          <circle cx="76" cy="18" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.24s"/>
-          <circle cx="16" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.30s"/>
-          <circle cx="31" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.36s"/>
-          <circle cx="46" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.42s"/>
-          <circle cx="61" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.48s"/>
-          <circle cx="76" cy="36" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.54s"/>
-          <circle cx="16" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.60s"/>
-          <circle cx="31" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.66s"/>
-          <circle cx="46" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.72s"/>
-          <circle cx="61" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.78s"/>
-          <circle cx="76" cy="54" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.84s"/>
-          <circle cx="16" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.90s"/>
-          <circle cx="31" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:0.96s"/>
-          <circle cx="46" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.02s"/>
-          <circle cx="61" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.08s"/>
-          <circle cx="76" cy="72" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.14s"/>
-          <circle cx="16" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.20s"/>
-          <circle cx="31" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.26s"/>
-          <circle cx="46" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.32s"/>
-          <circle cx="61" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.38s"/>
-          <circle cx="76" cy="90" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.44s"/>
-          <circle cx="16" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.50s"/>
-          <circle cx="31" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.56s"/>
-          <circle cx="46" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.62s"/>
-          <circle cx="61" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.68s"/>
-          <circle cx="76" cy="108" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.74s"/>
-          <circle cx="16" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.80s"/>
-          <circle cx="31" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.86s"/>
-          <circle cx="46" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.92s"/>
-          <circle cx="61" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:1.98s"/>
-          <circle cx="76" cy="126" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.04s"/>
-          <circle cx="16" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.10s"/>
-          <circle cx="31" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.16s"/>
-          <circle cx="46" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.22s"/>
-          <circle cx="61" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.28s"/>
-          <circle cx="76" cy="144" r="3.2" fill="var(--color-border)" style="animation:mi-pulse 2.4s ease-in-out infinite;animation-delay:2.34s"/>
-
-      <!-- funnel lines converging to 4 outputs -->
-      <line x1="85"  y1="18"  x2="155" y2="35"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <line x1="85"  y1="72"  x2="155" y2="35"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <line x1="85"  y1="18"  x2="155" y2="85"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.22"/>
-      <line x1="85"  y1="126" x2="155" y2="85"  stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <line x1="85"  y1="162" x2="155" y2="135" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <line x1="85"  y1="108" x2="155" y2="135" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.22"/>
-      <line x1="85"  y1="162" x2="155" y2="165" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <line x1="85"  y1="144" x2="155" y2="165" stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.35"/>
-      <!-- PCA label box -->
-      <rect x="96" y="85" width="48" height="28" rx="5" fill="var(--color-surface)" stroke="var(--color-accent)" stroke-width="1.4"/>
-      <text x="120" y="97"  text-anchor="middle" font-size="8"  fill="var(--color-accent)" font-weight="700">PCA</text>
-      <text x="120" y="108" text-anchor="middle" font-size="6.5" fill="var(--color-text-muted)">40 → 4</text>
-      <!-- 4 output nodes -->
-      <circle cx="175" cy="35"  r="13" fill="var(--color-accent)" opacity="0.85"/>
-      <circle cx="175" cy="85"  r="13" fill="var(--color-accent)" opacity="0.85"/>
-      <circle cx="175" cy="135" r="13" fill="var(--color-accent)" opacity="0.85"/>
-      <circle cx="175" cy="165" r="13" fill="var(--color-accent)" opacity="0.85"/>
-      <text x="175" y="38"  text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC1</text>
-      <text x="175" y="88"  text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC2</text>
-      <text x="175" y="138" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC3</text>
-      <text x="175" y="168" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">PC4</text>
-      <!-- axis labels -->
-      <text x="46"  y="192" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">40 network variables</text>
-      <text x="175" y="192" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">4 components</text>
     </svg>
   </div>
   <div class="measure-right">
@@ -911,6 +835,42 @@ text.pf-label.pf-on {
   font-size: 0.58rem;
   color: var(--color-text-muted);
   line-height: 1.15;
+}
+/* Metric table */
+.metric-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.4em 0;
+}
+.metric-table tr + tr td {
+  border-top: 1px solid var(--color-border);
+}
+.mt-icon {
+  width: 60px;
+  padding: 0.26em 0.3em 0.26em 0;
+  vertical-align: middle;
+}
+.mt-icon svg {
+  width: 60px;
+  height: 48px;
+  display: block;
+  color: var(--color-text-muted);
+}
+.mt-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.26em 0.55em;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 28%;
+  color: var(--color-text);
+}
+.mt-desc {
+  font-size: 0.69rem;
+  color: var(--color-text-muted);
+  padding: 0.26em 0 0.26em 0.3em;
+  vertical-align: middle;
+  line-height: 1.3;
 }
 /* Metric icon animations */
 @keyframes mi-draw   { 0%,5%{stroke-dashoffset:60} 65%,100%{stroke-dashoffset:0} }
