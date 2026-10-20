@@ -217,9 +217,6 @@ permalink: /projects/urban-network-analysis/
 </div>
 
 <div class="book-page" data-i="2">
-</div>
-
-<div class="book-page" data-i="2">
 <div class="book-kicker">Page 3</div>
 <h3>Measuring the Street Network</h3>
 <p>For each of the 371 NPAs, eight network metrics were computed at five buffer distances &mdash; yielding 40 variables per neighborhood. Principal component analysis then distilled these into <strong>four independent components</strong> capturing 70% of the variance, with the highest-loading variable per component entering the regression models.</p>
