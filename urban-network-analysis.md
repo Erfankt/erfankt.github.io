@@ -1466,9 +1466,9 @@ text.pf-label.pf-on {
 }
 /* Metric icon animations */
 .npa-network-fig {
-  margin: 0.4em 0 0;
+  margin: 0.4em auto 0;
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 .npa-net-svg {
   width: 100%;
