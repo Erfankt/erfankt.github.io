@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Urban Street Network Configuration & Property Crime
+title: Street Networks & Property Crime in Charlotte, NC
 permalink: /projects/urban-network-analysis/
 ---
 
@@ -14,7 +14,7 @@ permalink: /projects/urban-network-analysis/
 <p>Does the way a neighborhood's streets are laid out relate to how much property crime it sees? This project builds the full data pipeline behind that question &mdash; and packages it so anyone can run it themselves, on Charlotte's data or their own city's.</p>
 <p class="book-cite">Kefayat, E., &amp; Thill, J.-C. (2025). Urban Street Network Configuration and Property Crime: An Empirical Multivariate Case Study. <em>ISPRS International Journal of Geo-Information</em>, 14(5), 200. <a href="https://doi.org/10.3390/ijgi14050200" target="_blank" rel="noopener">doi.org/10.3390/ijgi14050200</a></p>
 <figure class="pipeline-figure">
-<svg id="pfSvg" viewBox="0 0 1620 260" role="img" aria-label="Animated pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; each of 371 Neighborhood Profile Areas is buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
+<svg id="pfSvg" viewBox="0 0 1620 260" role="img" aria-label="Animated pipeline: the county street centerline dataset is cleaned, simplified, and built into a network graph; the network graph feeds into each of the 371 Neighborhood Profile Areas, which are buffered at five distances from 0.1 to 1 mile to compute 40 network measures; principal component analysis reduces these to the final modeling dataset.">
 <defs>
 <marker id="pfArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
 <polygon points="0 0, 8 4, 0 8" fill="currentColor"></polygon>
@@ -46,8 +46,8 @@ permalink: /projects/urban-network-analysis/
 <text x="130" y="195" text-anchor="middle" font-size="12">Neighborhood Profile</text>
 <text x="130" y="212" text-anchor="middle" font-size="12">Areas (371 NPAs)</text>
 </g>
-<g class="pf-arrow pf-arrow-v" data-step="7" style="transform-origin:130px 170px">
-<line x1="130" y1="80" x2="130" y2="170" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></line>
+<g class="pf-arrow pf-arrow-v" data-step="7" style="transform-origin:560px 80px">
+<path d="M 560 80 L 560 125 L 130 125 L 130 170" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#pfArrow)"></path>
 </g>
 <g class="pf-node" data-step="8">
 <rect x="260" y="170" width="200" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
