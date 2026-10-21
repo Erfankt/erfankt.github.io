@@ -489,104 +489,315 @@ permalink: /projects/urban-network-analysis/
 <p>Each street-network metric was computed not just <em>inside</em> each NPA boundary, but also at <strong>five buffer distances</strong> around every NPA centroid — 0.1, 0.25, 0.5, 0.75, and 1 mile — capturing how the surrounding street environment changes with scale. This yields <strong>8&nbsp;metrics&nbsp;&times;&nbsp;5&nbsp;distances&nbsp;=&nbsp;40&nbsp;variables</strong> per neighborhood. Because these 40 variables are highly collinear, PCA condensed them to <strong>four independent components</strong> capturing <strong>70% of the variance</strong>.</p>
 <div class="measure-layout">
   <div>
-    <svg viewBox="0 0 300 285" class="measure-svg" aria-label="Urban street network with one NPA overlaid and five buffer-distance rings">
-      <!--
-        STEP 1 — static street network (nodes + edges) covering
-        full viewBox, fades in first via net-fade keyframe.
-        Center (150,142). Ring 5 r=136 reaches nearly edge-to-edge.
-      -->
-      <g style="animation:net-fade 12s ease-in-out infinite">
-        <!-- ── Major horizontal arterials (stroke-width 1.2) ── -->
-        <g stroke="var(--color-text-muted)" stroke-width="1.2" opacity="0.5" fill="none">
-          <line x1="0" y1="44"  x2="300" y2="44"/>
-          <line x1="0" y1="100" x2="300" y2="100"/>
-          <line x1="0" y1="142" x2="300" y2="142"/>
-          <line x1="0" y1="184" x2="300" y2="184"/>
-          <line x1="0" y1="234" x2="300" y2="234"/>
+    <svg viewBox="0 0 300 285" class="measure-svg" aria-label="Urban street network with NPA overlaid; buffer rings grow and highlight enclosed edges and nodes">
+      <!-- ══ 1. BASE GRID (dim, full coverage, no diagonals) ══════════════ -->
+      <g style="animation:net-fade 12s ease-in-out infinite" fill="none"
+         stroke="var(--color-text-muted)">
+        <!-- major horizontals -->
+        <g stroke-width="1.2" opacity="0.45">
+        <line x1="0" y1="44" x2="300" y2="44" stroke-width="1.2" opacity="0.45"/>
+        <line x1="0" y1="100" x2="300" y2="100" stroke-width="1.2" opacity="0.45"/>
+        <line x1="0" y1="142" x2="300" y2="142" stroke-width="1.2" opacity="0.45"/>
+        <line x1="0" y1="184" x2="300" y2="184" stroke-width="1.2" opacity="0.45"/>
+        <line x1="0" y1="234" x2="300" y2="234" stroke-width="1.2" opacity="0.45"/>
         </g>
-        <!-- ── Major vertical arterials (stroke-width 1.2) ── -->
-        <g stroke="var(--color-text-muted)" stroke-width="1.2" opacity="0.5" fill="none">
-          <line x1="55"  y1="0" x2="55"  y2="285"/>
-          <line x1="110" y1="0" x2="110" y2="285"/>
-          <line x1="150" y1="0" x2="150" y2="285"/>
-          <line x1="190" y1="0" x2="190" y2="285"/>
-          <line x1="245" y1="0" x2="245" y2="285"/>
+        <!-- major verticals -->
+        <g stroke-width="1.2" opacity="0.45">
+        <line x1="55" y1="0" x2="55" y2="285" stroke-width="1.2" opacity="0.45"/>
+        <line x1="110" y1="0" x2="110" y2="285" stroke-width="1.2" opacity="0.45"/>
+        <line x1="150" y1="0" x2="150" y2="285" stroke-width="1.2" opacity="0.45"/>
+        <line x1="190" y1="0" x2="190" y2="285" stroke-width="1.2" opacity="0.45"/>
+        <line x1="245" y1="0" x2="245" y2="285" stroke-width="1.2" opacity="0.45"/>
         </g>
-        <!-- ── Minor horizontal streets (stroke-width 0.65) ── -->
-        <g stroke="var(--color-text-muted)" stroke-width="0.65" opacity="0.32" fill="none">
-          <line x1="0" y1="12"  x2="300" y2="12"/>
-          <line x1="0" y1="72"  x2="300" y2="72"/>
-          <line x1="0" y1="120" x2="300" y2="120"/>
-          <line x1="0" y1="163" x2="300" y2="163"/>
-          <line x1="0" y1="210" x2="300" y2="210"/>
-          <line x1="0" y1="260" x2="300" y2="260"/>
+        <!-- minor horizontals -->
+        <g stroke-width="0.6" opacity="0.28">
+        <line x1="0" y1="12" x2="300" y2="12" stroke-width="0.6" opacity="0.28"/>
+        <line x1="0" y1="72" x2="300" y2="72" stroke-width="0.6" opacity="0.28"/>
+        <line x1="0" y1="120" x2="300" y2="120" stroke-width="0.6" opacity="0.28"/>
+        <line x1="0" y1="163" x2="300" y2="163" stroke-width="0.6" opacity="0.28"/>
+        <line x1="0" y1="210" x2="300" y2="210" stroke-width="0.6" opacity="0.28"/>
+        <line x1="0" y1="260" x2="300" y2="260" stroke-width="0.6" opacity="0.28"/>
         </g>
-        <!-- ── Minor vertical streets (stroke-width 0.65) ── -->
-        <g stroke="var(--color-text-muted)" stroke-width="0.65" opacity="0.32" fill="none">
-          <line x1="20"  y1="0" x2="20"  y2="285"/>
-          <line x1="82"  y1="0" x2="82"  y2="285"/>
-          <line x1="128" y1="0" x2="128" y2="285"/>
-          <line x1="172" y1="0" x2="172" y2="285"/>
-          <line x1="220" y1="0" x2="220" y2="285"/>
-          <line x1="274" y1="0" x2="274" y2="285"/>
+        <!-- minor verticals -->
+        <g stroke-width="0.6" opacity="0.28">
+        <line x1="20" y1="0" x2="20" y2="285" stroke-width="0.6" opacity="0.28"/>
+        <line x1="82" y1="0" x2="82" y2="285" stroke-width="0.6" opacity="0.28"/>
+        <line x1="128" y1="0" x2="128" y2="285" stroke-width="0.6" opacity="0.28"/>
+        <line x1="172" y1="0" x2="172" y2="285" stroke-width="0.6" opacity="0.28"/>
+        <line x1="220" y1="0" x2="220" y2="285" stroke-width="0.6" opacity="0.28"/>
+        <line x1="274" y1="0" x2="274" y2="285" stroke-width="0.6" opacity="0.28"/>
         </g>
-        <!-- ── Diagonal arterials (Charlotte-style) ── -->
-        <g stroke="var(--color-text-muted)" stroke-width="0.95" opacity="0.42" fill="none">
-          <!-- NW→SE through center -->
-          <line x1="0"   y1="32"  x2="260" y2="285"/>
-          <line x1="40"  y1="0"   x2="300" y2="252"/>
-          <!-- NE→SW through center -->
-          <line x1="300" y1="32"  x2="40"  y2="285"/>
-          <line x1="260" y1="0"   x2="0"   y2="252"/>
-        </g>
-        <!-- ── Intersection nodes at major street crossings ── -->
-        <g fill="var(--color-text-muted)" opacity="0.62">
-          <!-- Major H × Major V (25 nodes, r=1.8) -->
-          <circle cx="55"  cy="44"  r="1.8"/><circle cx="110" cy="44"  r="1.8"/><circle cx="150" cy="44"  r="1.8"/><circle cx="190" cy="44"  r="1.8"/><circle cx="245" cy="44"  r="1.8"/>
-          <circle cx="55"  cy="100" r="1.8"/><circle cx="110" cy="100" r="1.8"/><circle cx="150" cy="100" r="1.8"/><circle cx="190" cy="100" r="1.8"/><circle cx="245" cy="100" r="1.8"/>
-          <circle cx="55"  cy="142" r="1.8"/><circle cx="110" cy="142" r="1.8"/>                                     <circle cx="190" cy="142" r="1.8"/><circle cx="245" cy="142" r="1.8"/>
-          <circle cx="55"  cy="184" r="1.8"/><circle cx="110" cy="184" r="1.8"/><circle cx="150" cy="184" r="1.8"/><circle cx="190" cy="184" r="1.8"/><circle cx="245" cy="184" r="1.8"/>
-          <circle cx="55"  cy="234" r="1.8"/><circle cx="110" cy="234" r="1.8"/><circle cx="150" cy="234" r="1.8"/><circle cx="190" cy="234" r="1.8"/><circle cx="245" cy="234" r="1.8"/>
-          <!-- Major H × Minor V (selected, r=1.3) -->
-          <circle cx="20"  cy="44"  r="1.3"/><circle cx="82"  cy="44"  r="1.3"/><circle cx="128" cy="44"  r="1.3"/><circle cx="172" cy="44"  r="1.3"/><circle cx="220" cy="44"  r="1.3"/><circle cx="274" cy="44"  r="1.3"/>
-          <circle cx="20"  cy="100" r="1.3"/><circle cx="82"  cy="100" r="1.3"/><circle cx="128" cy="100" r="1.3"/><circle cx="172" cy="100" r="1.3"/><circle cx="220" cy="100" r="1.3"/><circle cx="274" cy="100" r="1.3"/>
-          <circle cx="20"  cy="142" r="1.3"/><circle cx="82"  cy="142" r="1.3"/>                                     <circle cx="172" cy="142" r="1.3"/><circle cx="220" cy="142" r="1.3"/><circle cx="274" cy="142" r="1.3"/>
-          <circle cx="20"  cy="184" r="1.3"/><circle cx="82"  cy="184" r="1.3"/><circle cx="128" cy="184" r="1.3"/><circle cx="172" cy="184" r="1.3"/><circle cx="220" cy="184" r="1.3"/><circle cx="274" cy="184" r="1.3"/>
-          <circle cx="20"  cy="234" r="1.3"/><circle cx="82"  cy="234" r="1.3"/><circle cx="128" cy="234" r="1.3"/><circle cx="172" cy="234" r="1.3"/><circle cx="220" cy="234" r="1.3"/><circle cx="274" cy="234" r="1.3"/>
-          <!-- Minor H × Minor V spot nodes (r=1.0) -->
-          <circle cx="20"  cy="12"  r="1.0"/><circle cx="82"  cy="12"  r="1.0"/><circle cx="128" cy="12"  r="1.0"/><circle cx="172" cy="12"  r="1.0"/><circle cx="220" cy="12"  r="1.0"/><circle cx="274" cy="12"  r="1.0"/>
-          <circle cx="20"  cy="72"  r="1.0"/><circle cx="82"  cy="72"  r="1.0"/><circle cx="128" cy="72"  r="1.0"/><circle cx="172" cy="72"  r="1.0"/><circle cx="220" cy="72"  r="1.0"/><circle cx="274" cy="72"  r="1.0"/>
-          <circle cx="20"  cy="120" r="1.0"/><circle cx="82"  cy="120" r="1.0"/><circle cx="128" cy="120" r="1.0"/><circle cx="172" cy="120" r="1.0"/><circle cx="220" cy="120" r="1.0"/><circle cx="274" cy="120" r="1.0"/>
-          <circle cx="20"  cy="163" r="1.0"/><circle cx="82"  cy="163" r="1.0"/><circle cx="128" cy="163" r="1.0"/><circle cx="172" cy="163" r="1.0"/><circle cx="220" cy="163" r="1.0"/><circle cx="274" cy="163" r="1.0"/>
-          <circle cx="20"  cy="210" r="1.0"/><circle cx="82"  cy="210" r="1.0"/><circle cx="128" cy="210" r="1.0"/><circle cx="172" cy="210" r="1.0"/><circle cx="220" cy="210" r="1.0"/><circle cx="274" cy="210" r="1.0"/>
-          <circle cx="20"  cy="260" r="1.0"/><circle cx="82"  cy="260" r="1.0"/><circle cx="128" cy="260" r="1.0"/><circle cx="172" cy="260" r="1.0"/><circle cx="220" cy="260" r="1.0"/><circle cx="274" cy="260" r="1.0"/>
+        <!-- dim intersection nodes -->
+        <g stroke="none" fill="var(--color-text-muted)" opacity="0.55">
+        <circle cx="55" cy="44" r="1.8"/>
+        <circle cx="110" cy="44" r="1.8"/>
+        <circle cx="150" cy="44" r="1.8"/>
+        <circle cx="190" cy="44" r="1.8"/>
+        <circle cx="245" cy="44" r="1.8"/>
+        <circle cx="55" cy="100" r="1.8"/>
+        <circle cx="110" cy="100" r="1.8"/>
+        <circle cx="150" cy="100" r="1.8"/>
+        <circle cx="190" cy="100" r="1.8"/>
+        <circle cx="245" cy="100" r="1.8"/>
+        <circle cx="55" cy="142" r="1.8"/>
+        <circle cx="110" cy="142" r="1.8"/>
+        <circle cx="150" cy="142" r="1.8"/>
+        <circle cx="190" cy="142" r="1.8"/>
+        <circle cx="245" cy="142" r="1.8"/>
+        <circle cx="55" cy="184" r="1.8"/>
+        <circle cx="110" cy="184" r="1.8"/>
+        <circle cx="150" cy="184" r="1.8"/>
+        <circle cx="190" cy="184" r="1.8"/>
+        <circle cx="245" cy="184" r="1.8"/>
+        <circle cx="55" cy="234" r="1.8"/>
+        <circle cx="110" cy="234" r="1.8"/>
+        <circle cx="150" cy="234" r="1.8"/>
+        <circle cx="190" cy="234" r="1.8"/>
+        <circle cx="245" cy="234" r="1.8"/>
+        <circle cx="20" cy="44" r="1.3"/>
+        <circle cx="82" cy="44" r="1.3"/>
+        <circle cx="128" cy="44" r="1.3"/>
+        <circle cx="172" cy="44" r="1.3"/>
+        <circle cx="220" cy="44" r="1.3"/>
+        <circle cx="274" cy="44" r="1.3"/>
+        <circle cx="20" cy="100" r="1.3"/>
+        <circle cx="82" cy="100" r="1.3"/>
+        <circle cx="128" cy="100" r="1.3"/>
+        <circle cx="172" cy="100" r="1.3"/>
+        <circle cx="220" cy="100" r="1.3"/>
+        <circle cx="274" cy="100" r="1.3"/>
+        <circle cx="20" cy="142" r="1.3"/>
+        <circle cx="82" cy="142" r="1.3"/>
+        <circle cx="128" cy="142" r="1.3"/>
+        <circle cx="172" cy="142" r="1.3"/>
+        <circle cx="220" cy="142" r="1.3"/>
+        <circle cx="274" cy="142" r="1.3"/>
+        <circle cx="20" cy="184" r="1.3"/>
+        <circle cx="82" cy="184" r="1.3"/>
+        <circle cx="128" cy="184" r="1.3"/>
+        <circle cx="172" cy="184" r="1.3"/>
+        <circle cx="220" cy="184" r="1.3"/>
+        <circle cx="274" cy="184" r="1.3"/>
+        <circle cx="20" cy="234" r="1.3"/>
+        <circle cx="82" cy="234" r="1.3"/>
+        <circle cx="128" cy="234" r="1.3"/>
+        <circle cx="172" cy="234" r="1.3"/>
+        <circle cx="220" cy="234" r="1.3"/>
+        <circle cx="274" cy="234" r="1.3"/>
+        <circle cx="55" cy="12" r="1.3"/>
+        <circle cx="110" cy="12" r="1.3"/>
+        <circle cx="150" cy="12" r="1.3"/>
+        <circle cx="190" cy="12" r="1.3"/>
+        <circle cx="245" cy="12" r="1.3"/>
+        <circle cx="55" cy="72" r="1.3"/>
+        <circle cx="110" cy="72" r="1.3"/>
+        <circle cx="150" cy="72" r="1.3"/>
+        <circle cx="190" cy="72" r="1.3"/>
+        <circle cx="245" cy="72" r="1.3"/>
+        <circle cx="55" cy="120" r="1.3"/>
+        <circle cx="110" cy="120" r="1.3"/>
+        <circle cx="150" cy="120" r="1.3"/>
+        <circle cx="190" cy="120" r="1.3"/>
+        <circle cx="245" cy="120" r="1.3"/>
+        <circle cx="55" cy="163" r="1.3"/>
+        <circle cx="110" cy="163" r="1.3"/>
+        <circle cx="150" cy="163" r="1.3"/>
+        <circle cx="190" cy="163" r="1.3"/>
+        <circle cx="245" cy="163" r="1.3"/>
+        <circle cx="55" cy="210" r="1.3"/>
+        <circle cx="110" cy="210" r="1.3"/>
+        <circle cx="150" cy="210" r="1.3"/>
+        <circle cx="190" cy="210" r="1.3"/>
+        <circle cx="245" cy="210" r="1.3"/>
+        <circle cx="55" cy="260" r="1.3"/>
+        <circle cx="110" cy="260" r="1.3"/>
+        <circle cx="150" cy="260" r="1.3"/>
+        <circle cx="190" cy="260" r="1.3"/>
+        <circle cx="245" cy="260" r="1.3"/>
         </g>
       </g>
+      <!-- ══ 2. BOLD HIGHLIGHT (accent, clip-path expands with rings) ════ -->
       <!--
-        STEP 2 — single NPA polygon overlaid on the network (buf-npa).
-        Irregular quad centered at (150,142), all corners within r≈21.
+        CSS clip-path:circle() grows in sync with each buffer ring.
+        16%→32%: r grows 0→28px (ring 1 drawing)
+        32%→44%: r grows 28→56px (ring 2 drawing)
+        44%→54%: r grows 56→86px (ring 3 drawing)
+        54%→64%: r grows 86→113px (ring 4 drawing)
+        64%→74%: r grows 113→136px (ring 5 drawing)
       -->
+      <g style="animation:bold-clip 12s ease-in-out infinite"
+         stroke="var(--color-accent)" stroke-width="1.6" fill="none">
+        <!-- major horizontals bold -->
+        <line x1="0" y1="44" x2="300" y2="44" stroke-width="1.6" opacity="1"/>
+        <line x1="0" y1="100" x2="300" y2="100" stroke-width="1.6" opacity="1"/>
+        <line x1="0" y1="142" x2="300" y2="142" stroke-width="1.6" opacity="1"/>
+        <line x1="0" y1="184" x2="300" y2="184" stroke-width="1.6" opacity="1"/>
+        <line x1="0" y1="234" x2="300" y2="234" stroke-width="1.6" opacity="1"/>
+        <!-- major verticals bold -->
+        <line x1="55" y1="0" x2="55" y2="285" stroke-width="1.6" opacity="1"/>
+        <line x1="110" y1="0" x2="110" y2="285" stroke-width="1.6" opacity="1"/>
+        <line x1="150" y1="0" x2="150" y2="285" stroke-width="1.6" opacity="1"/>
+        <line x1="190" y1="0" x2="190" y2="285" stroke-width="1.6" opacity="1"/>
+        <line x1="245" y1="0" x2="245" y2="285" stroke-width="1.6" opacity="1"/>
+        <!-- minor horizontals bold -->
+        <line x1="0" y1="12" x2="300" y2="12" stroke-width="0.9" opacity="0.75"/>
+        <line x1="0" y1="72" x2="300" y2="72" stroke-width="0.9" opacity="0.75"/>
+        <line x1="0" y1="120" x2="300" y2="120" stroke-width="0.9" opacity="0.75"/>
+        <line x1="0" y1="163" x2="300" y2="163" stroke-width="0.9" opacity="0.75"/>
+        <line x1="0" y1="210" x2="300" y2="210" stroke-width="0.9" opacity="0.75"/>
+        <line x1="0" y1="260" x2="300" y2="260" stroke-width="0.9" opacity="0.75"/>
+        <!-- minor verticals bold -->
+        <line x1="20" y1="0" x2="20" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <line x1="82" y1="0" x2="82" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <line x1="128" y1="0" x2="128" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <line x1="172" y1="0" x2="172" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <line x1="220" y1="0" x2="220" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <line x1="274" y1="0" x2="274" y2="285" stroke-width="0.9" opacity="0.75"/>
+        <!-- bold intersection nodes -->
+        <g stroke="none" fill="var(--color-accent)">
+        <circle cx="55" cy="44" r="1.8"/>
+        <circle cx="110" cy="44" r="1.8"/>
+        <circle cx="150" cy="44" r="1.8"/>
+        <circle cx="190" cy="44" r="1.8"/>
+        <circle cx="245" cy="44" r="1.8"/>
+        <circle cx="20" cy="44" r="1.3"/>
+        <circle cx="82" cy="44" r="1.3"/>
+        <circle cx="128" cy="44" r="1.3"/>
+        <circle cx="172" cy="44" r="1.3"/>
+        <circle cx="220" cy="44" r="1.3"/>
+        <circle cx="274" cy="44" r="1.3"/>
+        <circle cx="55" cy="100" r="1.8"/>
+        <circle cx="110" cy="100" r="1.8"/>
+        <circle cx="150" cy="100" r="1.8"/>
+        <circle cx="190" cy="100" r="1.8"/>
+        <circle cx="245" cy="100" r="1.8"/>
+        <circle cx="20" cy="100" r="1.3"/>
+        <circle cx="82" cy="100" r="1.3"/>
+        <circle cx="128" cy="100" r="1.3"/>
+        <circle cx="172" cy="100" r="1.3"/>
+        <circle cx="220" cy="100" r="1.3"/>
+        <circle cx="274" cy="100" r="1.3"/>
+        <circle cx="55" cy="142" r="1.8"/>
+        <circle cx="110" cy="142" r="1.8"/>
+        <circle cx="150" cy="142" r="1.8"/>
+        <circle cx="190" cy="142" r="1.8"/>
+        <circle cx="245" cy="142" r="1.8"/>
+        <circle cx="20" cy="142" r="1.3"/>
+        <circle cx="82" cy="142" r="1.3"/>
+        <circle cx="128" cy="142" r="1.3"/>
+        <circle cx="172" cy="142" r="1.3"/>
+        <circle cx="220" cy="142" r="1.3"/>
+        <circle cx="274" cy="142" r="1.3"/>
+        <circle cx="55" cy="184" r="1.8"/>
+        <circle cx="110" cy="184" r="1.8"/>
+        <circle cx="150" cy="184" r="1.8"/>
+        <circle cx="190" cy="184" r="1.8"/>
+        <circle cx="245" cy="184" r="1.8"/>
+        <circle cx="20" cy="184" r="1.3"/>
+        <circle cx="82" cy="184" r="1.3"/>
+        <circle cx="128" cy="184" r="1.3"/>
+        <circle cx="172" cy="184" r="1.3"/>
+        <circle cx="220" cy="184" r="1.3"/>
+        <circle cx="274" cy="184" r="1.3"/>
+        <circle cx="55" cy="234" r="1.8"/>
+        <circle cx="110" cy="234" r="1.8"/>
+        <circle cx="150" cy="234" r="1.8"/>
+        <circle cx="190" cy="234" r="1.8"/>
+        <circle cx="245" cy="234" r="1.8"/>
+        <circle cx="20" cy="234" r="1.3"/>
+        <circle cx="82" cy="234" r="1.3"/>
+        <circle cx="128" cy="234" r="1.3"/>
+        <circle cx="172" cy="234" r="1.3"/>
+        <circle cx="220" cy="234" r="1.3"/>
+        <circle cx="274" cy="234" r="1.3"/>
+        <circle cx="55" cy="12" r="1.3"/>
+        <circle cx="110" cy="12" r="1.3"/>
+        <circle cx="150" cy="12" r="1.3"/>
+        <circle cx="190" cy="12" r="1.3"/>
+        <circle cx="245" cy="12" r="1.3"/>
+        <circle cx="20" cy="12" r="1.0"/>
+        <circle cx="82" cy="12" r="1.0"/>
+        <circle cx="128" cy="12" r="1.0"/>
+        <circle cx="172" cy="12" r="1.0"/>
+        <circle cx="220" cy="12" r="1.0"/>
+        <circle cx="274" cy="12" r="1.0"/>
+        <circle cx="55" cy="72" r="1.3"/>
+        <circle cx="110" cy="72" r="1.3"/>
+        <circle cx="150" cy="72" r="1.3"/>
+        <circle cx="190" cy="72" r="1.3"/>
+        <circle cx="245" cy="72" r="1.3"/>
+        <circle cx="20" cy="72" r="1.0"/>
+        <circle cx="82" cy="72" r="1.0"/>
+        <circle cx="128" cy="72" r="1.0"/>
+        <circle cx="172" cy="72" r="1.0"/>
+        <circle cx="220" cy="72" r="1.0"/>
+        <circle cx="274" cy="72" r="1.0"/>
+        <circle cx="55" cy="120" r="1.3"/>
+        <circle cx="110" cy="120" r="1.3"/>
+        <circle cx="150" cy="120" r="1.3"/>
+        <circle cx="190" cy="120" r="1.3"/>
+        <circle cx="245" cy="120" r="1.3"/>
+        <circle cx="20" cy="120" r="1.0"/>
+        <circle cx="82" cy="120" r="1.0"/>
+        <circle cx="128" cy="120" r="1.0"/>
+        <circle cx="172" cy="120" r="1.0"/>
+        <circle cx="220" cy="120" r="1.0"/>
+        <circle cx="274" cy="120" r="1.0"/>
+        <circle cx="55" cy="163" r="1.3"/>
+        <circle cx="110" cy="163" r="1.3"/>
+        <circle cx="150" cy="163" r="1.3"/>
+        <circle cx="190" cy="163" r="1.3"/>
+        <circle cx="245" cy="163" r="1.3"/>
+        <circle cx="20" cy="163" r="1.0"/>
+        <circle cx="82" cy="163" r="1.0"/>
+        <circle cx="128" cy="163" r="1.0"/>
+        <circle cx="172" cy="163" r="1.0"/>
+        <circle cx="220" cy="163" r="1.0"/>
+        <circle cx="274" cy="163" r="1.0"/>
+        <circle cx="55" cy="210" r="1.3"/>
+        <circle cx="110" cy="210" r="1.3"/>
+        <circle cx="150" cy="210" r="1.3"/>
+        <circle cx="190" cy="210" r="1.3"/>
+        <circle cx="245" cy="210" r="1.3"/>
+        <circle cx="20" cy="210" r="1.0"/>
+        <circle cx="82" cy="210" r="1.0"/>
+        <circle cx="128" cy="210" r="1.0"/>
+        <circle cx="172" cy="210" r="1.0"/>
+        <circle cx="220" cy="210" r="1.0"/>
+        <circle cx="274" cy="210" r="1.0"/>
+        <circle cx="55" cy="260" r="1.3"/>
+        <circle cx="110" cy="260" r="1.3"/>
+        <circle cx="150" cy="260" r="1.3"/>
+        <circle cx="190" cy="260" r="1.3"/>
+        <circle cx="245" cy="260" r="1.3"/>
+        <circle cx="20" cy="260" r="1.0"/>
+        <circle cx="82" cy="260" r="1.0"/>
+        <circle cx="128" cy="260" r="1.0"/>
+        <circle cx="172" cy="260" r="1.0"/>
+        <circle cx="220" cy="260" r="1.0"/>
+        <circle cx="274" cy="260" r="1.0"/>
+        </g>
+      </g>
+      <!-- ══ 3. NPA POLYGON ════════════════════════════════════════════════ -->
       <g style="animation:buf-npa 12s ease-in-out infinite">
         <polygon points="132,131 163,125 170,149 138,157"
-          fill="var(--color-accent)" opacity="0.32"
-          stroke="var(--color-accent)" stroke-width="1.8" stroke-linejoin="round"/>
+          fill="var(--color-accent)" opacity="0.30"
+          stroke="var(--color-accent)" stroke-width="2" stroke-linejoin="round"/>
         <text x="151" y="143" text-anchor="middle" font-size="6.5"
           fill="var(--color-accent)" font-weight="700" opacity="0.95">NPA</text>
       </g>
-      <!--
-        STEP 3 — five buffer rings draw in sequentially (buf-r1..r5).
-      -->
-      <!-- Ring 1 · 0.1 mi · r=28 · circumference≈176 -->
+      <!-- ══ 4. BUFFER RINGS ════════════════════════════════════════════════ -->
+      <!-- Ring 1 · 0.1 mi · r=28 -->
       <circle cx="150" cy="142" r="28"  fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-dasharray="176" stroke-dashoffset="176" style="animation:buf-r1 12s ease-in-out infinite"/>
-      <!-- Ring 2 · 0.25 mi · r=56 · circumference≈352 -->
+      <!-- Ring 2 · 0.25 mi · r=56 -->
       <circle cx="150" cy="142" r="56"  fill="none" stroke="var(--color-border)" stroke-width="1.3" stroke-dasharray="352" stroke-dashoffset="352" style="animation:buf-r2 12s ease-in-out infinite"/>
-      <!-- Ring 3 · 0.5 mi · r=86 · circumference≈540 -->
+      <!-- Ring 3 · 0.5 mi · r=86 -->
       <circle cx="150" cy="142" r="86"  fill="none" stroke="var(--color-border)" stroke-width="1.3" stroke-dasharray="540" stroke-dashoffset="540" style="animation:buf-r3 12s ease-in-out infinite"/>
-      <!-- Ring 4 · 0.75 mi · r=113 · circumference≈710 -->
+      <!-- Ring 4 · 0.75 mi · r=113 -->
       <circle cx="150" cy="142" r="113" fill="none" stroke="var(--color-border)" stroke-width="1"   stroke-dasharray="710" stroke-dashoffset="710" style="animation:buf-r4 12s ease-in-out infinite"/>
-      <!-- Ring 5 · 1 mi · r=136 · circumference≈854 -->
+      <!-- Ring 5 · 1 mi · r=136 -->
       <circle cx="150" cy="142" r="136" fill="none" stroke="var(--color-border)" stroke-width="1"   stroke-dasharray="854" stroke-dashoffset="854" style="animation:buf-r5 12s ease-in-out infinite"/>
-      <!-- Distance labels — appear after all rings drawn (buf-lbl) -->
+      <!-- ══ 5. DISTANCE LABELS ════════════════════════════════════════════ -->
       <text x="181" y="117" font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.1 mi</text>
       <text x="207" y="99"  font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.25 mi</text>
       <text x="226" y="74"  font-size="7.5" fill="var(--color-text-muted)" style="animation:buf-lbl 12s ease-in-out infinite">0.5 mi</text>
@@ -1139,13 +1350,23 @@ text.pf-label.pf-on {
 @keyframes mi-flash  { 0%,50%,100%{opacity:0.2} 62%{opacity:1} }
 /* ── Buffer ring animations (Page 4) ─────────────────────────────── */
 @keyframes net-fade { 0%{opacity:0} 6%{opacity:1} 78%{opacity:0.85} 88%{opacity:0} 100%{opacity:0} }
+@keyframes bold-clip {
+  0%,14%{clip-path:circle(0px at 150px 142px);opacity:0}
+  16%{clip-path:circle(0px at 150px 142px);opacity:0.85}
+  32%{clip-path:circle(28px  at 150px 142px);opacity:0.85}
+  44%{clip-path:circle(56px  at 150px 142px);opacity:0.85}
+  54%{clip-path:circle(86px  at 150px 142px);opacity:0.85}
+  64%{clip-path:circle(113px at 150px 142px);opacity:0.85}
+  74%{clip-path:circle(136px at 150px 142px);opacity:0.85}
+  78%{clip-path:circle(136px at 150px 142px);opacity:0.85}
+  88%{clip-path:circle(0px  at 150px 142px);opacity:0}
+  100%{clip-path:circle(0px at 150px 142px);opacity:0} }
 @keyframes buf-npa  { 0%,8%{opacity:0} 14%{opacity:1} 78%{opacity:1} 90%{opacity:0} 100%{opacity:0} }
 @keyframes buf-r1  { 0%,16%{stroke-dashoffset:176;opacity:0} 20%{opacity:1} 32%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:176;opacity:0} }
 @keyframes buf-r2  { 0%,26%{stroke-dashoffset:352;opacity:0} 30%{opacity:1} 44%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:352;opacity:0} }
 @keyframes buf-r3  { 0%,36%{stroke-dashoffset:540;opacity:0} 40%{opacity:1} 54%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:540;opacity:0} }
 @keyframes buf-r4  { 0%,46%{stroke-dashoffset:710;opacity:0} 50%{opacity:1} 64%{stroke-dashoffset:0;opacity:1} 75%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:710;opacity:0} }
 @keyframes buf-r5  { 0%,56%{stroke-dashoffset:854;opacity:0} 60%{opacity:1} 74%{stroke-dashoffset:0;opacity:1} 77%{opacity:1} 88%{opacity:0} 100%{stroke-dashoffset:854;opacity:0} }
-@keyframes buf-seg { 0%,10%{stroke-dashoffset:80;opacity:0} 14%{opacity:0.4} 28%{stroke-dashoffset:0;opacity:0.45} 75%{opacity:0.45} 88%{opacity:0} 100%{stroke-dashoffset:80;opacity:0} }
 @keyframes buf-lbl { 0%,72%{opacity:0} 78%{opacity:1} 82%{opacity:1} 90%{opacity:0} 100%{opacity:0} }
 .buf-eq { font-size:0.82rem; text-align:center; margin:0.4em 0 0; color:var(--color-text-muted); }
 .buf-eq-n { color:var(--color-accent); font-size:1rem; }
