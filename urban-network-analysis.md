@@ -192,7 +192,7 @@ permalink: /projects/urban-network-analysis/
         <circle cx="138" cy="88" r="3.2" fill="var(--color-accent)" style="animation:mi-pulse 5s ease-in-out infinite;animation-delay:3.2s"/>
         <text x="158" y="10" font-size="6.8" fill="var(--color-accent)" opacity="0.75" text-anchor="end">NPA boundary</text>
       </svg>
-      <figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments &mdash; computed inside each NPA&rsquo;s boundary.</figcaption>
+      <figcaption><strong>Nodes</strong> = intersections &nbsp;&bull;&nbsp; <strong>Edges</strong> = street segments.</figcaption>
     </figure>
   </div><!-- /.p2-cell E -->
 
@@ -238,7 +238,7 @@ permalink: /projects/urban-network-analysis/
     <figure class="p2-map">
       <div class="p2-map-wrap" id="fig2Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-             alt="Figure 2: Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
+             alt="Diversity of street networks in the study area (Kefayat &amp; Thill 2025)"
              class="p2-map-img" id="fig2Img">
         <button class="fig2-expand-btn" id="fig2Btn" aria-label="View full size">
           <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -249,7 +249,7 @@ permalink: /projects/urban-network-analysis/
           </svg>
         </button>
       </div>
-      <figcaption>Street network diversity across Charlotte (Figure 2).</figcaption>
+      <figcaption>Street network diversity across Charlotte.</figcaption>
     </figure>
   </div><!-- /.p2-cell C -->
 
@@ -260,7 +260,7 @@ permalink: /projects/urban-network-analysis/
     <figure class="p2-crime-fig">
       <div class="p2-map-wrap" id="fig3Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
-             alt="Figure 3: Property crime counts across NPAs in 2022"
+             alt="Property crime counts across NPAs in 2022"
              class="p2-map-img p2-map-img--sm" id="fig3Img">
         <button class="fig2-expand-btn" id="fig3Btn" aria-label="View full size">
           <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -271,12 +271,12 @@ permalink: /projects/urban-network-analysis/
           </svg>
         </button>
       </div>
-      <figcaption>Crime counts by NPA (Figure 3).</figcaption>
+      <figcaption>Crime counts by NPA.</figcaption>
     </figure>
     <figure class="p2-crime-fig">
       <div class="p2-map-wrap" id="fig4Wrap" title="Click to enlarge">
         <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
-             alt="Figure 4: Property crime density across NPAs (by acre) in 2022"
+             alt="Property crime density across NPAs (by acre) in 2022"
              class="p2-map-img p2-map-img--sm" id="fig4Img">
         <button class="fig2-expand-btn" id="fig4Btn" aria-label="View full size">
           <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -287,7 +287,7 @@ permalink: /projects/urban-network-analysis/
           </svg>
         </button>
       </div>
-      <figcaption>Crime density per acre (Figure 4).</figcaption>
+      <figcaption>Crime density per acre.</figcaption>
     </figure>
     </div><!-- /.p2-crime-pair-row -->
   </div><!-- /.p2-cell D -->
@@ -295,32 +295,32 @@ permalink: /projects/urban-network-analysis/
 </div><!-- /.p2-layout -->
 
 <!-- Lightboxes (position:fixed overlays) -->
-<div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Figure 2 full size" hidden>
+<div class="fig2-lb" id="fig2Lb" role="dialog" aria-modal="true" aria-label="Street network diversity full size" hidden>
   <div class="fig2-lb-backdrop" id="fig2Backdrop"></div>
   <div class="fig2-lb-box">
     <button class="fig2-lb-close" id="fig2Close" aria-label="Close">&#215;</button>
     <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g002.png"
-         alt="Figure 2 full size: Diversity of street networks in the study area"
+         alt="Diversity of street networks in the study area"
          class="fig2-lb-img">
     <p class="fig2-lb-cap">Diversity of street networks in the study area</p>
   </div>
 </div>
-<div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Figure 3 full size" hidden>
+<div class="fig2-lb" id="fig3Lb" role="dialog" aria-modal="true" aria-label="Crime counts full size" hidden>
   <div class="fig2-lb-backdrop" id="fig3Backdrop"></div>
   <div class="fig2-lb-box">
     <button class="fig2-lb-close" id="fig3Close" aria-label="Close">&#215;</button>
     <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g003.png"
-         alt="Figure 3 full size: Property crime counts across NPAs in 2022"
+         alt="Property crime counts across NPAs in 2022"
          class="fig2-lb-img">
     <p class="fig2-lb-cap">Property crime counts across NPAs in 2022</p>
   </div>
 </div>
-<div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Figure 4 full size" hidden>
+<div class="fig2-lb" id="fig4Lb" role="dialog" aria-modal="true" aria-label="Crime density full size" hidden>
   <div class="fig2-lb-backdrop" id="fig4Backdrop"></div>
   <div class="fig2-lb-box">
     <button class="fig2-lb-close" id="fig4Close" aria-label="Close">&#215;</button>
     <img src="https://www.mdpi.com/ijgi/ijgi-14-00200/article_deploy/html/images/ijgi-14-00200-g004.png"
-         alt="Figure 4 full size: Property crime density across NPAs (by acre) in 2022"
+         alt="Property crime density across NPAs (by acre) in 2022"
          class="fig2-lb-img">
     <p class="fig2-lb-cap">Property crime density across NPAs, per acre</p>
   </div>
