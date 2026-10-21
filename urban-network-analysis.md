@@ -834,9 +834,9 @@ permalink: /projects/urban-network-analysis/
 <div class="app-pca">
 <p class="app-head">Stage 2 — PCA: from 40 variables to 4 components (minres FA · varimax rotation · n=371 NPAs)</p>
 <div class="app-row-top">
-  <!-- Fig A1: Scree plot -->
+  <!-- A1: Scree plot -->
   <figure style="margin:0">
-    <span class="app-cap">Fig. A1 — Scree plot: eigenvalues of the 40-variable correlation matrix</span>
+    <span class="app-cap">A1 — Scree plot: eigenvalues of the 40-variable correlation matrix</span>
     <svg viewBox="0 0 260 170" class="app-scree" style="width:100%;height:auto;overflow:visible">
   <!-- Y axis -->
   <line x1="42" y1="10" x2="42" y2="140" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
@@ -862,60 +862,137 @@ permalink: /projects/urban-network-analysis/
   <circle cx="42.0" cy="17.5" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="61.1" cy="44.2" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="80.2" cy="89.6" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="99.3" cy="110.6" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="118.4" cy="124.8" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="137.5" cy="129.7" r="2.2" fill="var(--color-accent,#E07030)" opacity="0.9"/><circle cx="156.5" cy="131.9" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/><circle cx="175.6" cy="133.2" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/><circle cx="194.7" cy="133.9" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/><circle cx="213.8" cy="135.9" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/><circle cx="232.9" cy="137.2" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/><circle cx="252.0" cy="137.4" r="1.6" fill="var(--color-text-muted,#777)" opacity="0.7"/>
 </svg>
   </figure>
-  <!-- Table A2: Variance explained -->
+  <!-- A2: Loadings heatmap (right column) -->
   <figure style="margin:0">
-    <span class="app-cap">Table A2 — Variance explained (rotated solution)</span>
-    <table class="app-tbl">
-      <thead><tr><th>Factor</th><th>Component</th><th>Rep. measure</th><th>SS load.</th><th>% Var.</th><th>Cum. %</th></tr></thead>
-      <tbody><tr>
-      <td style="font-weight:600">F1</td>
-      <td>Intersection density</td>
-      <td style="opacity:0.7">int_den</td>
-      <td>11.24</td>
-      <td>28.1%</td>
-      <td>28.1%</td>
-    </tr><tr>
-      <td style="font-weight:600">F2</td>
-      <td>Network accessibility</td>
-      <td style="opacity:0.7">shtpth</td>
-      <td>8.12</td>
-      <td>20.3%</td>
-      <td>48.4%</td>
-    </tr><tr>
-      <td style="font-weight:600">F3</td>
-      <td>Betweenness centrality</td>
-      <td style="opacity:0.7">bt_cnt</td>
-      <td>6.64</td>
-      <td>16.6%</td>
-      <td>65.0%</td>
-    </tr><tr>
-      <td style="font-weight:600">F4</td>
-      <td>Clustering coefficient</td>
-      <td style="opacity:0.7">cl_cof</td>
-      <td>5.23</td>
-      <td>13.1%</td>
-      <td>78.1%</td>
-    </tr></tbody>
-    </table>
-  </figure>
-</div>
-<!-- Fig A2: Loadings heatmap -->
-<figure class="app-fig-full" style="margin:0 0 .9rem">
-  <span class="app-cap">Fig. A2 — Factor loadings heatmap (max |λ| across 5 buffer distances per metric)</span>
-  <svg viewBox="0 0 378 214" class="app-heatmap" style="width:100%;height:auto;overflow:visible">
-  <text x="132.0" y="30" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F1 · Int. density</text><line x1="98.0" y1="36" x2="98.0" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/><text x="202.0" y="30" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F2 · Connectivity</text><line x1="168.0" y1="36" x2="168.0" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/><text x="272.0" y="30" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F3 · Betweenness</text><line x1="238.0" y1="36" x2="238.0" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/><text x="342.0" y="30" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F4 · Clustering</text><line x1="308.0" y1="36" x2="308.0" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-  <text x="92" y="49.0" text-anchor="end" font-size="8.5" opacity="0.75">Int. density</text><rect x="98" y="36" width="68" height="20" fill="rgba(225,125,40,0.96)" rx="2"/><text x="132.0" y="49.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.96</text><rect x="168" y="36" width="68" height="20" fill="rgba(225,125,40,0.31)" rx="2"/><text x="202.0" y="49.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.31</text><rect x="238" y="36" width="68" height="20" fill="rgba(55,135,220,0.32)" rx="2"/><text x="272.0" y="49.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.32</text><rect x="308" y="36" width="68" height="20" fill="rgba(55,135,220,0.18)" rx="2"/><text x="342.0" y="49.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.04</text><text x="92" y="71.0" text-anchor="end" font-size="8.5" opacity="0.75">Street density</text><rect x="98" y="58" width="68" height="20" fill="rgba(225,125,40,0.95)" rx="2"/><text x="132.0" y="71.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.95</text><rect x="168" y="58" width="68" height="20" fill="rgba(225,125,40,0.33)" rx="2"/><text x="202.0" y="71.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.33</text><rect x="238" y="58" width="68" height="20" fill="rgba(55,135,220,0.18)" rx="2"/><text x="272.0" y="71.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.14</text><rect x="308" y="58" width="68" height="20" fill="rgba(225,125,40,0.18)" rx="2"/><text x="342.0" y="71.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.03</text><text x="92" y="93.0" text-anchor="end" font-size="8.5" opacity="0.75">Node degree</text><rect x="98" y="80" width="68" height="20" fill="rgba(225,125,40,0.53)" rx="2"/><text x="132.0" y="93.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.53</text><rect x="168" y="80" width="68" height="20" fill="rgba(225,125,40,0.19)" rx="2"/><text x="202.0" y="93.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.19</text><rect x="238" y="80" width="68" height="20" fill="rgba(55,135,220,0.33)" rx="2"/><text x="272.0" y="93.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.33</text><rect x="308" y="80" width="68" height="20" fill="rgba(225,125,40,0.70)" rx="2"/><text x="342.0" y="93.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.70</text><text x="92" y="115.0" text-anchor="end" font-size="8.5" opacity="0.75">Clustering coeff.</text><rect x="98" y="102" width="68" height="20" fill="rgba(55,135,220,0.18)" rx="2"/><text x="132.0" y="115.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.17</text><rect x="168" y="102" width="68" height="20" fill="rgba(55,135,220,0.18)" rx="2"/><text x="202.0" y="115.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.09</text><rect x="238" y="102" width="68" height="20" fill="rgba(225,125,40,0.19)" rx="2"/><text x="272.0" y="115.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.19</text><rect x="308" y="102" width="68" height="20" fill="rgba(225,125,40,0.82)" rx="2"/><text x="342.0" y="115.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.82</text><text x="92" y="137.0" text-anchor="end" font-size="8.5" opacity="0.75">Avg. shortest path</text><rect x="98" y="124" width="68" height="20" fill="rgba(55,135,220,0.54)" rx="2"/><text x="132.0" y="137.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">-0.54</text><rect x="168" y="124" width="68" height="20" fill="rgba(55,135,220,0.83)" rx="2"/><text x="202.0" y="137.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">-0.83</text><rect x="238" y="124" width="68" height="20" fill="rgba(55,135,220,0.34)" rx="2"/><text x="272.0" y="137.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.34</text><rect x="308" y="124" width="68" height="20" fill="rgba(225,125,40,0.18)" rx="2"/><text x="342.0" y="137.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.13</text><text x="92" y="159.0" text-anchor="end" font-size="8.5" opacity="0.75">Betweenness</text><rect x="98" y="146" width="68" height="20" fill="rgba(55,135,220,0.52)" rx="2"/><text x="132.0" y="159.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">-0.52</text><rect x="168" y="146" width="68" height="20" fill="rgba(225,125,40,0.53)" rx="2"/><text x="202.0" y="159.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.53</text><rect x="238" y="146" width="68" height="20" fill="rgba(225,125,40,0.90)" rx="2"/><text x="272.0" y="159.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.90</text><rect x="308" y="146" width="68" height="20" fill="rgba(225,125,40,0.21)" rx="2"/><text x="342.0" y="159.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.21</text><text x="92" y="181.0" text-anchor="end" font-size="8.5" opacity="0.75">Closeness</text><rect x="98" y="168" width="68" height="20" fill="rgba(55,135,220,0.29)" rx="2"/><text x="132.0" y="181.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">-0.29</text><rect x="168" y="168" width="68" height="20" fill="rgba(225,125,40,0.82)" rx="2"/><text x="202.0" y="181.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.82</text><rect x="238" y="168" width="68" height="20" fill="rgba(225,125,40,0.66)" rx="2"/><text x="272.0" y="181.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.66</text><rect x="308" y="168" width="68" height="20" fill="rgba(225,125,40,0.18)" rx="2"/><text x="342.0" y="181.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.11</text><text x="92" y="203.0" text-anchor="end" font-size="8.5" opacity="0.75">PageRank</text><rect x="98" y="190" width="68" height="20" fill="rgba(55,135,220,0.49)" rx="2"/><text x="132.0" y="203.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">-0.49</text><rect x="168" y="190" width="68" height="20" fill="rgba(225,125,40,0.72)" rx="2"/><text x="202.0" y="203.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.72</text><rect x="238" y="190" width="68" height="20" fill="rgba(225,125,40,0.88)" rx="2"/><text x="272.0" y="203.5" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="500">+0.88</text><rect x="308" y="190" width="68" height="20" fill="rgba(225,125,40,0.18)" rx="2"/><text x="342.0" y="203.5" text-anchor="middle" font-size="7.5" fill="transparent" font-weight="500">+0.17</text>
+    <span class="app-cap">A2 — Rotated component loadings heatmap (street-network measures)</span>
+    <svg viewBox="0 0 280 214" class="app-heatmap" style="width:100%;height:auto;overflow:visible">
+  <text x="102" y="28" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F1</text>
+  <text x="153" y="28" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F2</text>
+  <line x1="128" y1="36" x2="128" y2="212" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="204" y="28" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F3</text>
+  <line x1="179" y1="36" x2="179" y2="212" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="255" y="28" text-anchor="middle" font-size="8" opacity="0.8" font-weight="600">F4</text>
+  <line x1="230" y1="36" x2="230" y2="212" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="74" y="50" text-anchor="end" font-size="7.5" opacity="0.75">Int. density</text>
+  <rect x="77" y="36" width="50" height="22" fill="rgba(225,125,40,0.97)" rx="2"/>
+  <text x="102" y="50" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.97</text>
+  <rect x="128" y="36" width="50" height="22" fill="rgba(225,125,40,0.36)" rx="2"/>
+  <rect x="179" y="36" width="50" height="22" fill="rgba(55,135,220,0.37)" rx="2"/>
+  <rect x="230" y="36" width="50" height="22" fill="rgba(55,135,220,0.12)" rx="2"/>
+  <text x="74" y="72" text-anchor="end" font-size="7.5" opacity="0.75">Street density</text>
+  <rect x="77" y="58" width="50" height="22" fill="rgba(225,125,40,0.95)" rx="2"/>
+  <text x="102" y="72" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.95</text>
+  <rect x="128" y="58" width="50" height="22" fill="rgba(225,125,40,0.39)" rx="2"/>
+  <rect x="179" y="58" width="50" height="22" fill="rgba(55,135,220,0.21)" rx="2"/>
+  <rect x="230" y="58" width="50" height="22" fill="rgba(225,125,40,0.11)" rx="2"/>
+  <text x="74" y="94" text-anchor="end" font-size="7.5" opacity="0.75">Node degree</text>
+  <rect x="77" y="80" width="50" height="22" fill="rgba(225,125,40,0.57)" rx="2"/>
+  <text x="102" y="94" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.53</text>
+  <rect x="128" y="80" width="50" height="22" fill="rgba(225,125,40,0.25)" rx="2"/>
+  <rect x="179" y="80" width="50" height="22" fill="rgba(55,135,220,0.38)" rx="2"/>
+  <rect x="230" y="80" width="50" height="22" fill="rgba(225,125,40,0.72)" rx="2"/>
+  <text x="255" y="94" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.70</text>
+  <text x="74" y="116" text-anchor="end" font-size="7.5" opacity="0.75">Clustering coeff.</text>
+  <rect x="77" y="102" width="50" height="22" fill="rgba(55,135,220,0.24)" rx="2"/>
+  <rect x="128" y="102" width="50" height="22" fill="rgba(55,135,220,0.16)" rx="2"/>
+  <rect x="179" y="102" width="50" height="22" fill="rgba(225,125,40,0.26)" rx="2"/>
+  <rect x="230" y="102" width="50" height="22" fill="rgba(225,125,40,0.83)" rx="2"/>
+  <text x="255" y="116" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.82</text>
+  <text x="74" y="138" text-anchor="end" font-size="7.5" opacity="0.75">Avg. shortest path</text>
+  <rect x="77" y="124" width="50" height="22" fill="rgba(55,135,220,0.58)" rx="2"/>
+  <text x="102" y="138" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">-0.54</text>
+  <rect x="128" y="124" width="50" height="22" fill="rgba(55,135,220,0.84)" rx="2"/>
+  <text x="153" y="138" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">-0.83</text>
+  <rect x="179" y="124" width="50" height="22" fill="rgba(55,135,220,0.40)" rx="2"/>
+  <rect x="230" y="124" width="50" height="22" fill="rgba(225,125,40,0.20)" rx="2"/>
+  <text x="74" y="160" text-anchor="end" font-size="7.5" opacity="0.75">Betweenness</text>
+  <rect x="77" y="146" width="50" height="22" fill="rgba(55,135,220,0.56)" rx="2"/>
+  <text x="102" y="160" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">-0.52</text>
+  <rect x="128" y="146" width="50" height="22" fill="rgba(225,125,40,0.56)" rx="2"/>
+  <text x="153" y="160" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.53</text>
+  <rect x="179" y="146" width="50" height="22" fill="rgba(225,125,40,0.91)" rx="2"/>
+  <text x="204" y="160" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.90</text>
+  <rect x="230" y="146" width="50" height="22" fill="rgba(225,125,40,0.27)" rx="2"/>
+  <text x="74" y="182" text-anchor="end" font-size="7.5" opacity="0.75">Closeness</text>
+  <rect x="77" y="168" width="50" height="22" fill="rgba(55,135,220,0.34)" rx="2"/>
+  <rect x="128" y="168" width="50" height="22" fill="rgba(225,125,40,0.83)" rx="2"/>
+  <text x="153" y="182" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.82</text>
+  <rect x="179" y="168" width="50" height="22" fill="rgba(225,125,40,0.69)" rx="2"/>
+  <text x="204" y="182" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.66</text>
+  <rect x="230" y="168" width="50" height="22" fill="rgba(225,125,40,0.18)" rx="2"/>
+  <text x="74" y="204" text-anchor="end" font-size="7.5" opacity="0.75">PageRank</text>
+  <rect x="77" y="190" width="50" height="22" fill="rgba(55,135,220,0.53)" rx="2"/>
+  <rect x="128" y="190" width="50" height="22" fill="rgba(225,125,40,0.74)" rx="2"/>
+  <text x="153" y="204" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.72</text>
+  <rect x="179" y="190" width="50" height="22" fill="rgba(225,125,40,0.89)" rx="2"/>
+  <text x="204" y="204" text-anchor="middle" font-size="6.5" fill="#fff" font-weight="500">+0.88</text>
+  <rect x="230" y="190" width="50" height="22" fill="rgba(225,125,40,0.24)" rx="2"/>
 </svg>
 </figure>
-<!-- Table A1: Full loadings -->
-<figure class="app-fig-full" style="margin:0">
-  <span class="app-cap">Table A1 — Factor loadings matrix (all 40 variables, varimax-rotated; bold ≥ |0.50|)</span>
+</div>
+<!-- A1: Communality table (full width) -->
+<figure class="app-fig-full" style="margin:0 0 .9rem">
+  <span class="app-cap">A1 — Communality of street-network measures for the retained components</span>
   <div class="app-tbl-scroll">
     <table class="app-tbl app-tbl-sm">
-      <thead><tr><th>Metric</th><th>Buffer</th><th>F1 · Int.dens.</th><th>F2 · Access.</th><th>F3 · Between.</th><th>F4 · Cluster.</th></tr></thead>
-      <tbody><tr><td>Intersection density</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:600">+0.765</td><td>+0.307</td><td>-0.317</td><td>-0.002</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Street density</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:600">+0.703</td><td>+0.333</td><td>-0.116</td><td>+0.029</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Node degree</td><td style="opacity:0.6">0.1 mi</td><td>+0.336</td><td>+0.107</td><td>-0.329</td><td style="font-weight:600">+0.642</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Clustering coeff.</td><td style="opacity:0.6">0.1 mi</td><td>-0.141</td><td>-0.086</td><td>+0.174</td><td style="font-weight:600">+0.605</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Avg. shortest path</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:600">-0.540</td><td style="font-weight:600">-0.565</td><td>-0.344</td><td>+0.130</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Betweenness</td><td style="opacity:0.6">0.1 mi</td><td>-0.058</td><td>+0.126</td><td style="font-weight:600">+0.887</td><td>-0.067</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Closeness</td><td style="opacity:0.6">0.1 mi</td><td>+0.224</td><td style="font-weight:600">+0.525</td><td style="font-weight:600">+0.664</td><td>+0.059</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>PageRank</td><td style="opacity:0.6">0.1 mi</td><td>+0.069</td><td>+0.321</td><td style="font-weight:600">+0.878</td><td>-0.005</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Intersection density</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:600">+0.852</td><td>+0.189</td><td>-0.317</td><td>-0.027</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Street density</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:600">+0.825</td><td>+0.175</td><td>-0.138</td><td>+0.026</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Node degree</td><td style="opacity:0.6">0.25 mi</td><td>+0.415</td><td>+0.166</td><td>-0.306</td><td style="font-weight:600">+0.697</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Clustering coeff.</td><td style="opacity:0.6">0.25 mi</td><td>-0.171</td><td>-0.082</td><td>+0.191</td><td style="font-weight:600">+0.728</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Avg. shortest path</td><td style="opacity:0.6">0.25 mi</td><td>-0.476</td><td style="font-weight:600">-0.653</td><td>-0.286</td><td>+0.100</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Betweenness</td><td style="opacity:0.6">0.25 mi</td><td>-0.190</td><td>+0.166</td><td style="font-weight:600">+0.903</td><td>+0.025</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Closeness</td><td style="opacity:0.6">0.25 mi</td><td>+0.088</td><td style="font-weight:600">+0.661</td><td style="font-weight:600">+0.545</td><td>+0.085</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>PageRank</td><td style="opacity:0.6">0.25 mi</td><td>-0.089</td><td>+0.435</td><td style="font-weight:600">+0.867</td><td>+0.043</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Intersection density</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:600">+0.934</td><td>-0.006</td><td>-0.171</td><td>-0.045</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Street density</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:600">+0.911</td><td>-0.081</td><td>-0.002</td><td>-0.021</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Node degree</td><td style="opacity:0.6">0.5 mi</td><td>+0.495</td><td>+0.189</td><td>-0.265</td><td style="font-weight:600">+0.680</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Clustering coeff.</td><td style="opacity:0.6">0.5 mi</td><td>-0.149</td><td>-0.048</td><td>+0.137</td><td style="font-weight:600">+0.800</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Avg. shortest path</td><td style="opacity:0.6">0.5 mi</td><td>-0.377</td><td style="font-weight:600">-0.788</td><td>-0.146</td><td>+0.067</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Betweenness</td><td style="opacity:0.6">0.5 mi</td><td>-0.366</td><td>+0.305</td><td style="font-weight:600">+0.750</td><td>+0.124</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Closeness</td><td style="opacity:0.6">0.5 mi</td><td>-0.106</td><td style="font-weight:600">+0.811</td><td>+0.305</td><td>+0.114</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>PageRank</td><td style="opacity:0.6">0.5 mi</td><td>-0.312</td><td style="font-weight:600">+0.626</td><td style="font-weight:600">+0.648</td><td>+0.129</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Intersection density</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:600">+0.965</td><td>-0.117</td><td>-0.073</td><td>-0.016</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Street density</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:600">+0.946</td><td>-0.183</td><td>+0.054</td><td>-0.002</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Node degree</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:600">+0.529</td><td>+0.177</td><td>-0.197</td><td style="font-weight:600">+0.653</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Clustering coeff.</td><td style="opacity:0.6">0.75 mi</td><td>-0.161</td><td>-0.004</td><td>+0.109</td><td style="font-weight:600">+0.816</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Avg. shortest path</td><td style="opacity:0.6">0.75 mi</td><td>-0.308</td><td style="font-weight:600">-0.828</td><td>-0.125</td><td>+0.090</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Betweenness</td><td style="opacity:0.6">0.75 mi</td><td>-0.472</td><td>+0.434</td><td style="font-weight:600">+0.545</td><td>+0.183</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Closeness</td><td style="opacity:0.6">0.75 mi</td><td>-0.236</td><td style="font-weight:600">+0.819</td><td>+0.199</td><td>+0.071</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>PageRank</td><td style="opacity:0.6">0.75 mi</td><td>-0.453</td><td style="font-weight:600">+0.711</td><td>+0.436</td><td>+0.145</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Intersection density</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:600">+0.952</td><td>-0.195</td><td>+0.015</td><td>-0.001</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Street density</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:600">+0.913</td><td>-0.236</td><td>+0.119</td><td>-0.001</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Node degree</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:600">+0.530</td><td>+0.157</td><td>-0.144</td><td style="font-weight:600">+0.628</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Clustering coeff.</td><td style="opacity:0.6">1.0 mi</td><td>-0.174</td><td>+0.051</td><td>+0.105</td><td style="font-weight:600">+0.773</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Avg. shortest path</td><td style="opacity:0.6">1.0 mi</td><td>-0.291</td><td style="font-weight:600">-0.743</td><td>-0.075</td><td>+0.077</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Betweenness</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:600">-0.517</td><td style="font-weight:600">+0.526</td><td>+0.365</td><td>+0.210</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>Closeness</td><td style="opacity:0.6">1.0 mi</td><td>-0.288</td><td style="font-weight:600">+0.770</td><td>+0.110</td><td>+0.087</td></tr><tr style="border-top:1px solid rgba(255,255,255,0.12)"><td>PageRank</td><td style="opacity:0.6">1.0 mi</td><td>-0.494</td><td style="font-weight:600">+0.723</td><td>+0.253</td><td>+0.173</td></tr></tbody>
+      <thead><tr><th>Metric</th><th>Buffer</th><th>Communality</th></tr></thead>
+      <tbody>
+<tr><td>Intersection density</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:700">0.779</td></tr>
+<tr><td>Street density</td><td style="opacity:0.6">0.1 mi</td><td>0.620</td></tr>
+<tr><td>Node degree</td><td style="opacity:0.6">0.1 mi</td><td>0.645</td></tr>
+<tr><td>Clustering coeff.</td><td style="opacity:0.6">0.1 mi</td><td>0.424</td></tr>
+<tr><td>Avg. shortest path</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:700">0.746</td></tr>
+<tr><td>Betweenness</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:700">0.811</td></tr>
+<tr><td>Closeness</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:700">0.770</td></tr>
+<tr><td>PageRank</td><td style="opacity:0.6">0.1 mi</td><td style="font-weight:700">0.879</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.14)"><td>Intersection density</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.862</td></tr>
+<tr><td>Street density</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.730</td></tr>
+<tr><td>Node degree</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.779</td></tr>
+<tr><td>Clustering coeff.</td><td style="opacity:0.6">0.25 mi</td><td>0.602</td></tr>
+<tr><td>Avg. shortest path</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.745</td></tr>
+<tr><td>Betweenness</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.879</td></tr>
+<tr><td>Closeness</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.749</td></tr>
+<tr><td>PageRank</td><td style="opacity:0.6">0.25 mi</td><td style="font-weight:700">0.950</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.14)"><td>Intersection density</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.904</td></tr>
+<tr><td>Street density</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.836</td></tr>
+<tr><td>Node degree</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.813</td></tr>
+<tr><td>Clustering coeff.</td><td style="opacity:0.6">0.5 mi</td><td>0.683</td></tr>
+<tr><td>Avg. shortest path</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.789</td></tr>
+<tr><td>Betweenness</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.805</td></tr>
+<tr><td>Closeness</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.775</td></tr>
+<tr><td>PageRank</td><td style="opacity:0.6">0.5 mi</td><td style="font-weight:700">0.926</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.14)"><td>Intersection density</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.951</td></tr>
+<tr><td>Street density</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.932</td></tr>
+<tr><td>Node degree</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.776</td></tr>
+<tr><td>Clustering coeff.</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.703</td></tr>
+<tr><td>Avg. shortest path</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.805</td></tr>
+<tr><td>Betweenness</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.741</td></tr>
+<tr><td>Closeness</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.770</td></tr>
+<tr><td>PageRank</td><td style="opacity:0.6">0.75 mi</td><td style="font-weight:700">0.922</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.14)"><td>Intersection density</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:700">0.944</td></tr>
+<tr><td>Street density</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:700">0.904</td></tr>
+<tr><td>Node degree</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:700">0.721</td></tr>
+<tr><td>Clustering coeff.</td><td style="opacity:0.6">1.0 mi</td><td>0.642</td></tr>
+<tr><td>Avg. shortest path</td><td style="opacity:0.6">1.0 mi</td><td>0.648</td></tr>
+<tr><td>Betweenness</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:700">0.721</td></tr>
+<tr><td>Closeness</td><td style="opacity:0.6">1.0 mi</td><td>0.696</td></tr>
+<tr><td>PageRank</td><td style="opacity:0.6">1.0 mi</td><td style="font-weight:700">0.860</td></tr>
+      </tbody>
     </table>
   </div>
+</figure>
+<!-- A2: Variance explained (full width) -->
+<figure class="app-fig-full" style="margin:0">
+  <span class="app-cap">A2 — Variance explained (rotated solution)</span>
+  <table class="app-tbl">
+    <thead><tr><th>Factor</th><th>Component</th><th>% Var.</th><th>Cum. %</th></tr></thead>
+    <tbody>
+      <tr><td>F1</td><td>Intersection density &amp; street connectivity</td><td>28.1</td><td>28.1</td></tr>
+      <tr><td>F2</td><td>Network accessibility</td><td>20.3</td><td>48.4</td></tr>
+      <tr><td>F3</td><td>Betweenness &amp; centrality</td><td>16.6</td><td>65.0</td></tr>
+      <tr><td>F4</td><td>Clustering &amp; local structure</td><td>13.1</td><td>78.1</td></tr>
+    </tbody>
+  </table>
 </figure>
 </div>
 </div>
