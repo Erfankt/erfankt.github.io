@@ -822,7 +822,6 @@ permalink: /projects/urban-network-analysis/
 .app-scree,.app-heatmap{width:100%;height:auto}
 </style>
 <div class="app-pca">
-<p class="app-head">Stage 2 — PCA: from 40 variables to 4 components (minres FA · varimax rotation · n=371 NPAs)</p>
 <div class="app-row-top">
   <!-- A1: Scree plot -->
   <figure style="margin:0">
@@ -1640,6 +1639,7 @@ text.pf-label.pf-on {
   font-style: italic;
   color: var(--color-text-muted);
   margin: 1em 0;
+  text-align: center;
 }
 .book-btn {
   display: inline-block;
