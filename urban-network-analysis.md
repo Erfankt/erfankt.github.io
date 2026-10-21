@@ -1472,7 +1472,7 @@ text.pf-label.pf-on {
 }
 .npa-net-svg {
   width: 100%;
-  max-width: 190px;
+  max-width: 320px;
   height: auto;
   display: inline-block;
   color: var(--color-text-muted);
@@ -1482,7 +1482,7 @@ text.pf-label.pf-on {
   color: var(--color-text-muted);
   margin-top: 0.3em;
   line-height: 1.35;
-  max-width: 190px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
