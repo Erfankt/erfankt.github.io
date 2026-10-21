@@ -806,16 +806,6 @@ permalink: /projects/urban-network-analysis/
     </svg>
     <p class="buf-eq">8 metrics &times; 5 buffers&nbsp;=&nbsp;<strong class="buf-eq-n">40 variables</strong></p>
   </div>
-  <div class="measure-right">
-    <p class="measure-pca-head">PCA variance explained (4 retained components):</p>
-    <div class="pca-bars">
-      <div class="pca-row"><span class="pca-name">Intersection density</span><div class="pca-track"><div class="pca-fill" style="width:37%">26%</div></div></div>
-      <div class="pca-row"><span class="pca-name">Clustering coeff.</span><div class="pca-track"><div class="pca-fill pf2" style="width:28.5%">20%</div></div></div>
-      <div class="pca-row"><span class="pca-name">Avg. shortest path</span><div class="pca-track"><div class="pca-fill pf3" style="width:18.5%">13%</div></div></div>
-      <div class="pca-row"><span class="pca-name">Betweenness</span><div class="pca-track"><div class="pca-fill pf4" style="width:15.7%">11%</div></div></div>
-    </div>
-
-  </div>
 </div>
 
 <style>
@@ -984,15 +974,12 @@ permalink: /projects/urban-network-analysis/
 <!-- A2: Variance explained (full width) -->
 <figure class="app-fig-full" style="margin:0">
   <span class="app-cap">A2 — Variance explained (rotated solution)</span>
-  <table class="app-tbl">
-    <thead><tr><th>Factor</th><th>Component</th><th>% Var.</th><th>Cum. %</th></tr></thead>
-    <tbody>
-      <tr><td>F1</td><td>Intersection density &amp; street connectivity</td><td>28.1</td><td>28.1</td></tr>
-      <tr><td>F2</td><td>Network accessibility</td><td>20.3</td><td>48.4</td></tr>
-      <tr><td>F3</td><td>Betweenness &amp; centrality</td><td>16.6</td><td>65.0</td></tr>
-      <tr><td>F4</td><td>Clustering &amp; local structure</td><td>13.1</td><td>78.1</td></tr>
-    </tbody>
-  </table>
+  <div class="pca-bars">
+    <div class="pca-row"><span class="pca-name">Intersection density</span><div class="pca-track"><div class="pca-fill" style="width:60%">28.1%</div></div></div>
+    <div class="pca-row"><span class="pca-name">Network accessibility</span><div class="pca-track"><div class="pca-fill pf2" style="width:43.4%">20.3%</div></div></div>
+    <div class="pca-row"><span class="pca-name">Betweenness</span><div class="pca-track"><div class="pca-fill pf3" style="width:35.5%">16.6%</div></div></div>
+    <div class="pca-row"><span class="pca-name">Clustering</span><div class="pca-track"><div class="pca-fill pf4" style="width:28.0%">13.1%</div></div></div>
+  </div>
 </figure>
 </div>
 </div>
