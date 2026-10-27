@@ -65,12 +65,6 @@ Cited by 1
 
 </div>
 
-<div class="callout" markdown="1">
-
-**Note:** This list reflects the publications currently indexed on my Google Scholar profile. It will continue to grow as new work from my PhD research at UTSA is published.
-
-</div>
-
 ---
 
 ### 🔗 Find Me
