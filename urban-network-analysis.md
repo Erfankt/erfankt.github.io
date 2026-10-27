@@ -1043,7 +1043,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-page" data-i="6">
 <div class="book-kicker">Page 7</div>
 <h3>Try It Yourself</h3>
-<p>The repository isn't just the paper's code &mdash; it's a point-and-click web app. Download it, double-click a launcher, and step through the same pipeline in your browser: no command line required.</p>
+<p>The repository isn't just the paper's code, it's a point-and-click web app. Download it, double-click a launcher, and step through the same pipeline in your browser: no command line required.</p>
 <p><a class="book-btn" href="https://github.com/Erfankt/urban-network-analysis" target="_blank" rel="noopener">View the repository on GitHub &rarr;</a></p>
 </div>
 
