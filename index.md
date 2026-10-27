@@ -55,26 +55,3 @@ Cited by 29 — the most-cited work in my current publication record.
 [Read more on the Research page →](/research/)
 
 </div>
-
----
-
-### 🧭 Explore
-
-<div class="nav-cards">
-  <a class="nav-card" href="/research/">
-    <h4>Research</h4>
-    <p>Publications, citation metrics, and ongoing work — sourced from Google Scholar.</p>
-  </a>
-  <a class="nav-card" href="/projects/">
-    <h4>Projects</h4>
-    <p>Applied and dissertation-scale projects in urban morphology and spatial analytics.</p>
-  </a>
-  <a class="nav-card" href="/cv/">
-    <h4>Curriculum Vitae</h4>
-    <p>Full academic history, education, and experience.</p>
-  </a>
-  <a class="nav-card" href="/contact/">
-    <h4>Contact</h4>
-    <p>Reach out about collaboration, research, or opportunities.</p>
-  </a>
-</div>
