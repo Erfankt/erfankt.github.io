@@ -1044,9 +1044,7 @@ permalink: /projects/urban-network-analysis/
 <div class="book-kicker">Page 7</div>
 <h3>Try It Yourself</h3>
 <p>The repository isn't just the paper's code &mdash; it's a point-and-click web app. Download it, double-click a launcher, and step through the same pipeline in your browser: no command line required.</p>
-<div class="book-note">Placeholder &mdash; 30&ndash;60 second GIF or video of the app walking through the pipeline stages. (Add media: assets/img/app-demo.gif)</div>
 <p><a class="book-btn" href="https://github.com/Erfankt/urban-network-analysis" target="_blank" rel="noopener">View the repository on GitHub &rarr;</a></p>
-<p><a class="book-btn book-btn-ghost" href="https://github.com/Erfankt/urban-network-analysis/releases/latest" target="_blank" rel="noopener">Latest release (v2.0.1) &rarr;</a></p>
 </div>
 
 <div class="book-page" data-i="7">
@@ -1055,14 +1053,6 @@ permalink: /projects/urban-network-analysis/
 <p><strong>Language &amp; libraries:</strong> Python, GeoPandas, NetworkX, scikit-learn, factor_analyzer</p>
 <p><strong>Methods:</strong> spatial statistics, principal component analysis, large-scale checkpointed computation</p>
 <p><strong>Interface:</strong> a Streamlit web app with an optional AI assistant for exploring run results</p>
-<p><strong>License:</strong> MIT &mdash; free to reuse, extend, or adapt to another city's data</p>
-</div>
-
-<div class="book-page" data-i="8">
-<div class="book-kicker">Page 9</div>
-<h3>Cite This Work</h3>
-<p>Citation details (paper and software) are maintained in the repository's <a href="https://github.com/Erfankt/urban-network-analysis/blob/master/CITATION.cff" target="_blank" rel="noopener">CITATION.cff</a>.</p>
-<p><a class="book-btn book-btn-ghost" href="/projects/">&larr; Back to Projects</a></p>
 </div>
 
 </div>
